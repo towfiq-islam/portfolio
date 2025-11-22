@@ -1,7 +1,6 @@
-"use client";
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 
-const Navbar = () => {
+const Navigation = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   const menuItems = [
@@ -13,6 +12,28 @@ const Navbar = () => {
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
   ];
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const sections = menuItems.map((item) => ({
+  //       id: item.id,
+  //       element: document.getElementById(item.id),
+  //     }));
+
+  //     const scrollPosition = window.scrollY + 100;
+
+  //     for (let i = sections.length - 1; i >= 0; i--) {
+  //       const section = sections[i];
+  //       if (section.element && section.element.offsetTop <= scrollPosition) {
+  //         setActiveSection(section.id);
+  //         break;
+  //       }
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <nav className="mx-5 fixed top-3 left-0 right-0 z-50 backdrop-blur bg-[#000014] border border-blue-500 rounded-full">
@@ -40,4 +61,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navigation;
