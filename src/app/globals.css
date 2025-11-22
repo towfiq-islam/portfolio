@@ -2,7 +2,8 @@
 
 @theme {
   --color-primary-green: #63be60;
-  --font-poppins: var(--font-poppins);
+  --font-roboto: var(--font-roboto);
+  --font-macondo: var(--font-macondo);
 }
 
 html {
@@ -10,5 +11,5 @@ html {
 }
 
 body {
-  @apply font-poppins bg-[#000014];
+  @apply font-roboto bg-[#000014];
 }

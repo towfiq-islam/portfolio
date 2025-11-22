@@ -1,16 +1,23 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
-import { Poppins } from "next/font/google";
+import { Roboto, Macondo } from "next/font/google";
 import AosProvider from "@/Provider/AosProvider/AosProvider";
 import Navbar from "@/Shared/Navbar";
 import Footer from "@/Shared/Footer";
 
 // Fonts
-const poppins = Poppins({
-  variable: "--font-poppins",
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
+const macondo = Macondo({
+  variable: "--font-macondo",
+  subsets: ["latin"],
+  weight: ["400"],
   display: "swap",
 });
 
@@ -29,7 +36,7 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} antialiased`}>
+      <body className={`${roboto.variable} ${macondo.variable} antialiased`}>
         <AosProvider>
           <Navbar />
           <Toaster />
