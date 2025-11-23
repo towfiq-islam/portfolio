@@ -9,97 +9,97 @@ import typescriptIcon from "@/Assets/ts.png";
 import javascriptIcon from "@/Assets/js.png";
 import nextIcon from "@/Assets/next.png";
 
-const Projects = () => {
-  const projects = [
-    {
-      thumbnail: projectImg,
-      title: "Digital Wallet",
-      description:
-        "High-performance Full Stack digital wallet built with React/TypeScript, featuring secure operations",
-      technologies: [
-        { name: "React.js", icon: reactIcon },
-        { name: "Tailwind CSS", icon: tailwindIcon },
-        { name: "TypeScript", icon: typescriptIcon },
-        { name: "Mongoose", icon: javascriptIcon },
-        { name: "Express.js", icon: nextIcon },
-      ],
-      github: "https://github.com",
-      demo: "https://demo.com",
-    },
-    {
-      thumbnail: projectImg2,
-      title: "LivingNest",
-      description:
-        "A room rental platform featuring user authentication and separate dashboards for users, members, and admins.",
-      technologies: [
-        { name: "React.js", icon: reactIcon },
-        { name: "Tailwind CSS", icon: tailwindIcon },
-        { name: "TypeScript", icon: typescriptIcon },
-        { name: "Mongoose", icon: javascriptIcon },
-        { name: "Express.js", icon: nextIcon },
-      ],
-      github: "https://github.com",
-      demo: "https://demo.com",
-    },
-    {
-      thumbnail: projectImg3,
-      title: "CarePoint",
-      description:
-        "CarePoint is a scalable platform for volunteer management, built with React, TailwindCSS, Firebase, Express, and MongoDB!",
-      technologies: [
-        { name: "React.js", icon: reactIcon },
-        { name: "Tailwind CSS", icon: tailwindIcon },
-        { name: "TypeScript", icon: typescriptIcon },
-        { name: "Mongoose", icon: javascriptIcon },
-        { name: "Express.js", icon: nextIcon },
-      ],
-      github: "https://github.com",
-      demo: "https://demo.com",
-    },
-    {
-      title: "GameScope",
-      description:
-        "A platform for reviewing and rating games, where users can share their experiences and ratings. Easy to use and community-driven",
-      technologies: [
-        { name: "React.js", icon: reactIcon },
-        { name: "Tailwind CSS", icon: tailwindIcon },
-        { name: "TypeScript", icon: typescriptIcon },
-        { name: "Mongoose", icon: javascriptIcon },
-        { name: "Express.js", icon: nextIcon },
-      ],
-      github: "https://github.com",
-      demo: "https://demo.com",
-    },
-    {
-      title: "Discount Pro",
-      description:
-        "Discount PRO is a coupon app for discovering and using discounts at e-commerce stores in Bangladesh, with responsive design.",
-      technologies: [
-        { name: "React.js", icon: reactIcon },
-        { name: "Tailwind CSS", icon: tailwindIcon },
-        { name: "TypeScript", icon: typescriptIcon },
-        { name: "Mongoose", icon: javascriptIcon },
-        { name: "Express.js", icon: nextIcon },
-      ],
-      github: "https://github.com",
-      demo: "https://demo.com",
-    },
-    {
-      title: "Paddy",
-      description:
-        "Peddy is a user-friendly pet adoption web app built with HTML, Tailwind CSS, DaisyUI, and JavaScript, offering a modern interface for easy pet adoption.",
-      technologies: [
-        { name: "React.js", icon: reactIcon },
-        { name: "Tailwind CSS", icon: tailwindIcon },
-        { name: "TypeScript", icon: typescriptIcon },
-        { name: "Mongoose", icon: javascriptIcon },
-        { name: "Express.js", icon: nextIcon },
-      ],
-      github: "https://github.com",
-      demo: "https://demo.com",
-    },
-  ];
+const projects = [
+  {
+    thumbnail: projectImg,
+    title: "Digital Wallet",
+    description:
+      "High-performance Full Stack digital wallet built with React/TypeScript, featuring secure operations",
+    technologies: [
+      { name: "React.js", icon: reactIcon },
+      { name: "Tailwind CSS", icon: tailwindIcon },
+      { name: "TypeScript", icon: typescriptIcon },
+      { name: "Mongoose", icon: javascriptIcon },
+      { name: "Express.js", icon: nextIcon },
+    ],
+    github: "https://github.com",
+    demo: "https://demo.com",
+  },
+  {
+    thumbnail: projectImg2,
+    title: "LivingNest",
+    description:
+      "A room rental platform featuring user authentication and separate dashboards for users, members, and admins.",
+    technologies: [
+      { name: "React.js", icon: reactIcon },
+      { name: "Tailwind CSS", icon: tailwindIcon },
+      { name: "TypeScript", icon: typescriptIcon },
+      { name: "Mongoose", icon: javascriptIcon },
+      { name: "Express.js", icon: nextIcon },
+    ],
+    github: "https://github.com",
+    demo: "https://demo.com",
+  },
+  {
+    thumbnail: projectImg3,
+    title: "CarePoint",
+    description:
+      "CarePoint is a scalable platform for volunteer management, built with React, TailwindCSS, Firebase, Express, and MongoDB!",
+    technologies: [
+      { name: "React.js", icon: reactIcon },
+      { name: "Tailwind CSS", icon: tailwindIcon },
+      { name: "TypeScript", icon: typescriptIcon },
+      { name: "Mongoose", icon: javascriptIcon },
+      { name: "Express.js", icon: nextIcon },
+    ],
+    github: "https://github.com",
+    demo: "https://demo.com",
+  },
+  {
+    title: "GameScope",
+    description:
+      "A platform for reviewing and rating games, where users can share their experiences and ratings. Easy to use and community-driven",
+    technologies: [
+      { name: "React.js", icon: reactIcon },
+      { name: "Tailwind CSS", icon: tailwindIcon },
+      { name: "TypeScript", icon: typescriptIcon },
+      { name: "Mongoose", icon: javascriptIcon },
+      { name: "Express.js", icon: nextIcon },
+    ],
+    github: "https://github.com",
+    demo: "https://demo.com",
+  },
+  {
+    title: "Discount Pro",
+    description:
+      "Discount PRO is a coupon app for discovering and using discounts at e-commerce stores in Bangladesh, with responsive design.",
+    technologies: [
+      { name: "React.js", icon: reactIcon },
+      { name: "Tailwind CSS", icon: tailwindIcon },
+      { name: "TypeScript", icon: typescriptIcon },
+      { name: "Mongoose", icon: javascriptIcon },
+      { name: "Express.js", icon: nextIcon },
+    ],
+    github: "https://github.com",
+    demo: "https://demo.com",
+  },
+  {
+    title: "Paddy",
+    description:
+      "Peddy is a user-friendly pet adoption web app built with HTML, Tailwind CSS, DaisyUI, and JavaScript, offering a modern interface for easy pet adoption.",
+    technologies: [
+      { name: "React.js", icon: reactIcon },
+      { name: "Tailwind CSS", icon: tailwindIcon },
+      { name: "TypeScript", icon: typescriptIcon },
+      { name: "Mongoose", icon: javascriptIcon },
+      { name: "Express.js", icon: nextIcon },
+    ],
+    github: "https://github.com",
+    demo: "https://demo.com",
+  },
+];
 
+const Projects = () => {
   return (
     <section id="projects" className="py-20">
       <div className="container mx-auto">
@@ -114,7 +114,7 @@ const Projects = () => {
           {projects.map(project => (
             <div
               key={project.title}
-              className="bg-[#101622] rounded-lg overflow-hidden group border border-gray-800 p-3.5 duration-500 transition-transform group hover:scale-[1.02]"
+              className="bg-gray-900 rounded-lg overflow-hidden group border border-gray-800 p-3.5 duration-500 transition-transform group hover:scale-[1.02]"
             >
               <figure className="h-[250px] flex items-center justify-center rounded-lg">
                 <Image

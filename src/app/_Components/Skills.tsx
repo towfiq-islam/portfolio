@@ -65,7 +65,7 @@ const Skills = () => {
   ];
 
   const Card = ({ icon: Icon, title, items }: CardProps) => (
-    <div className="bg-[#0d1117] border border-[#1f2937] rounded-xl p-6 shadow-lg">
+    <div className="bg-gray-900 border border-blue-500 rounded-xl p-6 shadow-lg">
       <div className="flex items-center gap-3 mb-6">
         <div className="bg-[#1f2937] p-3 rounded-lg">
           <Icon className="text-sky-500" size={28} />
