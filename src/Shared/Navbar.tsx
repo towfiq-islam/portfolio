@@ -47,7 +47,7 @@ const Navbar = () => {
               key={item.id}
               href={`#${item.id}`}
               onClick={() => setActiveSection(item?.label)}
-              className={`font-semibold rounded-full px-4 py-1.5 duration-300 transition-all flex gap-2 items-center text-[15px] ${
+              className={`font-semibold rounded-full px-4 py-1.5 duration-300 transition-all flex gap-2 items-center text-[15px] hover:bg-gray-900 hover:text-sky-500 ${
                 activeSection === item?.label
                   ? "text-sky-500 bg-gray-900"
                   : "text-white"

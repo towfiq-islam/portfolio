@@ -1,5 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Calendar } from "lucide-react";
 
 const Education = () => {
@@ -18,7 +16,8 @@ const Education = () => {
       institution: "College Name",
       location: "City, Country",
       period: "2018 - 2020",
-      description: "Science background with focus on Mathematics and Computer Science.",
+      description:
+        "Science background with focus on Mathematics and Computer Science.",
       achievements: ["GPA: 5.0/5.0", "Merit Scholarship"],
     },
   ];
@@ -33,11 +32,11 @@ const Education = () => {
 
         <div className="max-w-4xl mx-auto space-y-6">
           {education.map((edu, index) => (
-            <Card
+            <div
               key={index}
               className="bg-card border-border hover:border-primary transition-colors"
             >
-              <CardContent className="p-6 md:p-8">
+              <div className="p-6 md:p-8">
                 <div className="flex flex-col md:flex-row md:items-start gap-4">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <GraduationCap className="w-6 h-6 md:w-8 md:h-8 text-primary" />
@@ -54,29 +53,33 @@ const Education = () => {
                       </div>
                     </div>
 
-                    <h4 className="text-lg font-semibold mb-1">{edu.institution}</h4>
-                    <p className="text-muted-foreground text-sm mb-4">{edu.location}</p>
+                    <h4 className="text-lg font-semibold mb-1">
+                      {edu.institution}
+                    </h4>
+                    <p className="text-muted-foreground text-sm mb-4">
+                      {edu.location}
+                    </p>
 
-                    <p className="text-muted-foreground mb-4">{edu.description}</p>
+                    <p className="text-muted-foreground mb-4">
+                      {edu.description}
+                    </p>
 
                     <div>
-                      <h5 className="text-sm font-semibold mb-2">Achievements:</h5>
+                      <h5 className="text-sm font-semibold mb-2">
+                        Achievements:
+                      </h5>
                       <div className="flex flex-wrap gap-2">
                         {edu.achievements.map((achievement, idx) => (
-                          <Badge
-                            key={idx}
-                            variant="secondary"
-                            className="bg-secondary px-3 py-1"
-                          >
+                          <div key={idx} className="bg-secondary px-3 py-1">
                             {achievement}
-                          </Badge>
+                          </div>
                         ))}
                       </div>
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>

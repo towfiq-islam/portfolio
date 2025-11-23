@@ -11,12 +11,12 @@ const Page = () => {
   return (
     <>
       <Hero />
-      {/* <About />
-      <Skills />
-      <Education />
+      {/* <About /> */}
+      {/* <Skills /> */}
+      {/* <Education /> */}
       <Experiences />
       <Projects />
-      <Contact /> */}
+      {/* <Contact />  */}
     </>
   );
 };

@@ -1,6 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-
 const Skills = () => {
   const frontendSkills = [
     "JavaScript",

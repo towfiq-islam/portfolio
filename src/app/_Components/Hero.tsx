@@ -1,30 +1,21 @@
 "use client";
-import { useState, useEffect } from "react";
 import { Facebook, Linkedin, MessageCircle } from "lucide-react";
 import profile from "@/Assets/hero_img.png";
 import Image from "next/image";
+import Typewriter from "typewriter-effect";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   const titles = [
-    "Full Stack Developer",
+    "Front-End Developer",
     "MERN Stack Developer",
     "React JS Developer",
     "Next JS Developer",
-    "Frontend Developer",
-    "Backend Developer",
     "JavaScript Developer",
     "Web Developer",
   ];
-
-  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTitleIndex(prev => (prev + 1) % titles.length);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <section id="home" className="min-h-screen flex items-center pt-20">
@@ -34,11 +25,20 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
               Hello, I'm Towfiq Islam
             </h1>
-            <div className="h-16">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-50">
-                {titles[currentTitleIndex]}
-              </h2>
-            </div>
+
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-50">
+              <Typewriter
+                options={{
+                  strings: titles,
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 60,
+                  wrapperClassName: "text-blue-500",
+                  cursorClassName: "text-blue-500",
+                }}
+              />
+            </h2>
+
             <p className="text-muted-foreground text-lg">
               I am a motivated and adaptable individual with a passion for
               learning and delivering high-quality results. With a positive
@@ -46,36 +46,38 @@ const Hero = () => {
               make a meaningful impact.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-primary hover:bg-primary/90">Resume</button>
+              <button className="bg-blue-500 cursor-pointer px-5 py-1.5 rounded-full border border-blue-500 hover:bg-transparent hover:text-blue-500">
+                Resume
+              </button>
 
-              <button className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                Hire Me
+              <button className="bg-transparent cursor-pointer px-5 py-1.5 rounded-full border border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white">
+                Contact Me
               </button>
             </div>
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-4 pt-3">
               <a
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary transition-colors"
+                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-300 transition-all"
               >
-                <Facebook className="w-5 h-5" />
+                <FaFacebookF className="text-lg" />
               </a>
               <a
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary transition-colors"
+                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-300 transition-all"
               >
-                <Linkedin className="w-5 h-5" />
+                <FaLinkedinIn className="text-lg" />
               </a>
               <a
                 href="https://wa.me/8801736550601"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary transition-colors"
+                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-300 transition-all"
               >
-                <MessageCircle className="w-5 h-5" />
+                <FaGithub className="text-lg" />
               </a>
             </div>
           </div>
