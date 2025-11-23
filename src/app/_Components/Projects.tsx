@@ -96,7 +96,7 @@ const Projects = () => {
             >
               <figure className="h-[250px] flex items-center justify-center">
                 <Image
-                  src={project?.thumbnail}
+                  src={project?.thumbnail as any}
                   alt="project_img"
                   className="w-full h-full"
                 />
@@ -107,22 +107,24 @@ const Projects = () => {
                 <p className="text-muted-foreground mb-4 text-sm">
                   {project.description}
                 </p>
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map(tech => (
                     <div
                       key={tech}
-                      className="text-sm px-3 py-1 bg-gray-800 rounded-full"
+                      className="text-[13px] px-3 py-1 bg-gray-800 rounded-full"
                     >
                       {tech}
                     </div>
                   ))}
                 </div>
+
                 <div className="flex gap-3">
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 py-2 border flex gap-2 items-center rounded-lg text-center justify-center text-sm"
+                    className="flex-1 py-2 bg-gray-700 flex gap-2 items-center rounded-lg text-center justify-center text-sm"
                   >
                     <Github className="w-4 h-4" />
                     GitHub
@@ -132,7 +134,7 @@ const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 py-2 border flex gap-2 items-center rounded-lg text-center justify-center text-sm"
+                    className="flex-1 py-2  bg-blue-500 flex gap-2 items-center rounded-lg text-center justify-center text-sm"
                   >
                     <ExternalLink className="w-4 h-4" />
                     Live Demo
