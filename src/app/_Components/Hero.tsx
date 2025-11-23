@@ -1,6 +1,6 @@
 "use client";
 import { Facebook, Linkedin, MessageCircle } from "lucide-react";
-import profile from "@/Assets/hero_img.png";
+import profile from "@/Assets/Gemini_Generated_Image_yinwy7yinwy7yinw.png";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import { FaFacebookF } from "react-icons/fa6";
@@ -86,13 +86,13 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full border-4 border-primary animate-pulse"></div>
               <div className="absolute inset-4 rounded-full bg-gradient-to-br from-primary/20 to-transparent"></div>
               <div className="absolute inset-8 rounded-full bg-muted flex items-center justify-center overflow-hidden">
-                {/* <Image
+                <Image
                   src={profile}
                   alt="hero_img"
                   unoptimized
                   width={500}
                   height={300}
-                /> */}
+                />
               </div>
             </div>
           </div>

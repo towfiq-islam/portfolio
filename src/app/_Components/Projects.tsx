@@ -3,6 +3,16 @@ import Image from "next/image";
 import projectImg from "@/Assets/p1-BZE1zHxX.png";
 import projectImg2 from "@/Assets/p2-D5ICYa09.png";
 import projectImg3 from "@/Assets/p3-7fCS-KJe.png";
+import { RiReactjsLine } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import reactIcon from "@/Assets/react.png";
+import tailwindIcon from "@/Assets/tailwind.png";
+import typescriptIcon from "@/Assets/ts.png";
+import javascriptIcon from "@/Assets/js.png";
+import nextIcon from "@/Assets/next.png";
 
 const Projects = () => {
   const projects = [
@@ -13,12 +23,11 @@ const Projects = () => {
       description:
         "High-performance Full Stack digital wallet built with React/TypeScript, featuring secure operations",
       technologies: [
-        "React.js",
-        "Tailwind CSS",
-        "TypeScript",
-        "MongoDB",
-        "Mongoose",
-        "Express.js",
+        { name: "React.js", icon: reactIcon },
+        { name: "Tailwind CSS", icon: tailwindIcon },
+        { name: "TypeScript", icon: typescriptIcon },
+        { name: "Mongoose", icon: javascriptIcon },
+        { name: "Express.js", icon: nextIcon },
       ],
       github: "https://github.com",
       demo: "https://demo.com",
@@ -30,11 +39,11 @@ const Projects = () => {
       description:
         "A room rental platform featuring user authentication and separate dashboards for users, members, and admins.",
       technologies: [
-        "React.js",
-        "Tailwind CSS",
-        "Firebase",
-        "MongoDB",
-        "Express.js",
+        { name: "React.js", icon: reactIcon },
+        { name: "Tailwind CSS", icon: tailwindIcon },
+        { name: "TypeScript", icon: typescriptIcon },
+        { name: "Mongoose", icon: javascriptIcon },
+        { name: "Express.js", icon: nextIcon },
       ],
       github: "https://github.com",
       demo: "https://demo.com",
@@ -45,7 +54,13 @@ const Projects = () => {
       category: "Fullstack Website",
       description:
         "CarePoint is a scalable platform for volunteer management, built with React, TailwindCSS, Firebase, Express, and MongoDB!",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
+      technologies: [
+        { name: "React.js", icon: reactIcon },
+        { name: "Tailwind CSS", icon: tailwindIcon },
+        { name: "TypeScript", icon: typescriptIcon },
+        { name: "Mongoose", icon: javascriptIcon },
+        { name: "Express.js", icon: nextIcon },
+      ],
       github: "https://github.com",
       demo: "https://demo.com",
     },
@@ -54,7 +69,13 @@ const Projects = () => {
       category: "Fullstack Website",
       description:
         "A platform for reviewing and rating games, where users can share their experiences and ratings. Easy to use and community-driven",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
+      technologies: [
+        { name: "React.js", icon: reactIcon },
+        { name: "Tailwind CSS", icon: tailwindIcon },
+        { name: "TypeScript", icon: typescriptIcon },
+        { name: "Mongoose", icon: javascriptIcon },
+        { name: "Express.js", icon: nextIcon },
+      ],
       github: "https://github.com",
       demo: "https://demo.com",
     },
@@ -63,7 +84,13 @@ const Projects = () => {
       category: "React Website",
       description:
         "Discount PRO is a coupon app for discovering and using discounts at e-commerce stores in Bangladesh, with responsive design.",
-      technologies: ["React", "Tailwind CSS", "Firebase"],
+      technologies: [
+        { name: "React.js", icon: reactIcon },
+        { name: "Tailwind CSS", icon: tailwindIcon },
+        { name: "TypeScript", icon: typescriptIcon },
+        { name: "Mongoose", icon: javascriptIcon },
+        { name: "Express.js", icon: nextIcon },
+      ],
       github: "https://github.com",
       demo: "https://demo.com",
     },
@@ -72,7 +99,13 @@ const Projects = () => {
       category: "JavaScript Website",
       description:
         "Peddy is a user-friendly pet adoption web app built with HTML, Tailwind CSS, DaisyUI, and JavaScript, offering a modern interface for easy pet adoption.",
-      technologies: ["Tailwind CSS", "DaisyUI", "JavaScript"],
+      technologies: [
+        { name: "React.js", icon: reactIcon },
+        { name: "Tailwind CSS", icon: tailwindIcon },
+        { name: "TypeScript", icon: typescriptIcon },
+        { name: "Mongoose", icon: javascriptIcon },
+        { name: "Express.js", icon: nextIcon },
+      ],
       github: "https://github.com",
       demo: "https://demo.com",
     },
@@ -92,29 +125,33 @@ const Projects = () => {
           {projects.map(project => (
             <div
               key={project.title}
-              className="bg-[#101622] rounded-lg overflow-hidden group border border-gray-800"
+              className="bg-[#101622] rounded-lg overflow-hidden group border border-gray-800 p-3.5"
             >
-              <figure className="h-[250px] flex items-center justify-center">
+              <figure className="h-[250px] flex items-center justify-center rounded-lg">
                 <Image
                   src={project?.thumbnail as any}
                   alt="project_img"
-                  className="w-full h-full"
+                  className="w-full h-full rounded-lg"
                 />
               </figure>
 
-              <div className="p-5">
+              <div className="pt-5">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-muted-foreground mb-4 text-sm">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <h5 className="mb-2">Tech stack:</h5>
+
+                <div className="flex flex-wrap gap-1.5 mb-4">
                   {project.technologies.map(tech => (
                     <div
-                      key={tech}
-                      className="text-[13px] px-3 py-1 bg-gray-800 rounded-full"
+                      key={tech?.name}
+                      className="text-[13px] px-3 py-1 bg-gray-800 rounded border border-gray-700 flex gap-1 items-center"
                     >
-                      {tech}
+                      {/* <span className="">{tech?.icon}</span> */}
+                      <Image src={tech?.icon} alt="logo" />
+                      {tech?.name}
                     </div>
                   ))}
                 </div>
