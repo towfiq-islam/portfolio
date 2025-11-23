@@ -19,7 +19,7 @@ const Navbar = () => {
       label: "Home",
       icon: <FaHome />,
     },
-    { id: "about", label: "About", icon: <FaUser /> },
+    // { id: "about", label: "About", icon: <FaUser /> },
     { id: "skills", label: "Skills", icon: <GiSkills /> },
     { id: "experiences", label: "Experiences", icon: <FaGraduationCap /> },
     { id: "projects", label: "Projects", icon: <MdDocumentScanner /> },

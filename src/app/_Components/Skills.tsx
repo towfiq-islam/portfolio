@@ -1,16 +1,40 @@
 import { Code2, Database, Wrench } from "lucide-react";
-import htmlIcon from "@/Assets/html.webp";
-import cssIcon from "@/Assets/css.webp";
-import bootstrapIcon from "@/Assets/bootstrap.webp";
-import tailwindIcon from "@/Assets/tailwind.webp";
-import reactIcon from "@/Assets/react.webp";
-import nextIcon from "@/Assets/next.webp";
-import reduxIcon from "@/Assets/redux.webp";
-import jsIcon from "@/Assets/js.webp";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import htmlIcon from "@/Assets/icons/html.png";
+import cssIcon from "@/Assets/icons/css.png";
+import bootstrapIcon from "@/Assets/icons/bootstrap.png";
+import tailwindIcon from "@/Assets/icons/tailwind.png";
+import reactIcon from "@/Assets/icons/react.png";
+import nextIcon from "@/Assets/icons/next.webp";
+import reduxIcon from "@/Assets/icons/redux.png";
+import jsIcon from "@/Assets/icons/js.png";
+import tsIcon from "@/Assets/icons/ts.png";
+import mongoIcon from "@/Assets/icons/mongodb.png";
+import exIcon from "@/Assets/icons/ex.png";
+import nodeIcon from "@/Assets/icons/node.png";
+import jwtIcon from "@/Assets/icons/jwt.png";
+import postmanIcon from "@/Assets/icons/Postman.webp";
+import vsCodeIcon from "@/Assets/icons/vscode.png";
+import figmaIcon from "@/Assets/icons/figma.png";
+import vercelIcon from "@/Assets/icons/vercel.png";
+import githubIcon from "@/Assets/icons/github.png";
+import gitIcon from "@/Assets/icons/git.png";
+import npmIcon from "@/Assets/icons/npm.png";
+import firebaseIcon from "@/Assets/icons/firebase.png";
+
+type SkillItem = {
+  name: string;
+  icon: StaticImageData;
+};
+
+type CardProps = {
+  icon: React.ElementType;
+  title: string;
+  items: SkillItem[];
+};
 
 const Skills = () => {
-  const frontendSkills = [
+  const frontendSkills: SkillItem[] = [
     { name: "HTML", icon: htmlIcon },
     { name: "CSS", icon: cssIcon },
     { name: "Tailwind CSS", icon: tailwindIcon },
@@ -21,26 +45,26 @@ const Skills = () => {
     { name: "React", icon: reactIcon },
   ];
 
-  const backendSkills = [
-    { name: "TypeScript", icon: htmlIcon },
-    { name: "Node.js", icon: htmlIcon },
-    { name: "Express.js", icon: htmlIcon },
-    { name: "MongoDB", icon: htmlIcon },
-    { name: "Mongoose", icon: htmlIcon },
+  const backendSkills: SkillItem[] = [
+    { name: "TypeScript", icon: tsIcon },
+    { name: "Node.js", icon: nodeIcon },
+    { name: "Express.js", icon: exIcon },
+    { name: "MongoDB", icon: mongoIcon },
+    { name: "JWT", icon: jwtIcon },
   ];
 
-  const tools = [
-    { name: "Git", icon: htmlIcon },
-    { name: "GitHub", icon: htmlIcon },
-    { name: "Figma", icon: htmlIcon },
-    { name: "VS Code", icon: htmlIcon },
-    { name: "Postman", icon: htmlIcon },
-    { name: "Firebase", icon: htmlIcon },
-    { name: "NPM", icon: htmlIcon },
-    { name: "Vercel", icon: htmlIcon },
+  const tools: SkillItem[] = [
+    { name: "Git", icon: gitIcon },
+    { name: "GitHub", icon: githubIcon },
+    { name: "Figma", icon: figmaIcon },
+    { name: "VS Code", icon: vsCodeIcon },
+    { name: "Postman", icon: postmanIcon },
+    { name: "Firebase", icon: firebaseIcon },
+    { name: "NPM", icon: npmIcon },
+    { name: "Vercel", icon: vercelIcon },
   ];
 
-  const Card = ({ icon: Icon, title, items }) => (
+  const Card = ({ icon: Icon, title, items }: CardProps) => (
     <div className="bg-[#0d1117] border border-[#1f2937] rounded-xl p-6 shadow-lg">
       <div className="flex items-center gap-3 mb-6">
         <div className="bg-[#1f2937] p-3 rounded-lg">
@@ -55,7 +79,7 @@ const Skills = () => {
             key={item?.name}
             className="px-4 py-2 bg-[#161b22] text-gray-300 text-sm rounded-lg border border-[#1f2937] hover:bg-cyan-500 hover:text-black transition flex gap-2 items-center"
           >
-            <Image src={item?.icon} alt="icon" className="size-5" />
+            <Image src={item?.icon} alt="icon" className="size-7" />
             {item?.name}
           </div>
         ))}
@@ -78,6 +102,7 @@ const Skills = () => {
             title="Frontend Development"
             items={frontendSkills}
           />
+          
           <Card
             icon={Database}
             title="Backend Development"
