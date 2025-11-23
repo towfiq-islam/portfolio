@@ -1,101 +1,89 @@
+import { Code2, Database, Wrench } from "lucide-react";
+import htmlIcon from "@/Assets/html.webp";
+import cssIcon from "@/Assets/css.webp";
+import bootstrapIcon from "@/Assets/bootstrap.webp";
+import tailwindIcon from "@/Assets/tailwind.webp";
+import reactIcon from "@/Assets/react.webp";
+import nextIcon from "@/Assets/next.webp";
+import reduxIcon from "@/Assets/redux.webp";
+import jsIcon from "@/Assets/js.webp";
+import Image from "next/image";
+
 const Skills = () => {
   const frontendSkills = [
-    "JavaScript",
-    "React.js",
-    "Next.js",
-    "Tailwind CSS",
-    "TypeScript",
-    "shadcn/ui",
-    "Redux",
-    "Zustand",
-    "Tanstack Query",
+    { name: "HTML", icon: htmlIcon },
+    { name: "CSS", icon: cssIcon },
+    { name: "Tailwind CSS", icon: tailwindIcon },
+    { name: "Bootstrap", icon: bootstrapIcon },
+    { name: "JavaScript", icon: jsIcon },
+    { name: "Next.js", icon: nextIcon },
+    { name: "Redux", icon: reduxIcon },
+    { name: "React", icon: reactIcon },
   ];
 
   const backendSkills = [
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Mongoose",
-    "PostgreSQL",
-    "Prisma",
-    "JWT",
-    "Stripe/Payment",
-    "NextAuth.js",
+    { name: "TypeScript", icon: htmlIcon },
+    { name: "Node.js", icon: htmlIcon },
+    { name: "Express.js", icon: htmlIcon },
+    { name: "MongoDB", icon: htmlIcon },
+    { name: "Mongoose", icon: htmlIcon },
   ];
 
   const tools = [
-    "Git",
-    "GitHub",
-    "VS Code",
-    "Firebase",
-    "Vercel",
-    "Postman",
-    "Figma",
-    "Jira/Trello",
-    "Cloud",
+    { name: "Git", icon: htmlIcon },
+    { name: "GitHub", icon: htmlIcon },
+    { name: "Figma", icon: htmlIcon },
+    { name: "VS Code", icon: htmlIcon },
+    { name: "Postman", icon: htmlIcon },
+    { name: "Firebase", icon: htmlIcon },
+    { name: "NPM", icon: htmlIcon },
+    { name: "Vercel", icon: htmlIcon },
   ];
 
-  return (
-    <section id="skills" className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
-          <p className="text-xl text-muted-foreground">
-            Technologies I Master as a Full-Stack Developer
-          </p>
+  const Card = ({ icon: Icon, title, items }) => (
+    <div className="bg-[#0d1117] border border-[#1f2937] rounded-xl p-6 shadow-lg">
+      <div className="flex items-center gap-3 mb-6">
+        <div className="bg-[#1f2937] p-3 rounded-lg">
+          <Icon className="text-sky-500" size={28} />
         </div>
+        <h3 className="text-2xl font-semibold text-white">{title}</h3>
+      </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <Card className="bg-card border-border">
-            <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-6 text-primary">Frontend</h3>
-              <div className="flex flex-wrap gap-2">
-                {frontendSkills.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors px-4 py-2 text-sm"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+      <div className="flex flex-wrap gap-3">
+        {items.map(item => (
+          <div
+            key={item?.name}
+            className="px-4 py-2 bg-[#161b22] text-gray-300 text-sm rounded-lg border border-[#1f2937] hover:bg-cyan-500 hover:text-black transition flex gap-2 items-center"
+          >
+            <Image src={item?.icon} alt="icon" className="size-5" />
+            {item?.name}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 
-          <Card className="bg-card border-border">
-            <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-6 text-primary">Backend</h3>
-              <div className="flex flex-wrap gap-2">
-                {backendSkills.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors px-4 py-2 text-sm"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+  return (
+    <section id="skills" className="pt-10">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-4xl font-extrabold text-white mb-4">My Skills</h2>
+        <p className="text-gray-400 text-lg mb-12">
+          I specialize in modern web development, creating dynamic and
+          responsive applications.
+        </p>
 
-          <Card className="bg-card border-border">
-            <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-6 text-primary">Tools</h3>
-              <div className="flex flex-wrap gap-2">
-                {tools.map((tool) => (
-                  <Badge
-                    key={tool}
-                    variant="secondary"
-                    className="bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors px-4 py-2 text-sm"
-                  >
-                    {tool}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+        <div className="grid md:grid-cols-3 gap-8">
+          <Card
+            icon={Code2}
+            title="Frontend Development"
+            items={frontendSkills}
+          />
+          <Card
+            icon={Database}
+            title="Backend Development"
+            items={backendSkills}
+          />
+          <Card icon={Wrench} title="Tools & Technologies" items={tools} />
         </div>
       </div>
     </section>

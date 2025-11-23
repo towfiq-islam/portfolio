@@ -12,7 +12,7 @@ const Page = () => {
     <>
       <Hero />
       {/* <About /> */}
-      {/* <Skills /> */}
+      <Skills />
       {/* <Education /> */}
       <Experiences />
       <Projects />

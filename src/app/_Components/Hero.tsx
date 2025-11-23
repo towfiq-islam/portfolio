@@ -5,7 +5,7 @@ import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { PiGithubLogoBold } from "react-icons/pi";
 
 const Hero = () => {
   const titles = [
@@ -77,14 +77,14 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-300 transition-all"
               >
-                <FaGithub className="text-lg" />
+                <PiGithubLogoBold className="text-lg" />
               </a>
             </div>
           </div>
           <div className="flex justify-center">
             <div className="relative w-[350px] h-[350px] md:w-[450px] md:h-[450px]">
-              <div className="absolute inset-0 rounded-full border-4 border-primary animate-pulse"></div>
-              <div className="absolute inset-4 rounded-full bg-gradient-to-br from-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 rounded-full border-4 border-sky-700 animate-pulse"></div>
+              {/* <div className="absolute inset-4 rounded-full bg-gradient-to-br from-sky/20 to-transparent"></div> */}
               <div className="absolute inset-8 rounded-full bg-muted flex items-center justify-center overflow-hidden">
                 <Image
                   src={profile}

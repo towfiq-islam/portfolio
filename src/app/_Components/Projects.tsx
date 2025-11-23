@@ -114,7 +114,7 @@ const Projects = () => {
           {projects.map(project => (
             <div
               key={project.title}
-              className="bg-[#101622] rounded-lg overflow-hidden group border border-gray-800 p-3.5"
+              className="bg-[#101622] rounded-lg overflow-hidden group border border-gray-800 p-3.5 duration-500 transition-transform group hover:scale-[1.02]"
             >
               <figure className="h-[250px] flex items-center justify-center rounded-lg">
                 <Image
