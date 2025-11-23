@@ -77,7 +77,7 @@ const Skills = () => {
         {items.map(item => (
           <div
             key={item?.name}
-            className="px-4 py-2 bg-[#161b22] text-gray-300 text-sm rounded-lg border border-[#1f2937] hover:bg-cyan-500 hover:text-black transition flex gap-2 items-center"
+            className="px-4 py-2 bg-[#161b22] text-gray-300 text-sm rounded-lg border border-[#1f2937] flex gap-2 items-center"
           >
             <Image src={item?.icon} alt="icon" className="size-7" />
             {item?.name}
@@ -102,7 +102,7 @@ const Skills = () => {
             title="Frontend Development"
             items={frontendSkills}
           />
-          
+
           <Card
             icon={Database}
             title="Backend Development"
