@@ -28,10 +28,11 @@ const Navbar = () => {
 
   return (
     <nav className="mx-10 fixed top-3 left-0 right-0 z-50 backdrop-blur bg-[#000014] border-2 border-blue-500 rounded-full px-5 py-4">
-      <div className="container">
+      {/* container mx-auto */}
+      <div className="">
         <div className="flex items-center justify-between">
           {/* Left - Logo */}
-          <Link href="/" className="flex gap-2 items-center">
+          <Link href="/" className="flex gap-2 items-center shrink-0">
             <p className="w-10 h-9 rounded-xl bg-blue-500 grid place-items-center text-white">
               <CodeXml />
             </p>
@@ -42,7 +43,7 @@ const Navbar = () => {
           </Link>
 
           {/* Right - Links */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center justify-end gap-6 grow">
             {menuItems.map(item => (
               <a
                 key={item.id}
@@ -59,7 +60,7 @@ const Navbar = () => {
               </a>
             ))}
             <button className="px-4 py-2 rounded-full bg-blue-500 text-sm font-medium text-white flex gap-1 items-center cursor-pointer">
-              Resume <MdOutlineFileDownload className="text-lg"/>
+              Resume <MdOutlineFileDownload className="text-lg" />
             </button>
           </div>
         </div>
