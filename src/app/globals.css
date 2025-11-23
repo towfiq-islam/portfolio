@@ -11,5 +11,5 @@ html {
 }
 
 body {
-  @apply font-roboto bg-[#000014];
+  @apply font-roboto text-white bg-[#000014];
 }

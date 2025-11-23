@@ -10,7 +10,7 @@ import Contact from "./_Components/Contact";
 const Page = () => {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       {/* <About />
       <Skills />
       <Education />
