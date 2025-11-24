@@ -28,6 +28,7 @@ import timeIcon from "@/Assets/icons/time-management.png";
 import thinkingIcon from "@/Assets/icons/thinking.png";
 import problemIcon from "@/Assets/icons/problem.png";
 import adaptIcon from "@/Assets/icons/adapt.png";
+import { FaBookOpenReader } from "react-icons/fa6";
 
 type SkillItem = {
   name: string;
@@ -126,7 +127,11 @@ const Skills = () => {
             items={backendSkills}
           />
           <Card icon={Wrench} title="Tools & Technologies" items={tools} />
-          <Card icon={Wrench} title="Soft Skills" items={softSkills} />
+          <Card
+            icon={FaBookOpenReader}
+            title="Soft Skills"
+            items={softSkills}
+          />
         </div>
       </div>
     </section>
