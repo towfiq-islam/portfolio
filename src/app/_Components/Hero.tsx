@@ -83,8 +83,10 @@ const Hero = () => {
           </div>
           <div className="flex justify-center">
             <div className="relative w-[350px] h-[350px] md:w-[450px] md:h-[450px]">
-              <div className="absolute inset-0 rounded-full border-4 border-sky-700 animate-pulse"></div>
-              {/* <div className="absolute inset-4 rounded-full bg-gradient-to-br from-sky/20 to-transparent"></div> */}
+              {/* Outer Glow Border */}
+              <div className="absolute inset-0 rounded-full shadow-[0_0_10px_5px_rgba(56,189,248,0.15)] backdrop-blur-xl" />
+
+              <div className="absolute inset-0 rounded-full border-4 border-sky-700 animate-pulse" />
               <div className="absolute inset-8 rounded-full bg-muted flex items-center justify-center overflow-hidden">
                 <Image
                   src={profile}

@@ -1,88 +1,150 @@
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin, ArrowUpRight } from "lucide-react";
 
-const Experiences = () => {
+interface Experience {
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  description: string;
+  achievements: string[];
+  skills: string[];
+}
+
+const EditorialExperience = () => {
+  const experiences: Experience[] = [
+    {
+      role: "Frontend Developer",
+      company: "Bdcalling IT Ltd.",
+      period: "Jan 2025 — Present",
+      location: "On-site",
+      description:
+        "Developed responsive web applications and interactive experiences for diverse clients, focusing on performance optimization and accessibility.",
+      achievements: [
+        "Built 15+ client websites with perfect accessibility scores and SEO optimization",
+        "Implemented advanced animations using Framer Motion and GSAP, increasing user engagement by 45%",
+        "Collaborated with designers to create a design system that improved brand consistency",
+        "Optimized bundle sizes and loading times, achieving sub-2s page loads across all projects",
+      ],
+      skills: [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Figma",
+        "REST APIs",
+        "Git",
+      ],
+    },
+  ];
+
   return (
-    <section id="experiences" className="py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          My Experiences
-        </h2>
+    <section className="py-12 md:py-20">
+      <h2 className="text-4xl font-extrabold text-white mb-4 text-center">
+        My Experience
+      </h2>
+      <p className="text-gray-400 text-lg mb-12 text-center">
+        I specialize in modern web development, creating dynamic and responsive
+        applications.
+      </p>
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="space-y-32">
+          {experiences.map((exp, index) => (
+            <article
+              key={index}
+              className="group relative"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              {/* Grid Layout */}
+              <div className="grid md:grid-cols-12 gap-8 md:gap-12">
+                {/* Left Column - Role & Company */}
+                <div className="md:col-span-5 space-y-6">
+                  <div className="relative">
+                    <div className="pt-4">
+                      <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight mb-3 group-hover:translate-x-2 transition-transform duration-500">
+                        {exp.role}
+                      </h2>
 
-        <div className="border-2 border-sky-500 bg-gray-900 rounded-xl p-10">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-            <h3 className="text-2xl font-bold text-primary mb-2 md:mb-0">
-              Frontend Developer
-            </h3>
+                      <div className="flex items-center gap-2 text-accent text-lg font-medium mb-6">
+                        <span>{exp.company}</span>
+                        <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                      </div>
+                    </div>
+                  </div>
 
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Calendar className="w-4 h-4" />
-              <span>14/1/2025 — Present</span>
-            </div>
-          </div>
+                  {/* Meta information */}
+                  <div className="space-y-3 text-muted-foreground">
+                    <div className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 mt-0.5 shrink-0" />
+                      <span className="font-medium">{exp.period}</span>
+                    </div>
 
-          <div className="flex items-center gap-2 text-muted-foreground mb-6">
-            <MapPin className="w-4 h-4" />
-            <span>Mohakhali, Dhaka 1212, Bangladesh · On-site . Full time</span>
-          </div>
+                    <div className="flex items-start gap-3">
+                      <MapPin className="w-5 h-5 mt-0.5 shrink-0" />
+                      <span className="font-medium">{exp.location}</span>
+                    </div>
+                  </div>
 
-          <div className="mb-6">
-            <h4 className="text-lg font-bold mb-3">Responsibilities:</h4>
-
-            <ul className="ml-5 list-disc list-outside space-y-3">
-              <li>
-                Collaborate closely with UI/UX designers and backend developers
-                to translate design specifications into high-quality,
-                interactive web interfaces using modern frameworks such as
-                Next.js, React, and TypeScript.
-              </li>
-              <li>
-                Maintain responsive, SEO-optimized applications with a strong
-                emphasis on performance, scalability, mobile responsiveness, and
-                cross-browser compatibility.
-              </li>
-              <li>
-                Manage multiple concurrent projects, delivering clean,
-                maintainable, and scalable code within tight deadlines and
-                high-pressure environments.
-              </li>
-              <li>
-                Identify and resolve complex frontend issues to enhance
-                stability and performance, while adhering to best practices in
-                accessibility, optimization, and code quality.
-              </li>
-              <li>
-                Develop developer-friendly, sustainable codebases to support
-                long-term scalability, team collaboration, and efficient
-                onboarding of new developers.
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold mb-3">Key Technologies:</h4>
-
-            <div className="flex flex-wrap gap-3">
-              {[
-                "React.js",
-                "JavaScript",
-                "Tailwind CSS",
-                "Next.js",
-                "Express.js",
-                "Node.js",
-              ].map(tech => (
-                <div
-                  key={tech}
-                  className="border-2 text-sm border-blue-500 rounded-full px-4.5 py-1.5"
-                >
-                  {tech}
+                  {/* Description */}
+                  <p className="text-foreground/80 leading-relaxed text-lg border-l-2 border-border pl-6">
+                    {exp.description}
+                  </p>
                 </div>
-              ))}
-            </div>
-          </div>
+
+                {/* Right Column - Achievements & Skills */}
+                <div className="md:col-span-7 space-y-10">
+                  {/* Achievements Card */}
+                  <div className="border rounded-lg p-8 shadow-soft hover:shadow-elevated transition-all duration-500 group-hover:border-accent/30">
+                    <h3 className="text-xl font-display font-bold mb-6 flex items-center gap-3">
+                      <span className="w-1 h-6 bg-white rounded-full" />
+                      Key Achievements
+                    </h3>
+
+                    <ul className="space-y-4">
+                      {exp.achievements.map((achievement, i) => (
+                        <li
+                          key={i}
+                          className="flex gap-4 group/item"
+                          style={{
+                            animationDelay: `${index * 100 + i * 50}ms`,
+                          }}
+                        >
+                          <span className="text-accent font-bold text-lg mt-1 shrink-0">
+                            •
+                          </span>
+                          <span className="text-foreground/70 leading-relaxed group-hover/item:text-foreground transition-colors duration-300">
+                            {achievement}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <div className="mt-5">
+                      <h4 className="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-4">
+                        Technologies Used
+                      </h4>
+
+                      <div className="flex flex-wrap gap-3">
+                        {exp.skills.map(skill => (
+                          <span
+                            key={skill}
+                            className="px-5 py-2.5 bg-secondary/80 hover:bg-accent hover:text-accent-foreground border border-border hover:border-accent rounded-sm text-sm font-medium transition-all duration-300 cursor-default"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Skills */}
+                </div>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
   );
 };
 
-export default Experiences;
+export default EditorialExperience;
