@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-const SportLight = () => {
+const Spotlight = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = e => {
+    const handleMouseMove = (e: any) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
 
@@ -20,16 +20,16 @@ const SportLight = () => {
     <div
       className="fixed pointer-events-none z-50"
       style={{
-        width: "150px", // Smaller width
-        height: "150px", // Smaller height
-        background: "rgba(0, 163, 255, 0.60)", // Desired color
-        filter: "blur(100px)", // Reduced blur for smaller size
+        width: "150px",
+        height: "150px",
+        background: "rgba(0, 163, 255, 0.60)",
+        filter: "blur(100px)",
         borderRadius: "50%",
-        top: position.y - 75, // Adjusted centering
-        left: position.x - 75, // Adjusted centering
+        top: position.y - 75,
+        left: position.x - 75,
       }}
-    ></div>
+    />
   );
 };
 
-export default SportLight;
+export default Spotlight;

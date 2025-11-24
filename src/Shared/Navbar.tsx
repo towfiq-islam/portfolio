@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { CodeXml } from "lucide-react";
 import { FaHome } from "react-icons/fa";

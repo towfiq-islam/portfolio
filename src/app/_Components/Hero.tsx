@@ -1,6 +1,6 @@
 "use client";
 import { Facebook, Linkedin, MessageCircle } from "lucide-react";
-import profile from "@/Assets/Gemini_Generated_Image_yinwy7yinwy7yinw.png";
+import profile from "@/Assets/profile.png";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import { FaFacebookF } from "react-icons/fa6";

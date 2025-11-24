@@ -2,15 +2,14 @@
 import { Github, ExternalLink, LayoutGrid, List } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
-import projectImg from "@/Assets/p1-BZE1zHxX.png";
-import projectImg2 from "@/Assets/p2-D5ICYa09.png";
-import projectImg3 from "@/Assets/p3-7fCS-KJe.png";
+import projectImg from "@/Assets/p1.png";
+import projectImg2 from "@/Assets/p2.png";
+import projectImg3 from "@/Assets/p3.png";
 import reactIcon from "@/Assets/react.png";
 import tailwindIcon from "@/Assets/tailwind.png";
 import typescriptIcon from "@/Assets/ts.png";
 import javascriptIcon from "@/Assets/js.png";
 import nextIcon from "@/Assets/next.png";
-
 const projects = [
   {
     thumbnail: projectImg,

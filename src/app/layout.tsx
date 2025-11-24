@@ -5,7 +5,7 @@ import { Roboto, Macondo } from "next/font/google";
 import AosProvider from "@/Provider/AosProvider/AosProvider";
 import Navbar from "@/Shared/Navbar";
 import Footer from "@/Shared/Footer";
-import Sportlight from "@/lib/SportLight";
+import Spotlight from "@/lib/Spotlight";
 
 // Fonts
 const roboto = Roboto({
@@ -39,7 +39,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className={`${roboto.variable} ${macondo.variable} antialiased`}>
         <AosProvider>
-          <Sportlight />
+          <Spotlight />
           <Navbar />
           <Toaster />
           {children}
