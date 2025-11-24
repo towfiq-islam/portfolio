@@ -22,13 +22,13 @@ const Experiences = () => {
 
           <div className="flex items-center gap-2 text-muted-foreground mb-6">
             <MapPin className="w-4 h-4" />
-            <span>Mohakhali, Dhaka 1212, Bangladesh · On-site</span>
+            <span>Mohakhali, Dhaka 1212, Bangladesh · On-site . Full time</span>
           </div>
 
           <div className="mb-6">
             <h4 className="text-lg font-bold mb-3">Responsibilities:</h4>
 
-            <ul className="list-disc list-outside space-y-3">
+            <ul className="ml-5 list-disc list-outside space-y-3">
               <li>
                 Collaborate closely with UI/UX designers and backend developers
                 to translate design specifications into high-quality,

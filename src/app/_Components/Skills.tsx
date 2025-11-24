@@ -21,6 +21,13 @@ import githubIcon from "@/Assets/icons/github.png";
 import gitIcon from "@/Assets/icons/git.png";
 import npmIcon from "@/Assets/icons/npm.png";
 import firebaseIcon from "@/Assets/icons/firebase.png";
+import dedicationIcon from "@/Assets/icons/dedication.png";
+import communicationIcon from "@/Assets/icons/communication.png";
+import teamIcon from "@/Assets/icons/team.png";
+import timeIcon from "@/Assets/icons/time-management.png";
+import thinkingIcon from "@/Assets/icons/thinking.png";
+import problemIcon from "@/Assets/icons/problem.png";
+import adaptIcon from "@/Assets/icons/adapt.png";
 
 type SkillItem = {
   name: string;
@@ -64,6 +71,16 @@ const Skills = () => {
     { name: "Vercel", icon: vercelIcon },
   ];
 
+  const softSkills: SkillItem[] = [
+    { name: "Adaptability", icon: adaptIcon },
+    { name: "Team Work", icon: teamIcon },
+    { name: "Dedicated Learner", icon: dedicationIcon },
+    { name: "Communication", icon: communicationIcon },
+    { name: "Problem Solving", icon: problemIcon },
+    { name: "Time Management", icon: timeIcon },
+    { name: "Critical Thinking", icon: thinkingIcon },
+  ];
+
   const Card = ({ icon: Icon, title, items }: CardProps) => (
     <div className="bg-gray-900 border border-blue-500 rounded-xl p-6 shadow-lg">
       <div className="flex items-center gap-3 mb-6">
@@ -96,7 +113,7 @@ const Skills = () => {
           responsive applications.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           <Card
             icon={Code2}
             title="Frontend Development"
@@ -109,6 +126,7 @@ const Skills = () => {
             items={backendSkills}
           />
           <Card icon={Wrench} title="Tools & Technologies" items={tools} />
+          <Card icon={Wrench} title="Soft Skills" items={softSkills} />
         </div>
       </div>
     </section>

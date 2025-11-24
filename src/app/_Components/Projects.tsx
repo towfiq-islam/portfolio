@@ -76,7 +76,7 @@ const Projects = () => {
         <div className="flex justify-end mb-6 gap-3">
           <button
             onClick={() => setView("grid")}
-            className={`px-4 py-2 rounded flex items-center gap-2 border transition 
+            className={`cursor-pointer px-4 py-2 rounded flex items-center gap-2 border transition 
             ${
               view === "grid"
                 ? "bg-blue-600 border-blue-500"
@@ -89,7 +89,7 @@ const Projects = () => {
 
           <button
             onClick={() => setView("list")}
-            className={`px-4 py-2 rounded flex items-center gap-2 border transition 
+            className={`cursor-pointer px-4 py-2 rounded flex items-center gap-2 border transition 
             ${
               view === "list"
                 ? "bg-blue-600 border-blue-500"
