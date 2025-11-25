@@ -38,7 +38,7 @@ const EditorialExperience = () => {
   ];
 
   return (
-    <section id="experiences" className="py-12 md:py-20">
+    <section className="py-12 md:py-20">
       <h2 className="text-4xl font-extrabold text-white mb-4 text-center">
         My Experience
       </h2>
@@ -91,7 +91,7 @@ const EditorialExperience = () => {
                 </div>
 
                 {/* Right Column - Achievements & Skills */}
-                <div className="md:col-span-7 space-y-10">
+                <div className="md:col-span-7 space-y-5">
                   {/* Achievements Card */}
                   <div className="border rounded-lg p-8 shadow-soft hover:shadow-elevated transition-all duration-500 group-hover:border-accent/30">
                     <h3 className="text-xl font-display font-bold mb-6 flex items-center gap-3">
@@ -117,22 +117,27 @@ const EditorialExperience = () => {
                         </li>
                       ))}
                     </ul>
-
-                    <div className="mt-5">
-                      <div className="flex flex-wrap gap-3">
-                        {exp.skills.map(skill => (
-                          <span
-                            key={skill}
-                            className="px-3 text-sm py-2.5 bg-secondary/80 hover:bg-accent hover:text-accent-foreground border border-border hover:border-accent rounded-full font-medium transition-all duration-300 cursor-default"
-                          >
-                            {skill}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
                   </div>
 
                   {/* Skills */}
+
+                  <div className="border p-5 rounded-xl">
+                    <h3 className="text-xl font-display font-bold mb-6 flex items-center gap-3">
+                      <span className="w-1 h-6 bg-white rounded-full" />
+                      Technologies Used
+                    </h3>
+
+                    <div className="flex flex-wrap gap-3">
+                      {exp.skills.map(skill => (
+                        <span
+                          key={skill}
+                          className="px-5 py-2.5 bg-secondary/80 hover:bg-accent hover:text-accent-foreground border border-border hover:border-accent rounded-sm text-sm font-medium transition-all duration-300 cursor-default"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </article>

@@ -21,7 +21,7 @@ const Contact = () => {
             </p>
 
             {/* Email */}
-            <div className="bg-[#0F111A] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4">
+            <div className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4">
               <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
                 <Mail className="" />
               </div>
@@ -32,7 +32,7 @@ const Contact = () => {
             </div>
 
             {/* Phone */}
-            <div className="bg-[#0F111A] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4">
+            <div className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4">
               <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
                 <Phone className="" />
               </div>
@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
 
             {/* Location */}
-            <div className="bg-[#0F111A] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4">
+            <div className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4">
               <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
                 <MapPin className="" />
               </div>
@@ -55,7 +55,7 @@ const Contact = () => {
           </div>
 
           {/* RIGHT SIDE — Form */}
-          <div className="bg-[#0F111A] border border-[#1b1d27] rounded-xl p-8">
+          <div className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-8">
             <form className="space-y-5">
               <div>
                 <label className="text-sm mb-1 block">Name</label>

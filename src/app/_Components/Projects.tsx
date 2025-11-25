@@ -63,7 +63,11 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-20">
-      <div className="container mx-auto">
+      <div
+        className={`${
+          view === "grid" ? "max-w-7xl" : "max-w-5xl"
+        } mx-auto px-4`}
+      >
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
           <p className="text-xl text-muted-foreground">
@@ -111,7 +115,7 @@ const Projects = () => {
           {projects.map(project => (
             <div
               key={project.title}
-              className={`bg-gray-900 rounded-lg overflow-hidden group border border-gray-800 p-3.5 duration-500
+              className={`bg-[#0d0d1f] rounded-lg overflow-hidden group border border-gray-800 p-3.5 duration-500
                 ${view === "grid" ? "hover:scale-[1.02]" : "flex gap-5"}`}
             >
               {/* Thumbnail */}
