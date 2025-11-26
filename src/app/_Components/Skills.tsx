@@ -28,6 +28,13 @@ import timeIcon from "@/Assets/icons/time-management.png";
 import thinkingIcon from "@/Assets/icons/thinking.png";
 import problemIcon from "@/Assets/icons/problem.png";
 import adaptIcon from "@/Assets/icons/adapt.png";
+import antIcon from "@/Assets/icons/ant.png";
+import framerIcon from "@/Assets/icons/framer.png";
+import cnIcon from "@/Assets/icons/cn.png";
+import uiIcon from "@/Assets/icons/ui.png";
+import tanstackIcon from "@/Assets/icons/tanstack.png";
+import sassIcon from "@/Assets/icons/sass.png";
+
 import { FaBookOpenReader } from "react-icons/fa6";
 
 type SkillItem = {
@@ -50,7 +57,13 @@ const Skills = () => {
     { name: "JavaScript", icon: jsIcon },
     { name: "Next.js", icon: nextIcon },
     { name: "Redux", icon: reduxIcon },
-    { name: "React", icon: reactIcon },
+    { name: "React.js", icon: reactIcon },
+    { name: "Framer Motion", icon: framerIcon },
+    { name: "SASS", icon: sassIcon },
+    { name: "Shadcn UI", icon: cnIcon },
+    { name: "Material UI", icon: uiIcon },
+    { name: "Ant Design", icon: antIcon },
+    { name: "Tanstack Query", icon: tanstackIcon },
   ];
 
   const backendSkills: SkillItem[] = [
@@ -59,6 +72,7 @@ const Skills = () => {
     { name: "Express.js", icon: exIcon },
     { name: "MongoDB", icon: mongoIcon },
     { name: "JWT", icon: jwtIcon },
+    { name: "Firebase", icon: firebaseIcon },
   ];
 
   const tools: SkillItem[] = [

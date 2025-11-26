@@ -20,19 +20,21 @@ const EditorialExperience = () => {
       description:
         "Developed responsive web applications and interactive experiences for diverse clients, focusing on performance optimization and accessibility.",
       achievements: [
-        "Built 15+ client websites with perfect accessibility scores and SEO optimization",
-        "Implemented advanced animations using Framer Motion and GSAP, increasing user engagement by 45%",
-        "Collaborated with designers to create a design system that improved brand consistency",
-        "Optimized bundle sizes and loading times, achieving sub-2s page loads across all projects",
+        "Built 15+ high-performance, responsive web applications, achieving perfect accessibility scores and SEO-optimized architecture.",
+        "Improved cross-browser compatibility and mobile responsiveness across all major devices, resulting in zero UI-related production bugs.",
+        "Developed a scalable design system with UI/UX teams, increasing brand consistency across multiple projects.",
+        "Optimized codebases and asset pipelines, achieving sub-2-second load times and reducing bundle sizes by 35%.",
+        "Led the frontend development of complex features, resolving major performance issues and improving overall system stability.",
       ],
       skills: [
-        "React",
-        "JavaScript",
+        "Next.js",
+        "TypeScript",
         "Tailwind CSS",
+        "React.js",
+        "JavaScript",
         "Framer Motion",
-        "Figma",
-        "REST APIs",
         "Git",
+        "Pusher.js",
       ],
     },
   ];
@@ -119,11 +121,11 @@ const EditorialExperience = () => {
                     </ul>
 
                     <div className="mt-5">
-                      <div className="flex flex-wrap gap-3">
+                      <div className="flex flex-wrap gap-2">
                         {exp.skills.map(skill => (
                           <span
                             key={skill}
-                            className="px-3 text-sm py-2.5 bg-secondary/80 hover:bg-accent hover:text-accent-foreground border border-border hover:border-accent rounded-full font-medium transition-all duration-300 cursor-default"
+                            className="px-3 text-sm py-1 border rounded-full font-medium"
                           >
                             {skill}
                           </span>
