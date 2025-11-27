@@ -13,7 +13,7 @@ import nextIcon from "@/Assets/next.png";
 const projects = [
   {
     thumbnail: projectImg,
-    title: "Digital Wallet",
+    title: "Healthy Recipes",
     description:
       "High-performance Full Stack digital wallet built with React/TypeScript, featuring secure operations",
     technologies: [
@@ -108,7 +108,7 @@ const Projects = () => {
         <div
           className={
             view === "grid"
-              ? "grid md:grid-cols-2 lg:grid-cols-3 gap-7 max-w-7xl mx-auto"
+              ? "grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
               : "flex flex-col gap-6 max-w-5xl mx-auto"
           }
         >
@@ -129,7 +129,7 @@ const Projects = () => {
                 <Image
                   src={project?.thumbnail as any}
                   alt="project_img"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-fit rounded-lg"
                 />
               </figure>
 
