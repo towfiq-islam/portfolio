@@ -58,8 +58,8 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-10 mt-10">
           {/* LEFT SIDE — Contact Info */}
           <div className="space-y-6">
-            <p className="text-xl font-semibold">Let's work together</p>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-2xl font-semibold">Let's work together</p>
+            <p className="text-gray-300 text-lg leading-relaxed">
               I'm always interested in hearing about new projects and
               opportunities. Whether you have a question or just want to say hi,
               feel free to reach out!
@@ -72,7 +72,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-gray-400 text-sm">Email</p>
-                <p className="text-white">john@example.com</p>
+                <p className="text-white">towfiqislambd@gmail.com</p>
               </div>
             </div>
 
@@ -83,7 +83,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-gray-400 text-sm">Phone</p>
-                <p className="text-white">+1 (555) 123-4567</p>
+                <p className="text-white">+8801727969719</p>
               </div>
             </div>
 
@@ -94,7 +94,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-gray-400 text-sm">Location</p>
-                <p className="text-white">San Francisco, CA</p>
+                <p className="text-white">Dhaka, Bangladesh</p>
               </div>
             </div>
           </div>

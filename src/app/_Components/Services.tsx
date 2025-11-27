@@ -1,4 +1,4 @@
-import { Code2, Palette, Database, Cloud } from "lucide-react";
+import { Code2, Palette, Database, MonitorCog } from "lucide-react";
 
 export default function Services() {
   const services = [
@@ -18,9 +18,9 @@ export default function Services() {
       desc: "Developing robust and scalable server-side solutions with secure API integrations.",
     },
     {
-      icon: <Cloud className="size-10 text-blue-500" />,
-      title: "Cloud Solutions",
-      desc: "Deploying and managing applications on cloud platforms with optimized infrastructure.",
+      icon: <MonitorCog className="size-10 text-blue-500" />,
+      title: "Fix Website Bugs",
+      desc: "quickly fix website bugs and resolve errors to ensure smooth performance from UI glitches to functionality issues.",
     },
   ];
 

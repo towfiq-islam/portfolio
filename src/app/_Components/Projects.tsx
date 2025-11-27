@@ -5,56 +5,118 @@ import { useState } from "react";
 import projectImg from "@/Assets/p1.png";
 import projectImg2 from "@/Assets/p2.png";
 import projectImg3 from "@/Assets/p3.png";
-import reactIcon from "@/Assets/react.png";
-import tailwindIcon from "@/Assets/tailwind.png";
-import typescriptIcon from "@/Assets/ts.png";
-import javascriptIcon from "@/Assets/js.png";
-import nextIcon from "@/Assets/next.png";
+import projectImg4 from "@/Assets/p4.png";
+import projectImg5 from "@/Assets/p5.png";
+import projectImg6 from "@/Assets/p6.png";
+import reactIcon from "@/Assets/icons/react.png";
+import reduxIcon from "@/Assets/icons/redux.png";
+import tailwindIcon from "@/Assets/icons/tailwind.png";
+import typescriptIcon from "@/Assets/icons/ts.png";
+import javascriptIcon from "@/Assets/icons/js.png";
+import nextIcon from "@/Assets/icons/next.webp";
+import axiosIcon from "@/Assets/icons/adapt.png";
+import framerIcon from "@/Assets/icons/framer.png";
+import shadCnIcon from "@/Assets/icons/cn.png";
+import tanstackIcon from "@/Assets/icons/tanstack.png";
+import pusherIcon from "@/Assets/icons/cn.png";
+import momentIcon from "@/Assets/icons/vercel.png";
+
 const projects = [
   {
+    id: 1,
     thumbnail: projectImg,
     title: "Healthy Recipes",
     description:
-      "High-performance Full Stack digital wallet built with React/TypeScript, featuring secure operations",
+      "A fully dynamic, responsive recipe management platform with dual dashboards, advanced recipe management, CRUD operations, and SEO-optimized performance.",
     technologies: [
-      { name: "React.js", icon: reactIcon },
+      { name: "Next.js", icon: nextIcon },
       { name: "Tailwind CSS", icon: tailwindIcon },
       { name: "TypeScript", icon: typescriptIcon },
-      { name: "Mongoose", icon: javascriptIcon },
-      { name: "Express.js", icon: nextIcon },
+      { name: "Tanstack Query", icon: tanstackIcon },
+      { name: "Shadcn UI", icon: shadCnIcon },
     ],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/towfiqislambd/healthy-recipes",
+    demo: "https://healthy-care-recipes.vercel.app",
   },
   {
+    id: 2,
     thumbnail: projectImg2,
-    title: "LivingNest",
+    title: "Job Minds",
     description:
-      "A room rental platform featuring user authentication and separate dashboards for users, members, and admins.",
+      "AI-powered resume builder & career assistant platform. Enables users to create professional resumes, generate cover letters, optimize LinkedIn with AI-driven insights.",
     technologies: [
-      { name: "React.js", icon: reactIcon },
+      { name: "Next.js", icon: nextIcon },
       { name: "Tailwind CSS", icon: tailwindIcon },
       { name: "TypeScript", icon: typescriptIcon },
-      { name: "Mongoose", icon: javascriptIcon },
-      { name: "Express.js", icon: nextIcon },
+      { name: "Framer Motion", icon: framerIcon },
+      { name: "Axios", icon: axiosIcon },
     ],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/towfiqislambd/job-minds",
+    demo: "https://job-minds.vercel.app",
   },
   {
+    id: 3,
     thumbnail: projectImg3,
-    title: "CarePoint",
+    title: "Sustainable Trades",
     description:
-      "CarePoint is a scalable platform for volunteer management, built with React, TailwindCSS, Firebase, Express, and MongoDB!",
+      "Multi-Vendor E-Commerce Platform enabling admins, vendors, and customers to manage shops, products, orders, and real-time interactions.",
+    technologies: [
+      { name: "Next.js", icon: nextIcon },
+      { name: "TypeScript ", icon: typescriptIcon },
+      { name: "Pusher.js", icon: pusherIcon },
+      { name: "Tailwind CSS", icon: tailwindIcon },
+      { name: "Moment.js", icon: momentIcon },
+    ],
+    github: "https://github.com/towfiqislambd/sustainable-trades",
+    demo: "https://sustainable-trades.vercel.app",
+  },
+  {
+    id: 4,
+    thumbnail: projectImg4,
+    title: "Blackjack Payments",
+    description:
+      "Developed a crypto website using React, Redux, and Tailwind CSS, featuring a modern UI and smooth, user-friendly experience.",
     technologies: [
       { name: "React.js", icon: reactIcon },
-      { name: "Tailwind CSS", icon: tailwindIcon },
-      { name: "TypeScript", icon: typescriptIcon },
-      { name: "Mongoose", icon: javascriptIcon },
-      { name: "Express.js", icon: nextIcon },
+      { name: "JavaScript ", icon: javascriptIcon },
+      { name: "Swiper Slider", icon: typescriptIcon },
+      { name: "Redux", icon: reduxIcon },
+      { name: "React Hook Form", icon: nextIcon },
     ],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/towfiqislambd/blackjack-payments",
+    demo: "https://blackjack-payments.vercel.app",
+  },
+  {
+    id: 5,
+    thumbnail: projectImg5,
+    title: "Park Clear",
+    description:
+      "ParkClear is a modern, responsive parking management website. It features beautiful animations, a user dashboard, reusable components and seamless user experience.",
+    technologies: [
+      { name: "React.js", icon: reactIcon },
+      { name: "JavaScript ", icon: javascriptIcon },
+      { name: "Aos Animation", icon: typescriptIcon },
+      { name: "React Router", icon: javascriptIcon },
+      { name: "Shadcn UI", icon: shadCnIcon },
+    ],
+    github: "https://github.com/towfiqislambd/park-clear",
+    demo: "https://park-clear.netlify.app",
+  },
+  {
+    id: 6,
+    thumbnail: projectImg6,
+    title: "More Realty",
+    description:
+      "Built a real-estate platform where users can view plots, buy homes, and list properties for sale with a smooth and intuitive experience.",
+    technologies: [
+      { name: "Next.js", icon: nextIcon },
+      { name: "TypeScript ", icon: typescriptIcon },
+      { name: "Axios", icon: axiosIcon },
+      { name: "Tailwind CSS", icon: tailwindIcon },
+      { name: "AOS", icon: nextIcon },
+    ],
+    github: "https://github.com/towfiqislambd/more-reality",
+    demo: "https://more-reality.vercel.app",
   },
 ];
 
