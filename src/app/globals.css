@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-green: #63be60;
   --font-roboto: var(--font-roboto);
   --font-macondo: var(--font-macondo);
 }

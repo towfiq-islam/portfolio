@@ -10,6 +10,10 @@ import { FaSortAmountUpAlt } from "react-icons/fa";
 import { MdDocumentScanner } from "react-icons/md";
 import { MdOutlineFileDownload } from "react-icons/md";
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
 
@@ -35,7 +39,8 @@ const Navbar = () => {
       },
       {
         root: null,
-        threshold: 0.3, // 70% visible
+        rootMargin: "-100px 0px -85% 0px",
+        threshold: 0,
       }
     );
 
@@ -63,7 +68,10 @@ const Navbar = () => {
             <a
               key={item.id}
               href={`#${item.id}`}
-              onClick={() => setActiveSection(item.id)}
+              onClick={() => {
+                scrollToTop();
+                setActiveSection(item.id);
+              }}
               className={`font-semibold rounded-full px-4 py-1.5 flex gap-2 items-center text-[15px] duration-300 ${
                 activeSection === item.id
                   ? "text-sky-500 bg-gray-900"

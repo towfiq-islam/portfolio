@@ -65,9 +65,9 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-2 gap-10 mt-10">
           {/* LEFT SIDE — Contact Info */}
-          <div className="space-y-6">
-            <p className="text-2xl font-semibold">Contact Information</p>
-            <p className="text-gray-300 text-lg leading-relaxed">
+          <div className="space-y-5">
+            <h3 className="text-2xl font-semibold">Contact Information</h3>
+            <p className="text-gray-300 text-lg leading-relaxed pb-3">
               I'm always interested in hearing about new projects and
               opportunities. Whether you have a question or just want to say hi,
               feel free to reach out!
