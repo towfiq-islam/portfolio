@@ -47,7 +47,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://drive.google.com/file/d/1WlfjlfGJW94TeIjB2MdlMsrjIH_6K9GW/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MKQIIqIQ2ulY3L40lsHtjxHZ70PMf5zq/view?usp=drive_link"
                 target="_blank"
                 className="bg-blue-500 cursor-pointer px-5 py-1.5 rounded-full border border-blue-500 hover:bg-transparent hover:text-blue-500"
               >

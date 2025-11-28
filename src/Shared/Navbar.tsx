@@ -48,7 +48,7 @@ const Navbar = () => {
     <nav className="fixed mx-auto container top-0 left-0 right-0 z-50 w-[calc(100%-30px)] mt-5 backdrop-blur bg-[#000014] border-2 border-blue-500 rounded-full px-5 py-4">
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex gap-2 items-center shrink-0">
+        <Link href="/" id="home" className="flex gap-2 items-center shrink-0">
           <p className="w-10 h-9 rounded-xl bg-blue-500 grid place-items-center text-white">
             <CodeXml />
           </p>

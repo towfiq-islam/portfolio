@@ -14,23 +14,31 @@ export default function Services() {
     },
     {
       icon: <Database className="size-10 text-blue-500" />,
-      title: "Backend Development",
-      desc: "Developing robust and scalable server-side solutions with secure API integrations.",
+      title: "Full Stack Solutions",
+      desc: "End-to-end development services from concept to deployment and maintenance.",
     },
     {
       icon: <MonitorCog className="size-10 text-blue-500" />,
-      title: "Fix Website Bugs",
-      desc: "quickly fix website bugs and resolve errors to ensure smooth performance from UI glitches to functionality issues.",
+      title: "Performance Optimization",
+      desc: "Optimizing applications for speed, efficiency, and scalability to enhance user satisfaction.",
     },
   ];
 
   return (
     <section id="services" className="py-20 bg-[#000014] text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          My <span className="text-blue-500">Services</span>
-          <div className="w-24 h-1 bg-blue-500 mx-auto mt-2"></div>
-        </h2>
+        <div className="mb-12 space-y-5 text-center">
+          <h2 className="text-4xl font-bold text-center">
+            My <span className="text-blue-500">Services</span>
+            <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-2"></div>
+          </h2>
+
+          <p className="text-gray-300 text-lg max-w-[800px] mx-auto">
+            Delivering professional web development services that combine clean
+            code, modern UI design, and seamless functionality to bring ideas to
+            life.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (

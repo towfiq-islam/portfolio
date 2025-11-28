@@ -10,44 +10,50 @@ interface Experience {
   skills: string[];
 }
 
-const EditorialExperience = () => {
-  const experiences: Experience[] = [
-    {
-      role: "Frontend Developer",
-      company: "Bdcalling IT Ltd.",
-      period: "Jan 2025 — Present",
-      location: "On-site",
-      description:
-        "Developed responsive web applications and interactive experiences for diverse clients, focusing on performance optimization and accessibility.",
-      achievements: [
-        "Built 15+ high-performance, responsive web applications, achieving perfect accessibility scores and SEO-optimized architecture.",
-        "Improved cross-browser compatibility and mobile responsiveness across all major devices, resulting in zero UI-related production bugs.",
-        "Developed a scalable design system with UI/UX teams, increasing brand consistency across multiple projects.",
-        "Optimized codebases and asset pipelines, achieving sub-2-second load times and reducing bundle sizes by 35%.",
-        "Led the frontend development of complex features, resolving major performance issues and improving overall system stability.",
-      ],
-      skills: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "React.js",
-        "JavaScript",
-        "Framer Motion",
-        "Git",
-        "Pusher.js",
-      ],
-    },
-  ];
+const experiences: Experience[] = [
+  {
+    role: "Frontend Developer",
+    company: "Bdcalling IT Ltd.",
+    period: "Jan 2025 — Present",
+    location: "On-site",
+    description:
+      "Developed responsive web applications and interactive experiences for diverse clients, focusing on performance optimization and accessibility.",
+    achievements: [
+      "Built 15+ high-performance, responsive web applications, achieving perfect accessibility scores and SEO-optimized architecture.",
+      "Improved cross-browser compatibility and mobile responsiveness across all major devices, resulting in zero UI-related production bugs.",
+      "Developed a scalable design system with UI/UX teams, increasing brand consistency across multiple projects.",
+      "Optimized codebases and asset pipelines, achieving sub-2-second load times and reducing bundle sizes by 35%.",
+      "Led the frontend development of complex features, resolving major performance issues and improving overall system stability.",
+    ],
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "React.js",
+      "JavaScript",
+      "Framer Motion",
+      "Git",
+      "Pusher.js",
+    ],
+  },
+];
 
+const EditorialExperience = () => {
   return (
     <section id="experiences" className="py-12 md:py-20">
-      <h2 className="text-4xl font-extrabold text-white mb-4 text-center">
-        My Experience
-      </h2>
-      <p className="text-gray-400 text-lg mb-12 text-center">
-        I specialize in modern web development, creating dynamic and responsive
-        applications.
-      </p>
+      <div className="mb-12 space-y-5 text-center">
+        <h2 className="text-4xl font-bold text-center">
+          My <span className="text-blue-500">Experience</span>
+          <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-2.5"></div>
+        </h2>
+
+        <p className="text-gray-300 text-lg max-w-[800px] mx-auto">
+          I have hands-on experience developing real-world web applications,
+          collaborating with teams, and delivering scalable solutions that
+          enhance user experience.
+        </p>
+      </div>
+
       <div className="container mx-auto px-6 md:px-12">
         <div className="space-y-32">
           {experiences.map((exp, index) => (

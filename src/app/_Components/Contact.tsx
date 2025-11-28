@@ -50,15 +50,23 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-6">
-        {/* Title */}
-        <h2 className="text-center text-5xl font-bold mb-4">
-          Get In <span className="text-blue-500">Touch</span>
-        </h2>
+        <div className="mb-12 space-y-5 text-center">
+          <h2 className="text-4xl font-bold text-center">
+            Get In <span className="text-blue-500">Touch</span>
+            <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-2"></div>
+          </h2>
+
+          <p className="text-gray-300 text-lg max-w-[800px] mx-auto">
+            Let’s connect and bring your ideas to life through thoughtful design
+            and clean development. I’m here to collaborate and help you build
+            meaningful, high-quality digital experiences.
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-10 mt-10">
           {/* LEFT SIDE — Contact Info */}
           <div className="space-y-6">
-            <p className="text-2xl font-semibold">Let's work together</p>
+            <p className="text-2xl font-semibold">Contact Information</p>
             <p className="text-gray-300 text-lg leading-relaxed">
               I'm always interested in hearing about new projects and
               opportunities. Whether you have a question or just want to say hi,

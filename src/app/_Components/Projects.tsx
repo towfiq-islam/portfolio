@@ -20,7 +20,6 @@ import shadCnIcon from "@/Assets/icons/cn.png";
 import tanstackIcon from "@/Assets/icons/tanstack.png";
 import pusherIcon from "@/Assets/icons/cn.png";
 import momentIcon from "@/Assets/icons/vercel.png";
-
 const projects = [
   {
     id: 1,
@@ -130,10 +129,16 @@ const Projects = () => {
           view === "grid" ? "max-w-7xl" : "max-w-5xl"
         } mx-auto px-4`}
       >
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
-          <p className="text-xl text-muted-foreground">
-            MERN Stack and Next.js Portfolio Showcase
+        <div className="mb-12 space-y-5 text-center">
+          <h2 className="text-4xl font-bold text-center">
+            My <span className="text-blue-500">Projects</span>
+            <div className="w-22 h-1 rounded bg-blue-500 mx-auto mt-2.5"></div>
+          </h2>
+
+          <p className="text-gray-300 text-lg max-w-[800px] mx-auto">
+            Explore the projects I’ve built using modern technologies,
+            showcasing my expertise in front-end development, UI implementation,
+            and the ability to deliver user-focused solutions.
           </p>
         </div>
 

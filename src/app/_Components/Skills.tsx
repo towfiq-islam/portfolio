@@ -122,11 +122,18 @@ const Skills = () => {
   return (
     <section id="skills" className="pt-10">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-extrabold text-white mb-4">My Skills</h2>
-        <p className="text-gray-400 text-lg mb-12">
-          I specialize in modern web development, creating dynamic and
-          responsive applications.
-        </p>
+        <div className="mb-12 space-y-5 text-center">
+          <h2 className="text-4xl font-bold text-center">
+            My <span className="text-blue-500">Skills</span>
+            <div className="w-16 h-1 rounded bg-blue-500 mx-auto mt-2.5"></div>
+          </h2>
+
+          <p className="text-gray-300 text-lg max-w-[800px] mx-auto">
+            I specialize in modern web development, crafting dynamic,
+            responsive, and visually engaging applications that deliver seamless
+            user experiences across all devices.
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           <Card
