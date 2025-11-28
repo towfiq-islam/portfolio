@@ -120,7 +120,7 @@ const Skills = () => {
   );
 
   return (
-    <section id="skills" className="pt-10">
+    <section id="skills" className="pt-28">
       <div className="container mx-auto px-4 text-center">
         <div className="mb-12 space-y-5 text-center">
           <h2 className="text-4xl font-bold text-center">

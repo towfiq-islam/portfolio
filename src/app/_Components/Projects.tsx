@@ -123,7 +123,7 @@ const Projects = () => {
   const [view, setView] = useState<"grid" | "list">("grid");
 
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="pt-28">
       <div
         className={`${
           view === "grid" ? "max-w-7xl" : "max-w-5xl"

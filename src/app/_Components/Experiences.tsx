@@ -40,7 +40,7 @@ const experiences: Experience[] = [
 
 const EditorialExperience = () => {
   return (
-    <section id="experiences" className="py-12 md:py-20">
+    <section id="experiences" className="py-12 md:pt-28">
       <div className="mb-12 space-y-5 text-center">
         <h2 className="text-4xl font-bold text-center">
           My <span className="text-blue-500">Experience</span>

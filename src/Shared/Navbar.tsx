@@ -35,7 +35,7 @@ const Navbar = () => {
       },
       {
         root: null,
-        threshold: 0.5, // 50% visible
+        threshold: 0.3, // 70% visible
       }
     );
 
