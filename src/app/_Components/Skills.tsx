@@ -106,9 +106,11 @@ const Skills = () => {
       </div>
 
       <div className="flex flex-wrap gap-3">
-        {items.map(item => (
+        {items.map((item, index) => (
           <div
             key={item?.name}
+            data-aos="fade-up"
+            data-aos-delay={index * 150}
             className="px-4 py-2 bg-[#161b22] text-gray-300 text-sm rounded-lg border border-[#1f2937] flex gap-2 items-center"
           >
             <Image src={item?.icon} alt="icon" className="size-7" />
@@ -123,12 +125,20 @@ const Skills = () => {
     <section id="skills" className="pt-28">
       <div className="container mx-auto px-4 text-center">
         <div className="mb-12 space-y-5 text-center">
-          <h2 className="text-4xl font-bold text-center">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="text-4xl font-bold text-center"
+          >
             My <span className="text-blue-500">Skills</span>
             <div className="w-16 h-1 rounded bg-blue-500 mx-auto mt-2.5"></div>
           </h2>
 
-          <p className="text-gray-300 text-lg max-w-[800px] mx-auto">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="text-gray-300 text-lg max-w-[800px] mx-auto"
+          >
             I specialize in modern web development, crafting dynamic,
             responsive, and visually engaging applications that deliver seamless
             user experiences across all devices.

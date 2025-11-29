@@ -51,12 +51,20 @@ const Contact = () => {
     <section id="contact" className="pt-28 pb-16">
       <div className="container mx-auto px-6">
         <div className="mb-12 space-y-5 text-center">
-          <h2 className="text-4xl font-bold text-center">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="text-4xl font-bold text-center"
+          >
             Get In <span className="text-blue-500">Touch</span>
             <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-2"></div>
           </h2>
 
-          <p className="text-gray-300 text-lg max-w-[800px] mx-auto">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="text-gray-300 text-lg max-w-[800px] mx-auto"
+          >
             Let’s connect and bring your ideas to life through thoughtful design
             and clean development. I’m here to collaborate and help you build
             meaningful, high-quality digital experiences.

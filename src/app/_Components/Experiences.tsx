@@ -42,12 +42,20 @@ const EditorialExperience = () => {
   return (
     <section id="experiences" className="py-12 md:pt-28">
       <div className="mb-12 space-y-5 text-center">
-        <h2 className="text-4xl font-bold text-center">
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="text-4xl font-bold text-center"
+        >
           My <span className="text-blue-500">Experience</span>
           <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-2.5"></div>
         </h2>
 
-        <p className="text-gray-300 text-lg max-w-[800px] mx-auto">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="text-gray-300 text-lg max-w-[800px] mx-auto"
+        >
           I have hands-on experience developing real-world web applications,
           collaborating with teams, and delivering scalable solutions that
           enhance user experience.
@@ -65,7 +73,11 @@ const EditorialExperience = () => {
               {/* Grid Layout */}
               <div className="grid md:grid-cols-12 gap-8 md:gap-12">
                 {/* Left Column - Role & Company */}
-                <div className="md:col-span-5 space-y-6">
+                <div
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                  className="md:col-span-5 space-y-6"
+                >
                   <div className="relative">
                     <div className="pt-4">
                       <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight mb-3 group-hover:translate-x-2 transition-transform duration-500">
@@ -99,7 +111,11 @@ const EditorialExperience = () => {
                 </div>
 
                 {/* Right Column - Achievements & Skills */}
-                <div className="md:col-span-7 space-y-10">
+                <div
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  className="md:col-span-7 space-y-10"
+                >
                   {/* Achievements Card */}
                   <div className="border rounded-lg p-8 shadow-soft hover:shadow-elevated transition-all duration-500 group-hover:border-accent/30">
                     <h3 className="text-xl font-display font-bold mb-6 flex items-center gap-3">

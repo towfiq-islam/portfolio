@@ -9,7 +9,7 @@ function AosProvider({ children }: { children: React.ReactNode }) {
     AOS.init({
       duration: 600,
       easing: "ease-in-out",
-      once: true,
+      // once: true,
     });
 
     AOS.refresh();

@@ -28,12 +28,20 @@ export default function Services() {
     <section id="services" className="pt-28 bg-[#000014] text-white">
       <div className="container mx-auto px-4">
         <div className="mb-12 space-y-5 text-center">
-          <h2 className="text-4xl font-bold text-center">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="text-4xl font-bold text-center"
+          >
             My <span className="text-blue-500">Services</span>
             <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-2"></div>
           </h2>
 
-          <p className="text-gray-300 text-lg max-w-[800px] mx-auto">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="text-gray-300 text-lg max-w-[800px] mx-auto"
+          >
             Delivering professional web development services that combine clean
             code, modern UI design, and seamless functionality to bring ideas to
             life.
@@ -44,6 +52,8 @@ export default function Services() {
           {services.map((s, i) => (
             <div
               key={i}
+              data-aos="zoom-in"
+              data-aos-delay={i * 300}
               className="bg-[#0d0d1f] p-8 rounded-2xl shadow hover:shadow-blue-500 transition-shadow duration-300 border border-transparent hover:border-blue-500"
             >
               <div className="mb-6 w-14 h-14 flex items-center justify-center rounded-xl bg-[#0a0a18] border border-blue-500">
