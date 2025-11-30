@@ -20,6 +20,7 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center pt-20">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
               Hello, I'm Towfiq Islam
@@ -45,56 +46,88 @@ const Hero = () => {
               managing multiple projects, solving complex issues, and delivering
               clean and maintainable code.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div data-aos="fade-up" className="flex flex-wrap gap-4">
               <a
                 href="https://drive.google.com/file/d/1MKQIIqIQ2ulY3L40lsHtjxHZ70PMf5zq/view?usp=drive_link"
                 target="_blank"
-                className="bg-blue-500 cursor-pointer px-5 py-1.5 rounded-full border border-blue-500 hover:bg-transparent hover:text-blue-500"
+                className="relative overflow-hidden px-5 py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0"
               >
                 Resume
               </a>
 
               <a
                 href="#contact"
-                className="bg-transparent cursor-pointer px-5 py-1.5 rounded-full border border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white"
+                className="relative overflow-hidden px-5 py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-full"
               >
                 Contact Me
               </a>
             </div>
             <div className="flex gap-4 pt-3">
               <a
+                data-aos="zoom-in"
+                data-aos-delay="300"
                 href="https://www.facebook.com/towfiqislambd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-300 transition-all"
+                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
               >
                 <FaFacebookF className="text-lg" />
               </a>
               <a
+                data-aos="zoom-in"
+                data-aos-delay="600"
                 href="https://www.linkedin.com/in/towfiqislambd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-300 transition-all"
+                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
               >
                 <FaLinkedinIn className="text-lg" />
               </a>
               <a
+                data-aos="zoom-in"
+                data-aos-delay="900"
                 href="https://github.com/towfiqislambd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-300 transition-all"
+                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
               >
                 <PiGithubLogoBold className="text-lg" />
               </a>
             </div>
           </div>
-          <div className="flex justify-center">
-            <div className="relative w-[350px] h-[350px] md:w-[450px] md:h-[450px]">
-              {/* Outer Glow Border */}
-              <div className="absolute inset-0 rounded-full shadow-[0_0_10px_5px_rgba(56,189,248,0.15)] backdrop-blur-xl" />
 
-              <div className="absolute inset-0 rounded-full border-4 border-sky-700 animate-pulse" />
-              <div className="absolute inset-8 rounded-full bg-muted flex items-center justify-center overflow-hidden">
+          {/* Right */}
+          <div className="flex justify-center">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-duration="1200"
+              data-aos-easing="ease-out-cubic"
+              className="relative w-[350px] h-[350px] md:w-[450px] md:h-[450px]"
+            >
+              {/* Outer Glow */}
+              <div
+                data-aos="fade"
+                data-aos-duration="1500"
+                data-aos-delay="200"
+                className="absolute inset-0 rounded-full shadow-[0_0_10px_5px_rgba(56,189,248,0.15)] backdrop-blur-xl"
+              />
+
+              {/* Outer Border */}
+              <div
+                data-aos="flip-up"
+                data-aos-duration="1400"
+                data-aos-delay="300"
+                data-aos-easing="ease-out-back"
+                className="absolute inset-0 rounded-full border-4 border-sky-700 animate-pulse"
+              />
+
+              {/* Profile Image */}
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1200"
+                data-aos-delay="400"
+                className="absolute inset-8 rounded-full bg-muted flex items-center justify-center overflow-hidden"
+              >
                 <Image
                   src={profile}
                   alt="hero_img"

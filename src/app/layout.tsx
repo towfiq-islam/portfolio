@@ -6,6 +6,7 @@ import AosProvider from "@/Provider/AosProvider/AosProvider";
 import Navbar from "@/Shared/Navbar";
 import Footer from "@/Shared/Footer";
 import Spotlight from "@/lib/Spotlight";
+import Loader from "./_Components/Loader";
 
 // Fonts
 const roboto = Roboto({
@@ -39,6 +40,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className={`${roboto.variable} ${macondo.variable} antialiased`}>
         <AosProvider>
+          <Loader />
           <Spotlight />
           <Navbar />
           <Toaster />
