@@ -58,7 +58,7 @@ const Hero = () => {
               <a
                 data-aos="fade-up"
                 data-aos-delay="100"
-                href="https://drive.google.com/file/d/1MKQIIqIQ2ulY3L40lsHtjxHZ70PMf5zq/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1MKQIIqIQ2ulY3L40lsHtjxHZ70PMf5zq/view?usp=sharing"
                 target="_blank"
                 className="relative overflow-hidden px-5 py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0"
               >
