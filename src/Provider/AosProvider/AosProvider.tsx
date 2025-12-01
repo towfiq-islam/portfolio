@@ -9,7 +9,7 @@ function AosProvider({ children }: { children: React.ReactNode }) {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      // once: false, // Play animation every scroll (your choice)
+      once: true, // Play animation every scroll (your choice)
       // mirror: false, // Avoid reverse animation on scroll up
     });
 

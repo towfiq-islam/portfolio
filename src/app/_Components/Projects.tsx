@@ -1,7 +1,7 @@
 "use client";
 import { Github, ExternalLink, LayoutGrid, List } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import projectImg from "@/Assets/p1.png";
 import projectImg2 from "@/Assets/p2.png";
 import projectImg3 from "@/Assets/p3.png";
@@ -20,6 +20,7 @@ import shadCnIcon from "@/Assets/icons/cn.png";
 import tanstackIcon from "@/Assets/icons/tanstack.png";
 import pusherIcon from "@/Assets/icons/cn.png";
 import momentIcon from "@/Assets/icons/vercel.png";
+import AOS from "aos";
 const projects = [
   {
     id: 1,
@@ -122,6 +123,14 @@ const projects = [
 const Projects = () => {
   const [view, setView] = useState<"grid" | "list">("grid");
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      AOS.refreshHard();
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [view]);
+
   return (
     <section id="projects" className="pt-28">
       <div
@@ -149,6 +158,7 @@ const Projects = () => {
         {/* View Toggle Buttons */}
         <div className="flex justify-end mb-6 gap-3">
           <button
+            // data-aos="flip-left"
             onClick={() => setView("grid")}
             className={`cursor-pointer px-4 py-2 rounded flex items-center gap-2 border transition 
             ${
@@ -162,6 +172,7 @@ const Projects = () => {
           </button>
 
           <button
+            // data-aos="flip-right"
             onClick={() => setView("list")}
             className={`cursor-pointer px-4 py-2 rounded flex items-center gap-2 border transition 
             ${

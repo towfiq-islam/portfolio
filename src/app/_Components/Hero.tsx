@@ -23,7 +23,7 @@ const Hero = () => {
           {/* Left */}
           <div className="space-y-6">
             <h1
-              data-aos="zoom-in"
+              data-aos="fade-up"
               data-aos-delay="100"
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-white"
             >
@@ -67,7 +67,7 @@ const Hero = () => {
 
               <a
                 data-aos="fade-up"
-                data-aos-delay="250"
+                data-aos-delay="300"
                 href="#contact"
                 className="relative overflow-hidden px-5 py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-full"
               >
