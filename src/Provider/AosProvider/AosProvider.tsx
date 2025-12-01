@@ -7,10 +7,9 @@ import React, { useEffect } from "react";
 function AosProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 900,
       easing: "ease-in-out",
-      once: true, // Play animation every scroll (your choice)
-      // mirror: false, // Avoid reverse animation on scroll up
+      once: true,
     });
 
     AOS.refresh();

@@ -75,36 +75,38 @@ const Hero = () => {
               </a>
             </div>
             <div className="flex gap-4 pt-3">
-              <a
-                data-aos="zoom-in"
-                data-aos-delay="300"
-                href="https://www.facebook.com/towfiqislambd"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
-              >
-                <FaFacebookF className="text-lg" />
-              </a>
-              <a
-                data-aos="zoom-in"
-                data-aos-delay="700"
-                href="https://www.linkedin.com/in/towfiqislambd"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
-              >
-                <FaLinkedinIn className="text-lg" />
-              </a>
-              <a
-                data-aos="zoom-in"
-                data-aos-delay="1000"
-                href="https://github.com/towfiqislambd"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
-              >
-                <PiGithubLogoBold className="text-lg" />
-              </a>
+              <button data-aos="zoom-in" data-aos-delay="300">
+                <a
+                  href="https://www.facebook.com/towfiqislambd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                >
+                  <FaFacebookF className="text-lg" />
+                </a>
+              </button>
+
+              <button data-aos="zoom-in" data-aos-delay="700">
+                <a
+                  href="https://www.linkedin.com/in/towfiqislambd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="size-12 rounded-full border-2 border-primary grid place-items-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                >
+                  <FaLinkedinIn className="text-lg" />
+                </a>
+              </button>
+
+              <button data-aos="zoom-in" data-aos-delay="1000">
+                <a
+                  href="https://github.com/towfiqislambd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                >
+                  <PiGithubLogoBold className="text-lg" />
+                </a>
+              </button>
             </div>
           </div>
 

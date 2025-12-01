@@ -158,7 +158,8 @@ const Projects = () => {
         {/* View Toggle Buttons */}
         <div className="flex justify-end mb-6 gap-3">
           <button
-            // data-aos="flip-left"
+            data-aos="flip-left"
+            data-aos-delay="100"
             onClick={() => setView("grid")}
             className={`cursor-pointer px-4 py-2 rounded flex items-center gap-2 border transition 
             ${
@@ -172,7 +173,8 @@ const Projects = () => {
           </button>
 
           <button
-            // data-aos="flip-right"
+            data-aos="flip-right"
+            data-aos-delay="200"
             onClick={() => setView("list")}
             className={`cursor-pointer px-4 py-2 rounded flex items-center gap-2 border transition 
             ${
