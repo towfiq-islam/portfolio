@@ -130,11 +130,7 @@ const Projects = () => {
         } mx-auto px-4`}
       >
         <div className="mb-12 space-y-5 text-center">
-          <h2
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="text-4xl font-bold text-center"
-          >
+          <h2 data-aos="fade-up" className="text-4xl font-bold text-center">
             My <span className="text-blue-500">Projects</span>
             <div className="w-22 h-1 rounded bg-blue-500 mx-auto mt-2.5"></div>
           </h2>
@@ -191,7 +187,7 @@ const Projects = () => {
             <div
               key={project.title}
               data-aos="fade-up"
-              data-aos-delay={index * 300}
+              data-aos-delay={index * 250}
               className={`bg-[#0d0d1f] rounded-lg overflow-hidden group border border-gray-800 p-3.5 duration-500
                 ${view === "grid" ? "hover:scale-[1.02]" : "flex gap-5"}`}
             >

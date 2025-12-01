@@ -51,11 +51,7 @@ const Contact = () => {
     <section id="contact" className="pt-28 pb-16">
       <div className="container mx-auto px-6">
         <div className="mb-12 space-y-5 text-center">
-          <h2
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="text-4xl font-bold text-center"
-          >
+          <h2 data-aos="fade-up" className="text-4xl font-bold text-center">
             Get In <span className="text-blue-500">Touch</span>
             <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-2"></div>
           </h2>
@@ -74,15 +70,29 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-10 mt-10">
           {/* LEFT SIDE — Contact Info */}
           <div className="space-y-5">
-            <h3 className="text-2xl font-semibold">Contact Information</h3>
-            <p className="text-gray-300 text-lg leading-relaxed pb-3">
+            <h3
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="text-2xl font-semibold"
+            >
+              Contact Information
+            </h3>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="text-gray-300 text-lg leading-relaxed pb-3"
+            >
               I'm always interested in hearing about new projects and
               opportunities. Whether you have a question or just want to say hi,
               feel free to reach out!
             </p>
 
             {/* Email */}
-            <div className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4"
+            >
               <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
                 <Mail />
               </div>
@@ -93,7 +103,11 @@ const Contact = () => {
             </div>
 
             {/* Phone */}
-            <div className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4"
+            >
               <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
                 <Phone />
               </div>
@@ -104,7 +118,11 @@ const Contact = () => {
             </div>
 
             {/* Location */}
-            <div className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4"
+            >
               <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
                 <MapPin />
               </div>
@@ -116,7 +134,10 @@ const Contact = () => {
           </div>
 
           {/* RIGHT SIDE — Form */}
-          <div className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-8">
+          <div
+            data-aos="fade-left"
+            className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-8"
+          >
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
               <div>
                 <label className="text-sm mb-1 block">Name</label>

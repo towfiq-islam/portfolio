@@ -22,7 +22,11 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+            <h1
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white"
+            >
               Hello, I'm Towfiq Islam
             </h1>
 
@@ -39,15 +43,21 @@ const Hero = () => {
               />
             </h2>
 
-            <p className="text-muted-foreground text-lg">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="text-muted-foreground text-lg"
+            >
               I am a motivated and detail-oriented Front-End Developer with 1+
               years of experience building modern, responsive, and user-friendly
               web applications using Next.js, React, and TypeScript. Adept at
               managing multiple projects, solving complex issues, and delivering
               clean and maintainable code.
             </p>
-            <div data-aos="fade-up" className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4">
               <a
+                data-aos="fade-up"
+                data-aos-delay="100"
                 href="https://drive.google.com/file/d/1MKQIIqIQ2ulY3L40lsHtjxHZ70PMf5zq/view?usp=drive_link"
                 target="_blank"
                 className="relative overflow-hidden px-5 py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0"
@@ -56,6 +66,8 @@ const Hero = () => {
               </a>
 
               <a
+                data-aos="fade-up"
+                data-aos-delay="250"
                 href="#contact"
                 className="relative overflow-hidden px-5 py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-full"
               >
@@ -75,7 +87,7 @@ const Hero = () => {
               </a>
               <a
                 data-aos="zoom-in"
-                data-aos-delay="600"
+                data-aos-delay="700"
                 href="https://www.linkedin.com/in/towfiqislambd"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -85,7 +97,7 @@ const Hero = () => {
               </a>
               <a
                 data-aos="zoom-in"
-                data-aos-delay="900"
+                data-aos-delay="1000"
                 href="https://github.com/towfiqislambd"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -98,7 +98,11 @@ const Skills = () => {
 
   const Card = ({ icon: Icon, title, items }: CardProps) => (
     <div className="bg-[#0d0d1f] border border-blue-500 rounded-xl p-6 shadow-lg">
-      <div className="flex items-center gap-3 mb-6">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        className="flex items-center gap-3 mb-6"
+      >
         <div className="bg-[#1f2937] p-3 rounded-lg">
           <Icon className="text-sky-500" size={28} />
         </div>
@@ -125,11 +129,7 @@ const Skills = () => {
     <section id="skills" className="pt-28">
       <div className="container mx-auto px-4 text-center">
         <div className="mb-12 space-y-5 text-center">
-          <h2
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="text-4xl font-bold text-center"
-          >
+          <h2 data-aos="fade-up" className="text-4xl font-bold text-center">
             My <span className="text-blue-500">Skills</span>
             <div className="w-16 h-1 rounded bg-blue-500 mx-auto mt-2.5"></div>
           </h2>

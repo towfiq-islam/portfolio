@@ -28,11 +28,7 @@ export default function Services() {
     <section id="services" className="pt-28 bg-[#000014] text-white">
       <div className="container mx-auto px-4">
         <div className="mb-12 space-y-5 text-center">
-          <h2
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="text-4xl font-bold text-center"
-          >
+          <h2 data-aos="fade-up" className="text-4xl font-bold text-center">
             My <span className="text-blue-500">Services</span>
             <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-2"></div>
           </h2>
