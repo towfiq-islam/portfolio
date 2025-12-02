@@ -150,7 +150,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-5 2xl:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 2xl:gap-8">
           <Card
             icon={Code2}
             title="Frontend Development"

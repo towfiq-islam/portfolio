@@ -19,21 +19,21 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="lg:min-h-screen flex items-center pt-20 lg:pt-0"
+      className="lg:min-h-screen flex items-center pt-14 md:pt-20 lg:pt-0"
     >
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left */}
-          <div className="space-y-4 xl:space-y-5.5 2xl:space-y-6">
+          <div className="space-y-2.5 md:space-y-4 xl:space-y-5.5 2xl:space-y-6">
             <h1
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white"
+              className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white"
             >
               Hello, I'm Towfiq Islam
             </h1>
 
-            <h2 className="!text-[12px] xl:!text-2xl md:!text-3xl 2xl:!text-4xl font-bold">
+            <h2 className="text-xl xl:!text-2xl md:!text-3xl 2xl:!text-4xl font-bold">
               <Typewriter
                 options={{
                   strings: titles,
@@ -49,7 +49,7 @@ const Hero = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-muted-foreground 2xl:text-lg"
+              className="text-muted-foreground text-[15px] md:text-base 2xl:text-lg"
             >
               I am a motivated and detail-oriented Front-End Developer with 1+
               years of experience building modern, responsive, and user-friendly
@@ -57,13 +57,13 @@ const Hero = () => {
               managing multiple projects, solving complex issues, and delivering
               clean and maintainable code.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3 md:gap-4 pt-2 md:pt-0">
               <a
                 data-aos="fade-up"
                 data-aos-delay="100"
                 href="https://drive.google.com/file/d/1MKQIIqIQ2ulY3L40lsHtjxHZ70PMf5zq/view?usp=sharing"
                 target="_blank"
-                className="relative overflow-hidden px-5 py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0"
+                className="relative overflow-hidden px-4 md:px-5 py-1 md:py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0"
               >
                 Resume
               </a>
@@ -72,20 +72,20 @@ const Hero = () => {
                 data-aos="fade-up"
                 data-aos-delay="300"
                 href="#contact"
-                className="relative overflow-hidden px-5 py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-full"
+                className="relative overflow-hidden px-4 md:px-5 py-1 md:py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-full"
               >
                 Contact Me
               </a>
             </div>
-            <div className="flex gap-3 xl:gap-4 pt-2 lg:pt-3">
+            <div className="flex gap-2.5 md:gap-3 xl:gap-4 pt-2 lg:pt-3">
               <button data-aos="zoom-in" data-aos-delay="300">
                 <a
                   href="https://www.facebook.com/towfiqislambd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="size-10 xl:size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                  className="size-9 md:size-10 xl:size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
                 >
-                  <FaFacebookF className="text-lg" />
+                  <FaFacebookF className="md:text-lg" />
                 </a>
               </button>
 
@@ -94,9 +94,9 @@ const Hero = () => {
                   href="https://www.linkedin.com/in/towfiqislambd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="size-10 xl:size-12 rounded-full border-2 border-primary grid place-items-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                  className="size-9 md:size-10 xl:size-12 rounded-full border-2 border-primary grid place-items-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
                 >
-                  <FaLinkedinIn className="text-lg" />
+                  <FaLinkedinIn className="md:text-lg" />
                 </a>
               </button>
 
@@ -105,9 +105,9 @@ const Hero = () => {
                   href="https://github.com/towfiqislambd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="size-10 xl:size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                  className="size-9 md:size-10 xl:size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
                 >
-                  <PiGithubLogoBold className="text-lg" />
+                  <PiGithubLogoBold className="md:text-lg" />
                 </a>
               </button>
             </div>
@@ -119,7 +119,7 @@ const Hero = () => {
               data-aos="zoom-in-up"
               data-aos-duration="1200"
               data-aos-easing="ease-out-cubic"
-              className="relative size-[400px] xl:size-[420px] 2xl:size-[450px]"
+              className="relative size-[300px] sm:size-[400px] xl:size-[420px] 2xl:size-[450px]"
             >
               {/* Outer Glow */}
               <div
@@ -143,7 +143,7 @@ const Hero = () => {
                 data-aos="zoom-in"
                 data-aos-duration="1200"
                 data-aos-delay="400"
-                className="absolute inset-7 xl:inset-8 rounded-full bg-muted flex items-center justify-center overflow-hidden"
+                className="absolute inset-6 md:inset-7 xl:inset-8 rounded-full bg-muted flex items-center justify-center overflow-hidden"
               >
                 <Image
                   src={profile}

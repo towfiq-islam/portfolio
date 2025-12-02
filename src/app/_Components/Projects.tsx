@@ -160,7 +160,7 @@ const Projects = () => {
           </div>
 
           {/* View Toggle Buttons */}
-          <div className="flex justify-end mb-6 gap-3">
+          <div className="hidden lg:flex justify-end mb-6 gap-3">
             <button
               data-aos="flip-left"
               data-aos-delay="100"

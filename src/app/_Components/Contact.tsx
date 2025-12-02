@@ -70,7 +70,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
           {/* LEFT SIDE — Contact Info */}
           <div className="space-y-5">
             <h3
@@ -141,7 +141,10 @@ const Contact = () => {
             data-aos="fade-left"
             className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-5 xl:p-7 2xl:p-8"
           >
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 xl:space-y-5">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="space-y-4 xl:space-y-5"
+            >
               <div>
                 <label className="text-sm mb-1 block">Name</label>
                 <input

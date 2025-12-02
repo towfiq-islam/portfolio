@@ -20,8 +20,10 @@ const Page = () => {
       <ScrollToTop
         smooth={true}
         top={50}
-        component={<MdKeyboardDoubleArrowUp className="text-3xl" />}
-        className="!bg-blue-500 grid place-items-center !size-12 !text-accent-white"
+        component={
+          <MdKeyboardDoubleArrowUp className="text-[22px] md:text-2xl xl:text-3xl" />
+        }
+        className="!right-3 md:!right-5 xl:!right-10 !bottom-3 md:!bottom-5 xl:!bottom-10 !bg-blue-500 grid place-items-center !size-9 md:!size-10 xl:!size-12 !text-accent-white"
       />
     </>
   );

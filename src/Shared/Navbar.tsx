@@ -64,8 +64,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav data-aos="zoom-in" className="container sticky top-5 z-50">
-        <div className="backdrop-blur-3xl border-2 border-blue-500 rounded-full px-4 py-3 xl:px-4 2xl:px-5 xl:py-3.5 2xl:py-4">
+      <nav data-aos="zoom-in" className="container sticky top-3 lg:top-5 z-50">
+        <div className="backdrop-blur-3xl border-2 border-blue-500 rounded-full px-3.5 md:px-4 py-2 md:py-3 xl:px-4 2xl:px-5 xl:py-3.5 2xl:py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link
@@ -114,7 +114,7 @@ const Navbar = () => {
             {/* Hamburger btn */}
             <button
               onClick={() => setOpen(!isOpen)}
-              className="size-8 rounded lg:hidden grid place-items-center bg-blue-500 text-xl text-white cursor-pointer"
+              className="size-7.5 md:size-8 rounded lg:hidden grid place-items-center bg-blue-500 text-lg md:text-xl text-white cursor-pointer"
             >
               <FaBars />
             </button>
