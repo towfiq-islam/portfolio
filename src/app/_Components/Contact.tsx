@@ -49,17 +49,20 @@ const Contact = () => {
 
   return (
     <section id="contact" className="pt-28 pb-16">
-      <div className="container mx-auto px-6">
+      <div className="container">
         <div className="mb-12 space-y-5 text-center">
-          <h2 data-aos="fade-up" className="text-4xl font-bold text-center">
+          <h2
+            data-aos="fade-up"
+            className="text-[32px] 2xl:text-4xl font-bold text-center"
+          >
             Get In <span className="text-blue-500">Touch</span>
-            <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-2"></div>
+            <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2"></div>
           </h2>
 
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-gray-300 text-lg max-w-[800px] mx-auto"
+            className="text-gray-300 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
           >
             Let’s connect and bring your ideas to life through thoughtful design
             and clean development. I’m here to collaborate and help you build
@@ -80,7 +83,7 @@ const Contact = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-gray-300 text-lg leading-relaxed pb-3"
+              className="text-gray-300 2xl:text-lg leading-relaxed -mt-1.5 pb-4 2xl:pb-6"
             >
               I'm always interested in hearing about new projects and
               opportunities. Whether you have a question or just want to say hi,
@@ -91,9 +94,9 @@ const Contact = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="100"
-              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4"
+              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-4 2xl:p-6 flex items-center gap-4"
             >
-              <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="size-12 bg-gray-700 rounded-xl flex items-center justify-center">
                 <Mail />
               </div>
               <div>
@@ -106,9 +109,9 @@ const Contact = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="200"
-              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4"
+              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-4 2xl:p-6 flex items-center gap-4"
             >
-              <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="size-12 bg-gray-700 rounded-xl flex items-center justify-center">
                 <Phone />
               </div>
               <div>
@@ -121,9 +124,9 @@ const Contact = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="300"
-              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-6 flex items-center gap-4"
+              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-4 2xl:p-6 flex items-center gap-4"
             >
-              <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="size-12 bg-gray-700 rounded-xl flex items-center justify-center">
                 <MapPin />
               </div>
               <div>
@@ -136,9 +139,9 @@ const Contact = () => {
           {/* RIGHT SIDE — Form */}
           <div
             data-aos="fade-left"
-            className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-8"
+            className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-5 xl:p-7 2xl:p-8"
           >
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 xl:space-y-5">
               <div>
                 <label className="text-sm mb-1 block">Name</label>
                 <input

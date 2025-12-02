@@ -50,49 +50,48 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      data-aos="zoom-in"
-      className="fixed mx-auto container top-0 left-0 right-0 z-50 w-[calc(100%-30px)] mt-5 backdrop-blur bg-[#000014] border-2 border-blue-500 rounded-full px-5 py-4"
-    >
-      <div className="flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" id="home" className="flex gap-2 items-center shrink-0">
-          <p className="w-10 h-9 rounded-xl bg-blue-500 grid place-items-center text-white">
-            <CodeXml />
-          </p>
-          <p className="text-xl md:text-2xl font-black text-white font-macondo">
-            Tow<span className="text-blue-500">fiq</span>
-          </p>
-        </Link>
+    <nav data-aos="zoom-in" className="container sticky top-5 z-50">
+      <div className="backdrop-blur-3xl border-2 border-blue-500 rounded-full px-4 2xl:px-5 py-3.5 2xl:py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <Link href="/" id="home" className="flex gap-2 items-center shrink-0">
+            <p className="w-10 h-9 rounded-xl bg-blue-500 grid place-items-center text-white">
+              <CodeXml />
+            </p>
+            <p className="text-xl md:text-2xl font-black text-white font-macondo">
+              Tow<span className="text-blue-500">fiq</span>
+            </p>
+          </Link>
 
-        {/* Menu */}
-        <div className="flex items-center justify-end gap-6 grow">
-          {menuItems.map(item => (
+          {/* Menu */}
+          <div className="flex items-center justify-end gap-4 2xl:gap-6 grow">
+            {menuItems.map(item => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                onClick={() => {
+                  scrollToTop();
+                  setActiveSection(item.id);
+                }}
+                className={`font-semibold rounded-full px-3 2xl:px-4 py-1.5 flex gap-2 items-center text-sm 2xl:text-[15px] duration-300 ${
+                  activeSection === item.id
+                    ? "text-sky-500 bg-gray-900"
+                    : "text-white hover:bg-gray-900 hover:text-sky-500"
+                }`}
+              >
+                {item.icon}
+                {item.label}
+              </a>
+            ))}
+
             <a
-              key={item.id}
-              href={`#${item.id}`}
-              onClick={() => {
-                scrollToTop();
-                setActiveSection(item.id);
-              }}
-              className={`font-semibold rounded-full px-4 py-1.5 flex gap-2 items-center text-[15px] duration-300 ${
-                activeSection === item.id
-                  ? "text-sky-500 bg-gray-900"
-                  : "text-white hover:bg-gray-900 hover:text-sky-500"
-              }`}
+              href="/resume_of_towfiq_islam.pdf"
+              className="px-4 py-2 rounded-full bg-blue-500 text-sm font-medium text-white flex gap-1 items-center cursor-pointer"
+              download
             >
-              {item.icon}
-              {item.label}
+              Resume <MdOutlineFileDownload className="text-lg" />
             </a>
-          ))}
-
-          <a
-            href="/resume_of_towfiq_islam.pdf"
-            className="px-4 py-2 rounded-full bg-blue-500 text-sm font-medium text-white flex gap-1 items-center cursor-pointer"
-            download
-          >
-            Resume <MdOutlineFileDownload className="text-lg" />
-          </a>
+          </div>
         </div>
       </div>
     </nav>

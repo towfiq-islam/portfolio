@@ -17,20 +17,20 @@ const titles = [
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-20">
-      <div className="container mx-auto px-4">
+    <section id="home" className="min-h-screen flex items-center">
+      <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left */}
-          <div className="space-y-6">
+          <div className="space-y-4.5 xl:space-y-5.5 2xl:space-y-6">
             <h1
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white"
+              className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white"
             >
               Hello, I'm Towfiq Islam
             </h1>
 
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-50">
+            <h2 className="text-xl xl:text-2xl md:text-3xl 2xl:text-4xl font-bold text-gray-50">
               <Typewriter
                 options={{
                   strings: titles,
@@ -46,7 +46,7 @@ const Hero = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-muted-foreground text-lg"
+              className="text-muted-foreground 2xl:text-lg"
             >
               I am a motivated and detail-oriented Front-End Developer with 1+
               years of experience building modern, responsive, and user-friendly
@@ -74,13 +74,13 @@ const Hero = () => {
                 Contact Me
               </a>
             </div>
-            <div className="flex gap-4 pt-3">
+            <div className="flex gap-3 xl:gap-4 pt-3">
               <button data-aos="zoom-in" data-aos-delay="300">
                 <a
                   href="https://www.facebook.com/towfiqislambd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                  className="size-10 xl:size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
                 >
                   <FaFacebookF className="text-lg" />
                 </a>
@@ -91,7 +91,7 @@ const Hero = () => {
                   href="https://www.linkedin.com/in/towfiqislambd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="size-12 rounded-full border-2 border-primary grid place-items-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                  className="size-10 xl:size-12 rounded-full border-2 border-primary grid place-items-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
                 >
                   <FaLinkedinIn className="text-lg" />
                 </a>
@@ -102,7 +102,7 @@ const Hero = () => {
                   href="https://github.com/towfiqislambd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                  className="size-10 xl:size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
                 >
                   <PiGithubLogoBold className="text-lg" />
                 </a>
@@ -116,7 +116,7 @@ const Hero = () => {
               data-aos="zoom-in-up"
               data-aos-duration="1200"
               data-aos-easing="ease-out-cubic"
-              className="relative w-[350px] h-[350px] md:w-[450px] md:h-[450px]"
+              className="relative size-[400px] xl:size-[420px] 2xl:size-[450px]"
             >
               {/* Outer Glow */}
               <div

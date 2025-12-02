@@ -41,24 +41,27 @@ const experiences: Experience[] = [
 const EditorialExperience = () => {
   return (
     <section id="experiences" className="py-12 md:pt-28">
-      <div className="mb-12 space-y-5 text-center">
-        <h2 data-aos="fade-up" className="text-4xl font-bold text-center">
-          My <span className="text-blue-500">Experience</span>
-          <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-2.5"></div>
-        </h2>
+      <div className="container">
+        <div className="mb-12 space-y-5 text-center">
+          <h2
+            data-aos="fade-up"
+            className="text-[32px] 2xl:text-4xl font-bold text-center"
+          >
+            My <span className="text-blue-500">Experience</span>
+            <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2.5"></div>
+          </h2>
 
-        <p
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className="text-gray-300 text-lg max-w-[800px] mx-auto"
-        >
-          I have hands-on experience developing real-world web applications,
-          collaborating with teams, and delivering scalable solutions that
-          enhance user experience.
-        </p>
-      </div>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="text-gray-300 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
+          >
+            I have hands-on experience developing real-world web applications,
+            collaborating with teams, and delivering scalable solutions that
+            enhance user experience.
+          </p>
+        </div>
 
-      <div className="container mx-auto px-6 md:px-12">
         <div className="space-y-32">
           {experiences.map((exp, index) => (
             <article
@@ -67,12 +70,12 @@ const EditorialExperience = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Grid Layout */}
-              <div className="grid md:grid-cols-12 gap-8 md:gap-12">
+              <div className="grid md:grid-cols-12 gap-8 xl:gap-12">
                 {/* Left Column - Role & Company */}
                 <div data-aos="fade-right" className="md:col-span-5 space-y-6">
                   <div className="relative">
                     <div className="pt-4">
-                      <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight mb-3 group-hover:translate-x-2 transition-transform duration-500">
+                      <h2 className="text-[33px] xl:text-4xl 2xl:text-5xl font-display font-bold leading-tight mb-3 group-hover:translate-x-2 transition-transform duration-500">
                         {exp.role}
                       </h2>
 
@@ -97,7 +100,7 @@ const EditorialExperience = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-foreground/80 leading-relaxed text-lg border-l-2 border-border pl-6">
+                  <p className="text-foreground/80 leading-relaxed xl:text-lg border-l-2 border-border pl-4 2xl:pl-6">
                     {exp.description}
                   </p>
                 </div>
@@ -105,7 +108,7 @@ const EditorialExperience = () => {
                 {/* Right Column - Achievements & Skills */}
                 <div data-aos="fade-left" className="md:col-span-7 space-y-10">
                   {/* Achievements Card */}
-                  <div className="border rounded-lg p-8 shadow-soft hover:shadow-elevated transition-all duration-500 group-hover:border-accent/30">
+                  <div className="border rounded-lg p-6 2xl:p-8 shadow-soft hover:shadow-elevated transition-all duration-500 group-hover:border-accent/30">
                     <h3 className="text-xl font-display font-bold mb-6 flex items-center gap-3">
                       <span className="w-1 h-6 bg-white rounded-full" />
                       Key Achievements

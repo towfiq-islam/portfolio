@@ -12,3 +12,7 @@ html {
 body {
   @apply !overflow-x-hidden font-roboto text-white bg-[#000014];
 }
+
+.container {
+  @apply max-w-[1680px] px-10 xl:px-16 2xl:px-20 mx-auto;
+}
