@@ -17,20 +17,23 @@ const titles = [
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center">
+    <section
+      id="home"
+      className="lg:min-h-screen flex items-center pt-20 lg:pt-0"
+    >
       <div className="container">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left */}
-          <div className="space-y-4.5 xl:space-y-5.5 2xl:space-y-6">
+          <div className="space-y-4 xl:space-y-5.5 2xl:space-y-6">
             <h1
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white"
+              className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white"
             >
               Hello, I'm Towfiq Islam
             </h1>
 
-            <h2 className="text-xl xl:text-2xl md:text-3xl 2xl:text-4xl font-bold text-gray-50">
+            <h2 className="!text-[12px] xl:!text-2xl md:!text-3xl 2xl:!text-4xl font-bold">
               <Typewriter
                 options={{
                   strings: titles,
@@ -74,7 +77,7 @@ const Hero = () => {
                 Contact Me
               </a>
             </div>
-            <div className="flex gap-3 xl:gap-4 pt-3">
+            <div className="flex gap-3 xl:gap-4 pt-2 lg:pt-3">
               <button data-aos="zoom-in" data-aos-delay="300">
                 <a
                   href="https://www.facebook.com/towfiqislambd"
@@ -140,7 +143,7 @@ const Hero = () => {
                 data-aos="zoom-in"
                 data-aos-duration="1200"
                 data-aos-delay="400"
-                className="absolute inset-8 rounded-full bg-muted flex items-center justify-center overflow-hidden"
+                className="absolute inset-7 xl:inset-8 rounded-full bg-muted flex items-center justify-center overflow-hidden"
               >
                 <Image
                   src={profile}
