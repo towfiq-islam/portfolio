@@ -65,7 +65,7 @@ const Navbar = () => {
   return (
     <>
       <nav data-aos="zoom-in" className="container sticky top-3 lg:top-5 z-50">
-        <div className="backdrop-blur-3xl bg-black/10 border-2 border-blue-500 rounded-full px-3.5 md:px-4 py-2 md:py-3 xl:px-4 2xl:px-5 xl:py-3.5 2xl:py-4">
+        <div className="backdrop-blur-3xl bg-black/30 border-2 border-blue-500 rounded-full px-3.5 md:px-4 py-2 md:py-3 xl:px-4 2xl:px-5 xl:py-3.5 2xl:py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex gap-2 items-center shrink-0">
@@ -100,7 +100,7 @@ const Navbar = () => {
 
               <a
                 href="/resume_of_towfiq_islam.pdf"
-                className="px-3.5 xl:px-4 py-1.5 xl:py-2 rounded-full bg-blue-500 text-sm font-medium text-white flex gap-1 items-center cursor-pointer"
+                className="px-3.5 xl:px-4 py-1.5 xl:py-2 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0 relative overflow-hidden flex gap-1 items-center"
                 download
               >
                 Resume <MdOutlineFileDownload className="text-lg" />

@@ -49,21 +49,18 @@ export default function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-5 2xl:gap-6">
           {services.map((s, i) => (
-            <div
-              key={i}
-              data-aos="zoom-in"
-              data-aos-delay={i * 300}
-              className="bg-[#0d0d1f] p-5 md:p-5.5 2xl:p-8 rounded-2xl shadow hover:shadow-blue-500 transition-shadow duration-300 border border-transparent hover:border-blue-500"
-            >
-              <div className="mb-4 2xl:mb-6 size-14 flex items-center justify-center rounded-xl bg-[#0a0a18] border border-blue-500">
-                {s.icon}
+            <div key={i} data-aos="zoom-in" data-aos-delay={i * 300}>
+              <div className="bg-[#0d0d1f] p-5 md:p-5.5 2xl:p-8 rounded-2xl shadow hover:shadow-blue-500 transition-shadow duration-300 border border-transparent hover:border-blue-500">
+                <div className="mb-4 2xl:mb-6 size-14 flex items-center justify-center rounded-xl bg-[#0a0a18] border border-blue-500">
+                  {s.icon}
+                </div>
+                <h3 className="text-lg md:text-xl 2xl:text-2xl font-semibold mb-2 md:mb-3 truncate">
+                  {s.title}
+                </h3>
+                <p className="text-gray-300 leading-relaxed text-sm md:text-base">
+                  {s.desc}
+                </p>
               </div>
-              <h3 className="text-lg md:text-xl 2xl:text-2xl font-semibold mb-2 md:mb-3 truncate">
-                {s.title}
-              </h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">
-                {s.desc}
-              </p>
             </div>
           ))}
         </div>

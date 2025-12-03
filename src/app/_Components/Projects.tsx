@@ -205,77 +205,84 @@ const Projects = () => {
                 key={project.title}
                 data-aos="fade-up"
                 data-aos-delay={index * 250}
-                className={`bg-[#0d0d1f] rounded-lg overflow-hidden group border border-gray-800 p-3 md:p-3.5 duration-500
-                ${view === "grid" ? "hover:scale-[1.02]" : "flex gap-5"}`}
               >
-                {/* Thumbnail */}
-                <figure
-                  className={
-                    view === "grid"
-                      ? "h-[210px] md:h-[230px] 2xl:h-[250px] flex items-center justify-center rounded-lg"
-                      : "w-80 h-[250px] flex items-center justify-center rounded-lg"
-                  }
-                >
-                  <Image
-                    src={project?.thumbnail as any}
-                    alt="project_img"
-                    className="w-full h-full object-fit rounded-lg"
-                  />
-                </figure>
-
-                {/* Content */}
                 <div
-                  className={
-                    view === "list"
-                      ? "flex-1 flex flex-col justify-between py-2"
-                      : "pt-3 md:pt-5"
-                  }
+                  className={`bg-[#0d0d1f] rounded-lg overflow-hidden group border border-gray-800 p-3 md:p-3.5 duration-500
+                ${view === "grid" ? "hover:scale-[1.02]" : "flex gap-5"}`}
                 >
-                  <h3 className="text-lg md:text-xl font-bold mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-3 md:mb-4 text-sm">
-                    {project.description}
-                  </p>
+                  {/* Thumbnail */}
+                  <figure
+                    className={
+                      view === "grid"
+                        ? "h-[210px] md:h-[230px] 2xl:h-[250px] flex items-center justify-center rounded-lg"
+                        : "w-80 h-[250px] flex items-center justify-center rounded-lg"
+                    }
+                  >
+                    <Image
+                      src={project?.thumbnail as any}
+                      alt="project_img"
+                      className="w-full h-full object-fit rounded-lg"
+                    />
+                  </figure>
 
-                  <h5 className="mb-2">Tech stack:</h5>
+                  {/* Content */}
+                  <div
+                    className={
+                      view === "list"
+                        ? "flex-1 flex flex-col justify-between py-2"
+                        : "pt-3 md:pt-5"
+                    }
+                  >
+                    <h3 className="text-lg md:text-xl font-bold mb-2">
+                      {project.title}
+                    </h3>
+                    <p className="text-muted-foreground mb-3 md:mb-4 text-sm">
+                      {project.description}
+                    </p>
 
-                  <div className="flex flex-wrap gap-1.5 mb-4">
-                    {project.technologies.map(tech => (
-                      <div
-                        key={tech.name}
-                        className="text-xs md:text-[13px] px-2 2xl:px-3 py-1 bg-gray-800 rounded border border-gray-700 flex gap-1 items-center"
+                    <h5 className="mb-2">Tech stack:</h5>
+
+                    <div className="flex flex-wrap gap-1.5 mb-4">
+                      {project.technologies.map(tech => (
+                        <div
+                          key={tech.name}
+                          className="text-xs md:text-[13px] px-2 2xl:px-3 py-1 bg-gray-800 rounded border border-gray-700 flex gap-1 items-center"
+                        >
+                          <Image
+                            src={tech.icon}
+                            alt="logo"
+                            className="size-4"
+                          />
+                          {tech.name}
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="flex gap-4 mt-auto">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${
+                          view === "grid" && "flex-1"
+                        } py-2 bg-gray-700 flex gap-1.5 items-center rounded text-center justify-center text-sm px-4`}
                       >
-                        <Image src={tech.icon} alt="logo" className="size-4" />
-                        {tech.name}
-                      </div>
-                    ))}
-                  </div>
+                        <Github className="size-4" />
+                        GitHub
+                      </a>
 
-                  <div className="flex gap-4 mt-auto">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`${
-                        view === "grid" && "flex-1"
-                      } py-2 bg-gray-700 flex gap-1.5 items-center rounded text-center justify-center text-sm px-4`}
-                    >
-                      <Github className="size-4" />
-                      GitHub
-                    </a>
-
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`${
-                        view === "grid" && "flex-1"
-                      } py-2 bg-blue-500 flex gap-1.5 items-center rounded text-center justify-center text-sm px-4`}
-                    >
-                      <ExternalLink className="size-4" />
-                      Live Demo
-                    </a>
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${
+                          view === "grid" && "flex-1"
+                        } py-2 bg-blue-500 flex gap-1.5 items-center rounded text-center justify-center text-sm px-4`}
+                      >
+                        <ExternalLink className="size-4" />
+                        Live Demo
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

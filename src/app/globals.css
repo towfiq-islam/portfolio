@@ -3,6 +3,7 @@
 @theme {
   --font-roboto: var(--font-roboto);
   --font-macondo: var(--font-macondo);
+  --color-primary-blue: var(--color-blue-500)
 }
 
 html {
