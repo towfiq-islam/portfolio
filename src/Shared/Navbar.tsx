@@ -68,11 +68,7 @@ const Navbar = () => {
         <div className="backdrop-blur-3xl bg-black/10 border-2 border-blue-500 rounded-full px-3.5 md:px-4 py-2 md:py-3 xl:px-4 2xl:px-5 xl:py-3.5 2xl:py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link
-              href="/"
-              id="home"
-              className="flex gap-2 items-center shrink-0"
-            >
+            <Link href="/" className="flex gap-2 items-center shrink-0">
               <p className="w-10 h-9 rounded-xl bg-blue-500 grid place-items-center text-white">
                 <CodeXml />
               </p>
@@ -139,7 +135,6 @@ const Navbar = () => {
         {/* Logo */}
         <Link
           href="/"
-          id="home"
           className="flex gap-3 justify-center items-center border-b border-blue-500 pb-5 mb-5"
         >
           <p className="w-11 h-10 rounded-xl bg-blue-500 grid place-items-center text-white">
