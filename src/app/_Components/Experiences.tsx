@@ -54,7 +54,7 @@ const EditorialExperience = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-gray-300 text-sm md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
+            className="text-gray-300 text-[15px] md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
           >
             I have hands-on experience developing real-world web applications,
             collaborating with teams, and delivering scalable solutions that
@@ -107,8 +107,8 @@ const EditorialExperience = () => {
 
                 {/* Right Column - Achievements & Skills */}
                 <div
-                  data-aos="fade-up"
-                  data-aos-delay="500"
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
                   className="lg:col-span-7 space-y-10"
                 >
                   {/* Achievements Card */}

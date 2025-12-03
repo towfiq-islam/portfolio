@@ -145,13 +145,13 @@ const Projects = () => {
               className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
             >
               My <span className="text-blue-500">Projects</span>
-              <div className="w-20 md:w-22 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2.5"></div>
+              <div className="w-16 md:w-22 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2.5"></div>
             </h2>
 
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-gray-300 text-sm md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
+              className="text-gray-300 text-[15px] md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
             >
               Explore the projects I’ve built using modern technologies,
               showcasing my expertise in front-end development, UI

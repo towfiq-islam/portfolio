@@ -146,7 +146,7 @@ const Skills = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-gray-300 text-sm md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
+            className="text-gray-300 text-[15px] md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
           >
             I specialize in modern web development, crafting dynamic,
             responsive, and visually engaging applications that deliver seamless

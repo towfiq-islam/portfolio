@@ -22,7 +22,7 @@ const Contact = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      setLoading(true); // start loader
+      setLoading(true);
       const res = await fetch("https://formspree.io/f/xlddongn", {
         method: "POST",
         headers: {
@@ -43,7 +43,7 @@ const Contact = () => {
     } catch (error) {
       toast.error("Something went wrong!");
     } finally {
-      setLoading(false); // stop loader
+      setLoading(false);
     }
   };
 
@@ -56,13 +56,13 @@ const Contact = () => {
             className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
           >
             Get In <span className="text-blue-500">Touch</span>
-            <div className="w-20 md:w-24 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2"></div>
+            <div className="w-16 md:w-24 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2"></div>
           </h2>
 
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-gray-300 text-sm md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
+            className="text-gray-300 text-[15px] md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
           >
             Let’s connect and bring your ideas to life through thoughtful design
             and clean development. I’m here to collaborate and help you build
@@ -72,7 +72,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 md:gap-10 mt-10">
           {/* LEFT SIDE — Contact Info */}
-          <div className="space-y-3.5 md:space-y-5">
+          <div className="space-y-3 md:space-y-5">
             <h3
               data-aos="fade-up"
               data-aos-delay="100"
@@ -83,7 +83,7 @@ const Contact = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-gray-300 text-sm md:text-base 2xl:text-lg leading-relaxed -mt-1.5 pb-3 md:pb-4 2xl:pb-6"
+              className="text-gray-300 text-sm md:text-base 2xl:text-lg leading-relaxed  pb-3 md:pb-4 2xl:pb-6"
             >
               I'm always interested in hearing about new projects and
               opportunities. Whether you have a question or just want to say hi,
@@ -138,7 +138,7 @@ const Contact = () => {
 
           {/* RIGHT SIDE — Form */}
           <div
-            data-aos="fade-up"
+            data-aos="zoom-in"
             data-aos-delay="300"
             className="bg-[#0d0d1f] border border-[#1b1d27] rounded-lg md:rounded-xl p-4 md:p-5 xl:p-7 2xl:p-8"
           >
