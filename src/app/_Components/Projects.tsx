@@ -132,7 +132,7 @@ const Projects = () => {
   }, [view]);
 
   return (
-    <section id="projects" className="pt-14 md:pt-28">
+    <section id="projects" className="pt-18 md:pt-28">
       <div className="container">
         <div
           className={`${

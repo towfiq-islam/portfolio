@@ -25,7 +25,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="pt-14 md:pt-28">
+    <section id="services" className="pt-18 md:pt-28">
       <div className="container">
         <div className="mb-8 md:mb-12 space-y-4 md:space-y-5 text-center">
           <h2

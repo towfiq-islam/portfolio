@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="pt-14 md:pt-28 pb-16">
+    <section id="contact" className="pt-18 md:pt-28 pb-8 md:pb-16">
       <div className="container">
         <div className="mb-8 md:mb-12 space-y-4 md:space-y-5 text-center">
           <h2
