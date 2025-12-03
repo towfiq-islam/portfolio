@@ -72,7 +72,7 @@ const EditorialExperience = () => {
               {/* Grid Layout */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12">
                 {/* Left Column - Role & Company */}
-                <div data-aos="fade-right" className="lg:col-span-5 space-y-6">
+                <div data-aos="fade-up" className="lg:col-span-5 space-y-6">
                   <div className="relative">
                     <div className="md:pt-4">
                       <h2 className="text-2xl md:text-[33px] xl:text-4xl 2xl:text-5xl font-display font-bold leading-tight mb-2 md:mb-3 group-hover:translate-x-2 transition-transform duration-500">
@@ -106,7 +106,11 @@ const EditorialExperience = () => {
                 </div>
 
                 {/* Right Column - Achievements & Skills */}
-                <div data-aos="fade-left" className="lg:col-span-7 space-y-10">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                  className="lg:col-span-7 space-y-10"
+                >
                   {/* Achievements Card */}
                   <div className="border rounded-lg p-4 md:p-6 2xl:p-8 shadow-soft hover:shadow-elevated transition-all duration-500 group-hover:border-accent/30">
                     <h3 className="text-lg md:text-xl font-display font-bold mb-4 md:mb-6 flex items-center gap-3">

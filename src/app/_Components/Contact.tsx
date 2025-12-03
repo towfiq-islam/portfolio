@@ -138,7 +138,8 @@ const Contact = () => {
 
           {/* RIGHT SIDE — Form */}
           <div
-            data-aos="fade-left"
+            data-aos="fade-up"
+            data-aos-delay="300"
             className="bg-[#0d0d1f] border border-[#1b1d27] rounded-lg md:rounded-xl p-4 md:p-5 xl:p-7 2xl:p-8"
           >
             <form
