@@ -3,22 +3,22 @@ import { Code2, Palette, Database, MonitorCog } from "lucide-react";
 export default function Services() {
   const services = [
     {
-      icon: <Code2 className="size-10 text-blue-500" />,
+      icon: <Code2 className="size-10 text-primary" />,
       title: "Web Development",
       desc: "Building responsive and performant web applications using modern frameworks and best practices.",
     },
     {
-      icon: <Palette className="size-10 text-blue-500" />,
+      icon: <Palette className="size-10 text-primary" />,
       title: "UI/UX Design",
       desc: "Creating intuitive and beautiful user interfaces that provide exceptional user experiences.",
     },
     {
-      icon: <Database className="size-10 text-blue-500" />,
+      icon: <Database className="size-10 text-primary" />,
       title: "Full Stack Solutions",
       desc: "End-to-end development services from concept to deployment and maintenance.",
     },
     {
-      icon: <MonitorCog className="size-10 text-blue-500" />,
+      icon: <MonitorCog className="size-10 text-primary" />,
       title: "Performance Optimization",
       desc: "Optimizing applications for speed, efficiency, and scalability to enhance user satisfaction.",
     },
@@ -32,8 +32,8 @@ export default function Services() {
             data-aos="fade-up"
             className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
           >
-            My <span className="text-blue-500">Services</span>
-            <div className="w-16 md:w-24 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2.5"></div>
+            My <span className="text-primary">Services</span>
+            <div className="w-16 md:w-24 h-1 rounded bg-primary mx-auto mt-1 2xl:mt-2.5"></div>
           </h2>
 
           <p
@@ -50,8 +50,8 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-5 2xl:gap-6">
           {services.map((s, i) => (
             <div key={i} data-aos="zoom-in" data-aos-delay={i * 300}>
-              <div className="bg-[#0d0d1f] p-5 md:p-5.5 2xl:p-8 rounded-2xl shadow hover:shadow-blue-500 transition-shadow duration-300 border border-transparent hover:border-blue-500">
-                <div className="mb-4 2xl:mb-6 size-14 flex items-center justify-center rounded-xl bg-[#0a0a18] border border-blue-500">
+              <div className="bg-[#0d0d1f] p-5 md:p-5.5 2xl:p-8 rounded-2xl shadow hover:shadow-primary transition-shadow duration-300 border border-transparent hover:border-primary">
+                <div className="mb-4 2xl:mb-6 size-14 flex items-center justify-center rounded-xl bg-[#0a0a18] border border-primary">
                   {s.icon}
                 </div>
                 <h3 className="text-lg md:text-xl 2xl:text-2xl font-semibold mb-2 md:mb-3 truncate">

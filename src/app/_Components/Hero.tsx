@@ -40,8 +40,8 @@ const Hero = () => {
                   autoStart: true,
                   loop: true,
                   deleteSpeed: 60,
-                  wrapperClassName: "text-blue-500",
-                  cursorClassName: "text-blue-500",
+                  wrapperClassName: "text-primary",
+                  cursorClassName: "text-primary",
                 }}
               />
             </h2>
@@ -63,7 +63,7 @@ const Hero = () => {
                 data-aos-delay="100"
                 href="https://drive.google.com/file/d/1MKQIIqIQ2ulY3L40lsHtjxHZ70PMf5zq/view?usp=sharing"
                 target="_blank"
-                className="relative overflow-hidden px-4 md:px-5 py-1 md:py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0"
+                className="relative overflow-hidden px-4 md:px-5 py-1 md:py-1.5 rounded-full border border-primary text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-primary before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0"
               >
                 Resume
               </a>
@@ -72,7 +72,7 @@ const Hero = () => {
                 data-aos="fade-up"
                 data-aos-delay="300"
                 href="#contact"
-                className="relative overflow-hidden px-4 md:px-5 py-1 md:py-1.5 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-full"
+                className="relative overflow-hidden px-4 md:px-5 py-1 md:py-1.5 rounded-full border border-primary text-white before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-primary before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-full"
               >
                 Contact Me
               </a>
@@ -83,7 +83,7 @@ const Hero = () => {
                   href="https://www.facebook.com/towfiqislambd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="size-9 md:size-10 xl:size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                  className="size-9 md:size-10 xl:size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-primary  hover:text-white hover:border-primary duration-500 transition-all hover:rotate-[360deg]"
                 >
                   <FaFacebookF className="md:text-lg" />
                 </a>
@@ -94,7 +94,7 @@ const Hero = () => {
                   href="https://www.linkedin.com/in/towfiqislambd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="size-9 md:size-10 xl:size-12 rounded-full border-2 border-primary grid place-items-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                  className="size-9 md:size-10 xl:size-12 rounded-full border-2 border-primary grid place-items-center hover:bg-primary text-primary hover:text-white hover:border-primary duration-500 transition-all hover:rotate-[360deg]"
                 >
                   <FaLinkedinIn className="md:text-lg" />
                 </a>
@@ -105,7 +105,7 @@ const Hero = () => {
                   href="https://github.com/towfiqislambd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="size-9 md:size-10 xl:size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 duration-500 transition-all hover:rotate-[360deg]"
+                  className="size-9 md:size-10 xl:size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-primary hover:text-white hover:border-primary duration-500 transition-all hover:rotate-[360deg]"
                 >
                   <PiGithubLogoBold className="md:text-lg" />
                 </a>

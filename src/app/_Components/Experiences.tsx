@@ -47,8 +47,8 @@ const EditorialExperience = () => {
             data-aos="fade-up"
             className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
           >
-            My <span className="text-blue-500">Experience</span>
-            <div className="w-20 md:w-24 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2.5"></div>
+            My <span className="text-primary">Experience</span>
+            <div className="w-20 md:w-24 h-1 rounded bg-primary mx-auto mt-1 2xl:mt-2.5"></div>
           </h2>
 
           <p

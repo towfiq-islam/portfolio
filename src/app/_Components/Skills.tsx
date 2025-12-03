@@ -97,14 +97,14 @@ const Skills = () => {
   ];
 
   const Card = ({ icon: Icon, title, items }: CardProps) => (
-    <div className="bg-[#0d0d1f] border border-blue-500 rounded-xl p-4 2xl:p-6 shadow-lg">
+    <div className="bg-[#0d0d1f] border border-primary rounded-xl p-4 2xl:p-6 shadow-lg">
       <div
         data-aos="fade-up"
         data-aos-delay="100"
         className="flex items-center gap-3 mb-5 md:mb-6"
       >
         <div className="bg-[#1f2937] p-3 rounded-lg">
-          <Icon className="text-sky-500 size-[20px] md:size-[28px]" />
+          <Icon className="text-secondary size-[20px] md:size-[28px]" />
         </div>
         <h3 className="text-xl md:text-[22px] xl:text-2xl font-semibold text-white">
           {title}
@@ -139,8 +139,8 @@ const Skills = () => {
             data-aos="fade-up"
             className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
           >
-            My <span className="text-blue-500">Skills</span>
-            <div className="w-14 md:w-18 h-1 rounded bg-blue-500 mx-auto mt-1.5 2xl:mt-2.5"></div>
+            My <span className="text-primary">Skills</span>
+            <div className="w-14 md:w-18 h-1 rounded bg-primary mx-auto mt-1.5 2xl:mt-2.5"></div>
           </h2>
 
           <p

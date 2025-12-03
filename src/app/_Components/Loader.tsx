@@ -12,7 +12,7 @@ const Loader = () => {
     <div>
       {loading && (
         <div className="fixed inset-0 bg-[#000014] flex items-center justify-center z-[9999]">
-          <div className="animate-spin rounded-full size-14 lg:size-16 xl:size-20 border-t-4 border-blue-500 border-solid" />
+          <div className="animate-spin rounded-full size-14 lg:size-16 xl:size-20 border-t-4 border-primary border-solid" />
         </div>
       )}
     </div>

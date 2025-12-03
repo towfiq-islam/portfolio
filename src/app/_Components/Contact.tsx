@@ -55,8 +55,8 @@ const Contact = () => {
             data-aos="fade-up"
             className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
           >
-            Get In <span className="text-blue-500">Touch</span>
-            <div className="w-16 md:w-24 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2"></div>
+            Get In <span className="text-primary">Touch</span>
+            <div className="w-16 md:w-24 h-1 rounded bg-primary mx-auto mt-1 2xl:mt-2"></div>
           </h2>
 
           <p
@@ -153,7 +153,7 @@ const Contact = () => {
                   placeholder="Your name"
                   className={`w-full text-[15px] md:text-base px-3 md:px-4 py-2 md:py-3 rounded-lg bg-[#0B0D15] border ${
                     errors.name ? "border-red-500" : "border-[#1b1d27]"
-                  } text-white outline-none focus:border-blue-500`}
+                  } text-white outline-none focus:border-primary`}
                   {...register("name", { required: "Name is required" })}
                 />
                 {errors.name && (
@@ -170,7 +170,7 @@ const Contact = () => {
                   placeholder="your.email@example.com"
                   className={`w-full text-[15px] md:text-base px-3 md:px-4 py-2 md:py-3 rounded-lg bg-[#0B0D15] border ${
                     errors.email ? "border-red-500" : "border-[#1b1d27]"
-                  } text-white outline-none focus:border-blue-500`}
+                  } text-white outline-none focus:border-primary`}
                   {...register("email", {
                     required: "Email is required",
                     pattern: {
@@ -192,7 +192,7 @@ const Contact = () => {
                   placeholder="Your message..."
                   className={`w-full text-[15px] md:text-base px-3 md:px-4 py-2 md:py-3 rounded-lg bg-[#0B0D15] border ${
                     errors.message ? "border-red-500" : "border-[#1b1d27]"
-                  } text-white outline-none min-h-[150px] focus:border-blue-500`}
+                  } text-white outline-none min-h-[150px] focus:border-primary`}
                   {...register("message", { required: "Message is required" })}
                 ></textarea>
                 {errors.message && (
@@ -205,7 +205,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting || loading}
-                className="w-full bg-blue-500 py-2.5 md:py-3 rounded-lg font-semibold hover:bg-blue-600 transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-[15px] md:text-base"
+                className="w-full bg-primary py-2.5 md:py-3 rounded-lg font-semibold hover:bg-primary transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-[15px] md:text-base"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>

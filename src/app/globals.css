@@ -3,7 +3,8 @@
 @theme {
   --font-roboto: var(--font-roboto);
   --font-macondo: var(--font-macondo);
-  --color-primary-blue: var(--color-blue-500)
+  --color-primary: var(--color-blue-500);
+  --color-secondary: var(--color-sky-500);
 }
 
 html {
@@ -17,4 +18,3 @@ body {
 .container {
   @apply max-w-[1680px] px-4 md:px-7 lg:px-10 xl:px-16 2xl:px-20 mx-auto;
 }
-

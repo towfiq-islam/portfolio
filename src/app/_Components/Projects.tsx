@@ -144,8 +144,8 @@ const Projects = () => {
               data-aos="fade-up"
               className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
             >
-              My <span className="text-blue-500">Projects</span>
-              <div className="w-16 md:w-22 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2.5"></div>
+              My <span className="text-primary">Projects</span>
+              <div className="w-16 md:w-22 h-1 rounded bg-primary mx-auto mt-1 2xl:mt-2.5"></div>
             </h2>
 
             <p
@@ -168,7 +168,7 @@ const Projects = () => {
               className={`cursor-pointer px-4 py-2 rounded flex items-center gap-2 border transition 
             ${
               view === "grid"
-                ? "bg-blue-600 border-blue-500"
+                ? "bg-primary border-primary"
                 : "bg-gray-800 border-gray-700"
             }`}
             >
@@ -183,7 +183,7 @@ const Projects = () => {
               className={`cursor-pointer px-4 py-2 rounded flex items-center gap-2 border transition 
             ${
               view === "list"
-                ? "bg-blue-600 border-blue-500"
+                ? "bg-primary border-primary"
                 : "bg-gray-800 border-gray-700"
             }`}
             >
@@ -277,7 +277,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className={`${
                           view === "grid" && "flex-1"
-                        } py-2 bg-blue-500 flex gap-1.5 items-center rounded text-center justify-center text-sm px-4`}
+                        } py-2 bg-primary flex gap-1.5 items-center rounded text-center justify-center text-sm px-4`}
                       >
                         <ExternalLink className="size-4" />
                         Live Demo

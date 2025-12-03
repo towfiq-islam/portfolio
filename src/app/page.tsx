@@ -23,7 +23,7 @@ const Page = () => {
         component={
           <MdKeyboardDoubleArrowUp className="text-[22px] md:text-2xl xl:text-3xl" />
         }
-        className="!right-5 xl:!right-10 !bottom-5 xl:!bottom-10 !bg-blue-500 grid place-items-center !size-9.5 md:!size-10 xl:!size-12 !text-accent-white"
+        className="!right-5 xl:!right-10 !bottom-5 xl:!bottom-10 !bg-primary grid place-items-center !size-9.5 md:!size-10 xl:!size-12 !text-accent-white"
       />
     </>
   );

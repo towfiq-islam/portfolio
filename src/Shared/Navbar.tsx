@@ -65,15 +65,15 @@ const Navbar = () => {
   return (
     <>
       <nav data-aos="zoom-in" className="container sticky top-3 lg:top-5 z-50">
-        <div className="backdrop-blur-3xl bg-black/30 border-2 border-blue-500 rounded-full px-3.5 md:px-4 py-2 md:py-3 xl:px-4 2xl:px-5 xl:py-3.5 2xl:py-4">
+        <div className="backdrop-blur-3xl bg-black/30 border-2 border-primary rounded-full px-3.5 md:px-4 py-2 md:py-3 xl:px-4 2xl:px-5 xl:py-3.5 2xl:py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex gap-2 items-center shrink-0">
-              <p className="w-10 h-9 rounded-xl bg-blue-500 grid place-items-center text-white">
+              <p className="w-10 h-9 rounded-xl bg-primary grid place-items-center text-white">
                 <CodeXml />
               </p>
               <p className="text-xl md:text-2xl font-black text-white font-macondo">
-                Tow<span className="text-blue-500">fiq</span>
+                Tow<span className="text-primary">fiq</span>
               </p>
             </Link>
 
@@ -89,8 +89,8 @@ const Navbar = () => {
                   }}
                   className={`font-semibold rounded-full px-3 2xl:px-4 py-1.5 flex gap-2 items-center text-sm 2xl:text-[15px] duration-300 ${
                     activeSection === item.id
-                      ? "text-sky-500 bg-gray-900"
-                      : "text-white hover:bg-gray-900 hover:text-sky-500"
+                      ? "text-secondary bg-gray-900"
+                      : "text-white hover:bg-gray-900 hover:text-secondary"
                   }`}
                 >
                   {item.icon}
@@ -100,7 +100,7 @@ const Navbar = () => {
 
               <a
                 href="/resume_of_towfiq_islam.pdf"
-                className="px-3.5 xl:px-4 py-1.5 xl:py-2 rounded-full border border-blue-500 text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-blue-500 before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0 relative overflow-hidden flex gap-1 items-center"
+                className="px-3.5 xl:px-4 py-1.5 xl:py-2 rounded-full border border-primary text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-primary before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0 relative overflow-hidden flex gap-1 items-center"
                 download
               >
                 Resume <MdOutlineFileDownload className="text-lg" />
@@ -110,7 +110,7 @@ const Navbar = () => {
             {/* Hamburger btn */}
             <button
               onClick={() => setOpen(!isOpen)}
-              className="size-8 rounded lg:hidden grid place-items-center bg-blue-500 text-lg md:text-xl text-white cursor-pointer"
+              className="size-8 rounded lg:hidden grid place-items-center bg-primary text-lg md:text-xl text-white cursor-pointer"
             >
               <FaBars />
             </button>
@@ -136,13 +136,13 @@ const Navbar = () => {
         <Link
           href="/"
           onClick={() => setOpen(false)}
-          className="flex gap-3 justify-center items-center border-b border-blue-500 pb-5 mb-5"
+          className="flex gap-3 justify-center items-center border-b border-primary pb-5 mb-5"
         >
-          <p className="w-11 h-10 rounded-xl bg-blue-500 grid place-items-center text-white">
+          <p className="w-11 h-10 rounded-xl bg-primary grid place-items-center text-white">
             <CodeXml />
           </p>
           <p className="text-[26px] font-black text-white font-macondo">
-            Tow<span className="text-blue-500">fiq</span>
+            Tow<span className="text-primary">fiq</span>
           </p>
         </Link>
 
@@ -159,8 +159,8 @@ const Navbar = () => {
               }}
               className={`font-semibold rounded-full px-4 py-2 flex gap-2 items-center text-sm duration-300 ${
                 activeSection === item.id
-                  ? "text-sky-500 bg-gray-900"
-                  : "text-white hover:bg-gray-900 hover:text-sky-500"
+                  ? "text-secondary bg-gray-900"
+                  : "text-white hover:bg-gray-900 hover:text-secondary"
               }`}
             >
               {item.icon}
@@ -172,7 +172,7 @@ const Navbar = () => {
             download
             onClick={() => setOpen(false)}
             href="/resume_of_towfiq_islam.pdf"
-            className="px-3 py-2.5 rounded-full bg-blue-500 text-sm font-medium text-white flex gap-1 items-center justify-center cursor-pointer mt-5"
+            className="px-3 py-2.5 rounded-full bg-primary text-sm font-medium text-white flex gap-1 items-center justify-center cursor-pointer mt-5"
           >
             Resume <MdOutlineFileDownload className="text-lg" />
           </a>

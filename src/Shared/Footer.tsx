@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container">
         <p>
           Copyright © 2025 - All right reserved by{" "}
-          <span className="text-blue-500">Towfiq Islam</span>
+          <span className="text-primary">Towfiq Islam</span>
         </p>
       </div>
     </footer>
