@@ -140,12 +140,12 @@ const Navbar = () => {
         <Link
           href="/"
           id="home"
-          className="flex gap-2 justify-center items-center mb-10"
+          className="flex gap-3 justify-center items-center border-b border-blue-500 pb-5 mb-5"
         >
-          <p className="w-10 h-9 rounded-xl bg-blue-500 grid place-items-center text-white">
+          <p className="w-11 h-10 rounded-xl bg-blue-500 grid place-items-center text-white">
             <CodeXml />
           </p>
-          <p className="text-2xl font-black text-white font-macondo">
+          <p className="text-[26px] font-black text-white font-macondo">
             Tow<span className="text-blue-500">fiq</span>
           </p>
         </Link>
