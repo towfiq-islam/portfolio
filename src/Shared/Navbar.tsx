@@ -135,6 +135,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link
           href="/"
+          onClick={() => setOpen(false)}
           className="flex gap-3 justify-center items-center border-b border-blue-500 pb-5 mb-5"
         >
           <p className="w-11 h-10 rounded-xl bg-blue-500 grid place-items-center text-white">
