@@ -97,7 +97,7 @@ const Skills = () => {
   ];
 
   const Card = ({ icon: Icon, title, items }: CardProps) => (
-    <div className="bg-[#0d0d1f] border border-blue-500 rounded-xl p-5 2xl:p-6 shadow-lg">
+    <div className="bg-[#0d0d1f] border border-blue-500 rounded-xl p-4 2xl:p-6 shadow-lg">
       <div
         data-aos="fade-up"
         data-aos-delay="100"

@@ -65,7 +65,7 @@ const Navbar = () => {
   return (
     <>
       <nav data-aos="zoom-in" className="container sticky top-3 lg:top-5 z-50">
-        <div className="backdrop-blur-3xl border-2 border-blue-500 rounded-full px-3.5 md:px-4 py-2 md:py-3 xl:px-4 2xl:px-5 xl:py-3.5 2xl:py-4">
+        <div className="backdrop-blur-3xl bg-black/10 border-2 border-blue-500 rounded-full px-3.5 md:px-4 py-2 md:py-3 xl:px-4 2xl:px-5 xl:py-3.5 2xl:py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link
@@ -114,7 +114,7 @@ const Navbar = () => {
             {/* Hamburger btn */}
             <button
               onClick={() => setOpen(!isOpen)}
-              className="size-7.5 md:size-8 rounded lg:hidden grid place-items-center bg-blue-500 text-lg md:text-xl text-white cursor-pointer"
+              className="size-8 rounded lg:hidden grid place-items-center bg-blue-500 text-lg md:text-xl text-white cursor-pointer"
             >
               <FaBars />
             </button>
@@ -134,7 +134,7 @@ const Navbar = () => {
       <div
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } duration-500 transition-transform fixed top-0 z-[9999] left-0 bg-[#000014] px-5 py-7 shadow-lg overflow-y-auto border-r border-blue-700 max-h-screen min-h-screen w-[250px] lg:hidden`}
+        } duration-500 transition-transform fixed top-0 z-[9999] left-0 bg-[#000014] px-5 py-7 shadow-lg overflow-y-auto border-r border-gray-800 max-h-screen min-h-screen w-[250px] lg:hidden`}
       >
         {/* Logo */}
         <Link
@@ -145,7 +145,7 @@ const Navbar = () => {
           <p className="w-10 h-9 rounded-xl bg-blue-500 grid place-items-center text-white">
             <CodeXml />
           </p>
-          <p className="text-xl md:text-2xl font-black text-white font-macondo">
+          <p className="text-2xl font-black text-white font-macondo">
             Tow<span className="text-blue-500">fiq</span>
           </p>
         </Link>
@@ -173,9 +173,10 @@ const Navbar = () => {
           ))}
 
           <a
+            download
+            onClick={() => setOpen(false)}
             href="/resume_of_towfiq_islam.pdf"
             className="px-3 py-2.5 rounded-full bg-blue-500 text-sm font-medium text-white flex gap-1 items-center justify-center cursor-pointer mt-5"
-            download
           >
             Resume <MdOutlineFileDownload className="text-lg" />
           </a>

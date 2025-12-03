@@ -70,9 +70,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 md:gap-10 mt-10">
           {/* LEFT SIDE — Contact Info */}
-          <div className="space-y-5">
+          <div className="space-y-3.5 md:space-y-5">
             <h3
               data-aos="fade-up"
               data-aos-delay="100"
@@ -83,7 +83,7 @@ const Contact = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-gray-300 2xl:text-lg leading-relaxed -mt-1.5 pb-4 2xl:pb-6"
+              className="text-gray-300 text-sm md:text-base 2xl:text-lg leading-relaxed -mt-1.5 pb-3 md:pb-4 2xl:pb-6"
             >
               I'm always interested in hearing about new projects and
               opportunities. Whether you have a question or just want to say hi,
@@ -94,10 +94,10 @@ const Contact = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="100"
-              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-4 2xl:p-6 flex items-center gap-4"
+              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-lg md:rounded-xl p-3 md:p-4 2xl:p-6 flex items-center gap-3 md:gap-4"
             >
-              <div className="size-12 bg-gray-700 rounded-xl flex items-center justify-center">
-                <Mail />
+              <div className="size-11 md:size-12 bg-gray-700 rounded-lg md:rounded-xl flex items-center justify-center">
+                <Mail className="size-5 md:size-6" />
               </div>
               <div>
                 <p className="text-gray-400 text-sm">Email</p>
@@ -109,10 +109,10 @@ const Contact = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="200"
-              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-4 2xl:p-6 flex items-center gap-4"
+              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-lg md:rounded-xl p-3 md:p-4 2xl:p-6 flex items-center gap-3 md:gap-4"
             >
-              <div className="size-12 bg-gray-700 rounded-xl flex items-center justify-center">
-                <Phone />
+              <div className="size-11 md:size-12 bg-gray-700 rounded-lg md:rounded-xl flex items-center justify-center">
+                <Phone className="size-5 md:size-6" />
               </div>
               <div>
                 <p className="text-gray-400 text-sm">Phone</p>
@@ -124,10 +124,10 @@ const Contact = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="300"
-              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-4 2xl:p-6 flex items-center gap-4"
+              className="bg-[#0d0d1f] border border-[#1b1d27] rounded-lg md:rounded-xl p-3 md:p-4 2xl:p-6 flex items-center gap-3 md:gap-4"
             >
-              <div className="size-12 bg-gray-700 rounded-xl flex items-center justify-center">
-                <MapPin />
+              <div className="size-11 md:size-12 bg-gray-700 rounded-lg md:rounded-xl flex items-center justify-center">
+                <MapPin className="size-5 md:size-6" />
               </div>
               <div>
                 <p className="text-gray-400 text-sm">Location</p>
@@ -139,7 +139,7 @@ const Contact = () => {
           {/* RIGHT SIDE — Form */}
           <div
             data-aos="fade-left"
-            className="bg-[#0d0d1f] border border-[#1b1d27] rounded-xl p-5 xl:p-7 2xl:p-8"
+            className="bg-[#0d0d1f] border border-[#1b1d27] rounded-lg md:rounded-xl p-4 md:p-5 xl:p-7 2xl:p-8"
           >
             <form
               onSubmit={handleSubmit(onSubmit)}
@@ -150,7 +150,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Your name"
-                  className={`w-full px-4 py-3 rounded-lg bg-[#0B0D15] border ${
+                  className={`w-full text-[15px] md:text-base px-3 md:px-4 py-2 md:py-3 rounded-lg bg-[#0B0D15] border ${
                     errors.name ? "border-red-500" : "border-[#1b1d27]"
                   } text-white outline-none focus:border-blue-500`}
                   {...register("name", { required: "Name is required" })}
@@ -167,7 +167,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="your.email@example.com"
-                  className={`w-full px-4 py-3 rounded-lg bg-[#0B0D15] border ${
+                  className={`w-full text-[15px] md:text-base px-3 md:px-4 py-2 md:py-3 rounded-lg bg-[#0B0D15] border ${
                     errors.email ? "border-red-500" : "border-[#1b1d27]"
                   } text-white outline-none focus:border-blue-500`}
                   {...register("email", {
@@ -189,7 +189,7 @@ const Contact = () => {
                 <label className="text-sm mb-1 block">Message</label>
                 <textarea
                   placeholder="Your message..."
-                  className={`w-full px-4 py-3 rounded-lg bg-[#0B0D15] border ${
+                  className={`w-full text-[15px] md:text-base px-3 md:px-4 py-2 md:py-3 rounded-lg bg-[#0B0D15] border ${
                     errors.message ? "border-red-500" : "border-[#1b1d27]"
                   } text-white outline-none min-h-[150px] focus:border-blue-500`}
                   {...register("message", { required: "Message is required" })}
@@ -204,7 +204,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting || loading}
-                className="w-full bg-blue-500 py-3 rounded-lg font-semibold hover:bg-blue-600 transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-blue-500 py-2.5 md:py-3 rounded-lg font-semibold hover:bg-blue-600 transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-[15px] md:text-base"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
