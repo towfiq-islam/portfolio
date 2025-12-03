@@ -48,21 +48,21 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="pt-28 pb-16">
+    <section id="contact" className="pt-14 md:pt-28 pb-16">
       <div className="container">
-        <div className="mb-12 space-y-5 text-center">
+        <div className="mb-8 md:mb-12 space-y-4 md:space-y-5 text-center">
           <h2
             data-aos="fade-up"
-            className="text-[32px] 2xl:text-4xl font-bold text-center"
+            className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
           >
             Get In <span className="text-blue-500">Touch</span>
-            <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2"></div>
+            <div className="w-20 md:w-24 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2"></div>
           </h2>
 
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-gray-300 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
+            className="text-gray-300 text-sm md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
           >
             Let’s connect and bring your ideas to life through thoughtful design
             and clean development. I’m here to collaborate and help you build
@@ -76,7 +76,7 @@ const Contact = () => {
             <h3
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-2xl font-semibold"
+              className="text-xl md:text-2xl font-semibold"
             >
               Contact Information
             </h3>

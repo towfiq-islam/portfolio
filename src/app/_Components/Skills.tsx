@@ -101,25 +101,29 @@ const Skills = () => {
       <div
         data-aos="fade-up"
         data-aos-delay="100"
-        className="flex items-center gap-3 mb-6"
+        className="flex items-center gap-3 mb-5 md:mb-6"
       >
         <div className="bg-[#1f2937] p-3 rounded-lg">
-          <Icon className="text-sky-500" size={28} />
+          <Icon className="text-sky-500 size-[20px] md:size-[28px]" />
         </div>
-        <h3 className="text-[22px] xl:text-2xl font-semibold text-white">
+        <h3 className="text-xl md:text-[22px] xl:text-2xl font-semibold text-white">
           {title}
         </h3>
       </div>
 
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-2.5 md:gap-3">
         {items.map((item, index) => (
           <div
             key={item?.name}
             data-aos="fade-up"
             data-aos-delay={index * 150}
-            className="px-3 2xl:px-4 py-1.5 xl:py-2 bg-[#161b22] text-gray-300 text-sm rounded-lg border border-[#1f2937] flex gap-2 items-center"
+            className="px-2.5 md:px-3 2xl:px-4 py-1.5 xl:py-2 bg-[#161b22] text-gray-300 text-sm rounded-lg border border-[#1f2937] flex gap-1.5 md:gap-2 items-center"
           >
-            <Image src={item?.icon} alt="icon" className="size-6 xl:size-7" />
+            <Image
+              src={item?.icon}
+              alt="icon"
+              className="size-5 md:size-6 xl:size-7"
+            />
             {item?.name}
           </div>
         ))}
@@ -128,21 +132,21 @@ const Skills = () => {
   );
 
   return (
-    <section id="skills" className="pt-28">
+    <section id="skills" className="pt-14 md:pt-28">
       <div className="container text-center">
-        <div className="mb-12 space-y-5 text-center">
+        <div className="mb-8 md:mb-12 space-y-4 md:space-y-5 text-center">
           <h2
             data-aos="fade-up"
-            className="text-[32px] 2xl:text-4xl font-bold text-center"
+            className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
           >
             My <span className="text-blue-500">Skills</span>
-            <div className="w-18 h-1 rounded bg-blue-500 mx-auto mt-1.5 2xl:mt-2.5"></div>
+            <div className="w-14 md:w-18 h-1 rounded bg-blue-500 mx-auto mt-1.5 2xl:mt-2.5"></div>
           </h2>
 
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-gray-300 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
+            className="text-gray-300 text-sm md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
           >
             I specialize in modern web development, crafting dynamic,
             responsive, and visually engaging applications that deliver seamless
@@ -150,7 +154,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 2xl:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-5 2xl:gap-8">
           <Card
             icon={Code2}
             title="Frontend Development"

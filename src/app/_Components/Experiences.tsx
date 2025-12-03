@@ -40,21 +40,21 @@ const experiences: Experience[] = [
 
 const EditorialExperience = () => {
   return (
-    <section id="experiences" className="py-12 md:pt-28">
+    <section id="experiences" className="pt-14 md:pt-28">
       <div className="container">
-        <div className="mb-12 space-y-5 text-center">
+        <div className="mb-8 md:mb-12 space-y-4 md:space-y-5 text-center">
           <h2
             data-aos="fade-up"
-            className="text-[32px] 2xl:text-4xl font-bold text-center"
+            className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
           >
             My <span className="text-blue-500">Experience</span>
-            <div className="w-24 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2.5"></div>
+            <div className="w-20 md:w-24 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2.5"></div>
           </h2>
 
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-gray-300 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
+            className="text-gray-300 text-sm md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
           >
             I have hands-on experience developing real-world web applications,
             collaborating with teams, and delivering scalable solutions that
@@ -74,12 +74,12 @@ const EditorialExperience = () => {
                 {/* Left Column - Role & Company */}
                 <div data-aos="fade-right" className="lg:col-span-5 space-y-6">
                   <div className="relative">
-                    <div className="pt-4">
-                      <h2 className="text-[33px] xl:text-4xl 2xl:text-5xl font-display font-bold leading-tight mb-3 group-hover:translate-x-2 transition-transform duration-500">
+                    <div className="md:pt-4">
+                      <h2 className="text-2xl md:text-[33px] xl:text-4xl 2xl:text-5xl font-display font-bold leading-tight mb-2 md:mb-3 group-hover:translate-x-2 transition-transform duration-500">
                         {exp.role}
                       </h2>
 
-                      <div className="flex items-center gap-2 text-accent text-lg font-medium mb-6">
+                      <div className="flex items-center gap-2 text-accent md:text-lg font-medium mb-4 md:mb-6">
                         <span>{exp.company}</span>
                         <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                       </div>
@@ -87,7 +87,7 @@ const EditorialExperience = () => {
                   </div>
 
                   {/* Meta information */}
-                  <div className="space-y-3 text-muted-foreground">
+                  <div className="space-y-2 md:space-y-3 text-muted-foreground">
                     <div className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 mt-0.5 shrink-0" />
                       <span className="font-medium">{exp.period}</span>
@@ -100,7 +100,7 @@ const EditorialExperience = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-foreground/80 leading-relaxed xl:text-lg border-l-2 border-border pl-4 2xl:pl-6">
+                  <p className="text-foreground/80 leading-relaxed text-sm md:text-lg border-l-2 border-border pl-3 md:pl-4 2xl:pl-6">
                     {exp.description}
                   </p>
                 </div>
@@ -108,13 +108,13 @@ const EditorialExperience = () => {
                 {/* Right Column - Achievements & Skills */}
                 <div data-aos="fade-left" className="lg:col-span-7 space-y-10">
                   {/* Achievements Card */}
-                  <div className="border rounded-lg p-6 2xl:p-8 shadow-soft hover:shadow-elevated transition-all duration-500 group-hover:border-accent/30">
-                    <h3 className="text-xl font-display font-bold mb-6 flex items-center gap-3">
+                  <div className="border rounded-lg p-4 md:p-6 2xl:p-8 shadow-soft hover:shadow-elevated transition-all duration-500 group-hover:border-accent/30">
+                    <h3 className="text-lg md:text-xl font-display font-bold mb-4 md:mb-6 flex items-center gap-3">
                       <span className="w-1 h-6 bg-white rounded-full" />
                       Key Achievements
                     </h3>
 
-                    <ul className="space-y-2">
+                    <ul className="text-sm md:text-base space-y-2">
                       {exp.achievements.map((achievement, i) => (
                         <li
                           key={i}

@@ -132,26 +132,26 @@ const Projects = () => {
   }, [view]);
 
   return (
-    <section id="projects" className="pt-28">
+    <section id="projects" className="pt-14 md:pt-28">
       <div className="container">
         <div
           className={`${
             view === "grid" ? "2xl:max-w-7xl" : "xl:max-w-5xl"
           } mx-auto`}
         >
-          <div className="mb-12 space-y-5 text-center">
+          <div className="mb-8 md:mb-12 space-y-4 md:space-y-5 text-center">
             <h2
               data-aos="fade-up"
-              className="text-[32px] 2xl:text-4xl font-bold text-center"
+              className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
             >
               My <span className="text-blue-500">Projects</span>
-              <div className="w-22 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2.5"></div>
+              <div className="w-20 md:w-22 h-1 rounded bg-blue-500 mx-auto mt-1 2xl:mt-2.5"></div>
             </h2>
 
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-gray-300 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
+              className="text-gray-300 text-sm md:text-base 2xl:text-lg max-w-[700px] 2xl:max-w-[800px] mx-auto"
             >
               Explore the projects I’ve built using modern technologies,
               showcasing my expertise in front-end development, UI
@@ -196,7 +196,7 @@ const Projects = () => {
           <div
             className={
               view === "grid"
-                ? "grid md:grid-cols-2 xl:grid-cols-3 gap-5 2xl:gap-6 max-w-7xl mx-auto"
+                ? "grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-5 2xl:gap-6 max-w-7xl mx-auto"
                 : "flex flex-col gap-6 max-w-5xl mx-auto"
             }
           >
@@ -205,14 +205,14 @@ const Projects = () => {
                 key={project.title}
                 data-aos="fade-up"
                 data-aos-delay={index * 250}
-                className={`bg-[#0d0d1f] rounded-lg overflow-hidden group border border-gray-800 p-3.5 duration-500
+                className={`bg-[#0d0d1f] rounded-lg overflow-hidden group border border-gray-800 p-3 md:p-3.5 duration-500
                 ${view === "grid" ? "hover:scale-[1.02]" : "flex gap-5"}`}
               >
                 {/* Thumbnail */}
                 <figure
                   className={
                     view === "grid"
-                      ? "h-[230px] 2xl:h-[250px] flex items-center justify-center rounded-lg"
+                      ? "h-[210px] md:h-[230px] 2xl:h-[250px] flex items-center justify-center rounded-lg"
                       : "w-80 h-[250px] flex items-center justify-center rounded-lg"
                   }
                 >
@@ -228,11 +228,13 @@ const Projects = () => {
                   className={
                     view === "list"
                       ? "flex-1 flex flex-col justify-between py-2"
-                      : "pt-5"
+                      : "pt-3 md:pt-5"
                   }
                 >
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4 text-sm">
+                  <h3 className="text-lg md:text-xl font-bold mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-3 md:mb-4 text-sm">
                     {project.description}
                   </p>
 
@@ -242,9 +244,9 @@ const Projects = () => {
                     {project.technologies.map(tech => (
                       <div
                         key={tech.name}
-                        className="text-[13px] px-2 2xl:px-3 py-1 bg-gray-800 rounded border border-gray-700 flex gap-1 items-center"
+                        className="text-xs md:text-[13px] px-2 2xl:px-3 py-1 bg-gray-800 rounded border border-gray-700 flex gap-1 items-center"
                       >
-                        <Image src={tech.icon} alt="logo" className="w-4 h-4" />
+                        <Image src={tech.icon} alt="logo" className="size-4" />
                         {tech.name}
                       </div>
                     ))}
@@ -259,7 +261,7 @@ const Projects = () => {
                         view === "grid" && "flex-1"
                       } py-2 bg-gray-700 flex gap-1.5 items-center rounded text-center justify-center text-sm px-4`}
                     >
-                      <Github className="w-4 h-4" />
+                      <Github className="size-4" />
                       GitHub
                     </a>
 
@@ -271,7 +273,7 @@ const Projects = () => {
                         view === "grid" && "flex-1"
                       } py-2 bg-blue-500 flex gap-1.5 items-center rounded text-center justify-center text-sm px-4`}
                     >
-                      <ExternalLink className="w-4 h-4" />
+                      <ExternalLink className="size-4" />
                       Live Demo
                     </a>
                   </div>

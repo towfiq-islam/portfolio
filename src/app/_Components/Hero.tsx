@@ -19,10 +19,10 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="lg:min-h-screen flex items-center pt-14 md:pt-20 lg:pt-0"
+      className="lg:min-h-screen flex items-center pt-12 md:pt-20 lg:pt-0"
     >
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Left */}
           <div className="space-y-2.5 md:space-y-4 xl:space-y-5.5 2xl:space-y-6">
             <h1
@@ -33,7 +33,7 @@ const Hero = () => {
               Hello, I'm Towfiq Islam
             </h1>
 
-            <h2 className="text-xl xl:!text-2xl md:!text-3xl 2xl:!text-4xl font-bold">
+            <h2 className="!text-xl xl:!text-2xl md:!text-3xl 2xl:!text-4xl font-bold">
               <Typewriter
                 options={{
                   strings: titles,
