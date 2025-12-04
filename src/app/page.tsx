@@ -7,10 +7,25 @@ import Contact from "./_Components/Contact";
 import ScrollToTop from "react-scroll-to-top";
 import Services from "./_Components/Services";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
+import LightRays from "@/lib/LightRays";
 
 const Page = () => {
   return (
     <>
+      <div className="absolute top-0 left-0 w-full h-screen -z-10 pointer-events-none">
+        <LightRays
+          raysOrigin="top-center"
+          raysColor="#00ffff"
+          raysSpeed={1.5}
+          lightSpread={0.8}
+          rayLength={1.2}
+          followMouse={true}
+          mouseInfluence={0.1}
+          noiseAmount={0.1}
+          distortion={0.05}
+          className="custom-rays !z-50"
+        />
+      </div>
       <Hero />
       <Skills />
       <Experiences />
