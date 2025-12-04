@@ -35,10 +35,10 @@ export default function About() {
           {/* Right */}
           <div className="col-span-6 flex flex-col justify-center space-y-6">
             <h1 className="text-4xl lg:text-5xl font-bold">
-              Hi, I'm <span className="text-blue-400">John Portfolio</span>
+              Hi, I'm <span className="text-blue-400">Towfiq Islam</span>
             </h1>
             <p className="text-gray-300 leading-relaxed">
-              I'm a passionate Full Stack Developer with over 5 years of
+              I'm a passionate Full Stack Developer with over 1 years of
               experience building modern web applications. I specialize in
               creating seamless user experiences with cutting-edge technologies.
             </p>
