@@ -8,6 +8,7 @@ import ScrollToTop from "react-scroll-to-top";
 import Services from "./_Components/Services";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import LightRays from "@/lib/LightRays";
+import About from "./_Components/About";
 
 const Page = () => {
   return (
@@ -27,6 +28,7 @@ const Page = () => {
         />
       </div>
       <Hero />
+      <About />
       <Skills />
       <Experiences />
       <Projects />
