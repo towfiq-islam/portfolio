@@ -34,7 +34,7 @@ import cnIcon from "@/Assets/icons/cn.png";
 import uiIcon from "@/Assets/icons/ui.png";
 import tanstackIcon from "@/Assets/icons/tanstack.png";
 import sassIcon from "@/Assets/icons/sass.png";
-
+import { motion } from "framer-motion";
 import { FaBookOpenReader } from "react-icons/fa6";
 
 type SkillItem = {
@@ -113,10 +113,12 @@ const Skills = () => {
 
       <div className="flex flex-wrap gap-2.5 md:gap-3">
         {items.map((item, index) => (
-          <div
+          <motion.div
             key={item?.name}
-            data-aos="fade-up"
-            data-aos-delay={index * 150}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: index * 0.15 }}
+            viewport={{ once: true }}
             className="px-2.5 md:px-3 2xl:px-4 py-1.5 xl:py-2 bg-[#161b22] text-gray-300 text-sm rounded-lg border border-[#1f2937] flex gap-1.5 md:gap-2 items-center"
           >
             <Image
@@ -125,7 +127,7 @@ const Skills = () => {
               className="size-5 md:size-6 xl:size-7"
             />
             {item?.name}
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

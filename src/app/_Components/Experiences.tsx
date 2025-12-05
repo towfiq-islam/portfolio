@@ -1,4 +1,5 @@
 import { Calendar, MapPin, ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface Experience {
   role: string;
@@ -71,8 +72,12 @@ const EditorialExperience = () => {
             >
               {/* Grid Layout */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12">
-                {/* Left Column - Role & Company */}
-                <div data-aos="fade-up" className="lg:col-span-5 space-y-6">
+                {/* Left Column */}
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                  className="lg:col-span-5 space-y-6"
+                >
                   <div className="relative">
                     <div className="md:pt-4">
                       <h2 className="text-2xl md:text-[33px] xl:text-4xl 2xl:text-5xl font-display font-bold leading-tight mb-2 md:mb-3 group-hover:translate-x-2 transition-transform duration-500">
@@ -88,27 +93,47 @@ const EditorialExperience = () => {
 
                   {/* Meta information */}
                   <div className="space-y-2 md:space-y-3 text-muted-foreground">
-                    <div className="flex items-start gap-3">
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.7, delay: 0.1 }}
+                      viewport={{ once: true }}
+                      className="flex items-start gap-3"
+                    >
                       <Calendar className="w-5 h-5 mt-0.5 shrink-0" />
                       <span className="font-medium">{exp.period}</span>
-                    </div>
+                    </motion.div>
 
-                    <div className="flex items-start gap-3">
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.7, delay: 0.1 }}
+                      viewport={{ once: true }}
+                      className="flex items-start gap-3"
+                    >
                       <MapPin className="w-5 h-5 mt-0.5 shrink-0" />
                       <span className="font-medium">{exp.location}</span>
-                    </div>
+                    </motion.div>
                   </div>
 
                   {/* Description */}
-                  <p className="text-foreground/80 leading-relaxed text-sm md:text-lg border-l-2 border-border pl-3 md:pl-4 2xl:pl-6">
+                  <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, delay: 0.1 }}
+                    viewport={{ once: true }}
+                    className="text-foreground/80 leading-relaxed text-sm md:text-lg border-l-2 border-border pl-3 md:pl-4 2xl:pl-6"
+                  >
                     {exp.description}
-                  </p>
+                  </motion.p>
                 </div>
 
-                {/* Right Column - Achievements & Skills */}
-                <div
-                  data-aos="zoom-in"
-                  data-aos-delay="300"
+                {/* Right Column */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  viewport={{ once: true }}
                   className="lg:col-span-7 space-y-10"
                 >
                   {/* Achievements Card */}
@@ -120,12 +145,13 @@ const EditorialExperience = () => {
 
                     <ul className="text-sm md:text-base space-y-2">
                       {exp.achievements.map((achievement, i) => (
-                        <li
+                        <motion.li
                           key={i}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.8, delay: i * 0.3 }}
+                          viewport={{ once: true }}
                           className="flex gap-4 group/item"
-                          style={{
-                            animationDelay: `${index * 100 + i * 50}ms`,
-                          }}
                         >
                           <span className="text-accent font-bold text-lg mt-1 shrink-0">
                             •
@@ -133,26 +159,28 @@ const EditorialExperience = () => {
                           <span className="text-foreground/70 leading-relaxed group-hover/item:text-foreground transition-colors duration-300">
                             {achievement}
                           </span>
-                        </li>
+                        </motion.li>
                       ))}
                     </ul>
 
                     <div className="mt-5">
                       <div className="flex flex-wrap gap-2">
-                        {exp.skills.map(skill => (
-                          <span
-                            key={skill}
+                        {exp.skills.map((skill, i) => (
+                          <motion.span
+                            key={i}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: i * 0.2 }}
+                            viewport={{ once: true }}
                             className="px-3 text-sm py-1 border rounded-full font-medium"
                           >
                             {skill}
-                          </span>
+                          </motion.span>
                         ))}
                       </div>
                     </div>
                   </div>
-
-                  {/* Skills */}
-                </div>
+                </motion.div>
               </div>
             </article>
           ))}

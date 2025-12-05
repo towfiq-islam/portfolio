@@ -21,6 +21,7 @@ import tanstackIcon from "@/Assets/icons/tanstack.png";
 import pusherIcon from "@/Assets/icons/cn.png";
 import momentIcon from "@/Assets/icons/vercel.png";
 import AOS from "aos";
+import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
@@ -201,10 +202,12 @@ const Projects = () => {
             }
           >
             {projects.map((project, index) => (
-              <div
+              <motion.div
                 key={project.title}
-                data-aos="fade-up"
-                data-aos-delay={index * 250}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: index * 0.25 }}
+                viewport={{ once: true }}
               >
                 <div
                   className={`bg-[#0d0d1f] rounded-lg overflow-hidden group border border-gray-800 p-3 md:p-3.5 duration-500
@@ -285,7 +288,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

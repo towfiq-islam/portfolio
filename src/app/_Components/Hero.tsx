@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { PiGithubLogoBold } from "react-icons/pi";
+import { motion } from "framer-motion";
 
 const titles = [
   "Front-End Developer",
@@ -46,9 +47,10 @@ const Hero = () => {
               />
             </h2>
 
-            <p
-              data-aos="fade-up"
-              data-aos-delay="200"
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
               className="text-muted-foreground text-[15px] md:text-base 2xl:text-lg"
             >
               I am a motivated and detail-oriented Front-End Developer with 1+
@@ -56,29 +58,35 @@ const Hero = () => {
               web applications using Next.js, React, and TypeScript. Adept at
               managing multiple projects, solving complex issues, and delivering
               clean and maintainable code.
-            </p>
+            </motion.p>
             <div className="flex flex-wrap gap-3 md:gap-4 pt-2 md:pt-0">
-              <a
-                data-aos="fade-up"
-                data-aos-delay="100"
+              <motion.a
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.3 }}
                 href="https://drive.google.com/file/d/1MKQIIqIQ2ulY3L40lsHtjxHZ70PMf5zq/view?usp=sharing"
                 target="_blank"
                 className="relative overflow-hidden px-4 md:px-5 py-1 md:py-1.5 rounded-full border border-primary text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-primary before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0"
               >
                 Resume
-              </a>
+              </motion.a>
 
-              <a
-                data-aos="fade-up"
-                data-aos-delay="300"
+              <motion.a
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.6 }}
                 href="#contact"
                 className="relative overflow-hidden px-4 md:px-5 py-1 md:py-1.5 rounded-full border border-primary text-white before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-primary before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-full"
               >
                 Contact Me
-              </a>
+              </motion.a>
             </div>
             <div className="flex gap-2.5 md:gap-3 xl:gap-4 pt-2 lg:pt-3">
-              <button data-aos="zoom-in" data-aos-delay="300">
+              <motion.button
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.3 }}
+              >
                 <a
                   href="https://www.facebook.com/towfiqislambd"
                   target="_blank"
@@ -87,9 +95,13 @@ const Hero = () => {
                 >
                   <FaFacebookF className="md:text-lg" />
                 </a>
-              </button>
+              </motion.button>
 
-              <button data-aos="zoom-in" data-aos-delay="700">
+              <motion.button
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.6 }}
+              >
                 <a
                   href="https://www.linkedin.com/in/towfiqislambd"
                   target="_blank"
@@ -98,9 +110,13 @@ const Hero = () => {
                 >
                   <FaLinkedinIn className="md:text-lg" />
                 </a>
-              </button>
+              </motion.button>
 
-              <button data-aos="zoom-in" data-aos-delay="1000">
+              <motion.button
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.9 }}
+              >
                 <a
                   href="https://github.com/towfiqislambd"
                   target="_blank"
@@ -109,7 +125,7 @@ const Hero = () => {
                 >
                   <PiGithubLogoBold className="md:text-lg" />
                 </a>
-              </button>
+              </motion.button>
             </div>
           </div>
 

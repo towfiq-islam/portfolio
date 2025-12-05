@@ -1,9 +1,15 @@
 "use client";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { motion } from "framer-motion";
 
-const About = () => {
-  const code = `const Profile = {
+const aboutCards = [
+  { title: "Total projects", description: "20+" },
+  { title: " Years Experience", description: "1+" },
+  { title: " Satisfaction rate", description: "99%" },
+];
+
+const code = `const Profile = {
   name: 'Towfiq Islam',
   role: 'Front-End Developer',
   seniority: 'Mid-Level',
@@ -23,6 +29,7 @@ const About = () => {
 
 export default Profile;`;
 
+const About = () => {
   return (
     <section id="about" className="pt-18 md:pt-28">
       <div className="container">
@@ -48,12 +55,16 @@ export default Profile;`;
 
         <div className="grid lg:grid-cols-2 gap-7 xl:gap-12">
           {/* Left */}
-          <div className="w-full rounded-xl border border-gray-500 code-card shadow-2xl shadow-black/50 overflow-hidden">
-            {/* Top bar - macOS style */}
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            className="w-full rounded-xl border border-gray-500 code-card shadow-2xl shadow-black/50 overflow-hidden"
+          >
+            {/* Top bar */}
             <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-500">
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              <div className="size-3 rounded-full bg-red-500"></div>
+              <div className="size-3 rounded-full bg-yellow-500"></div>
+              <div className="size-3 rounded-full bg-green-500"></div>
               <span className="ml-auto text-sm text-muted-foreground">
                 developer.ts
               </span>
@@ -81,7 +92,7 @@ export default Profile;`;
               </SyntaxHighlighter>
             </div>
 
-            {/* Status bar */}
+            {/* Bottom bar */}
             <div className="flex justify-between px-4 py-2 border-t border-gray-500 text-muted-foreground text-xs bg-transparent">
               <span>UTF-8</span>
               <span>TypeScript</span>
@@ -90,54 +101,84 @@ export default Profile;`;
           </div>
 
           {/* Right */}
-          <div className="flex flex-col justify-center space-y-2.5 md:space-y-4 xl:space-y-6">
-            <h3 className="text-lg md:text-2xl xl:text-3xl font-bold text-blue-400">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="flex flex-col justify-center space-y-2.5 md:space-y-4 xl:space-y-6"
+          >
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-lg md:text-2xl xl:text-3xl font-bold text-blue-400"
+            >
               Front-End Developer & Problem Solver
-            </h3>
+            </motion.h3>
 
-            <p className="text-gray-400 leading-relaxed text-sm md:text-base">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-gray-400 leading-relaxed text-sm md:text-base"
+            >
               I'm a passionate Front-End Developer with over 1 years of
               experience building modern web applications. I specialize in
               creating seamless user experiences with cutting-edge technologies.
-            </p>
+            </motion.p>
 
-            <p className="text-gray-400 leading-relaxed text-sm md:text-base">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="text-gray-400 leading-relaxed text-sm md:text-base"
+            >
               With a strong commitment to writing clean, maintainable, and
               scalable code, I collaborate effectively with UI/UX designers and
               backend teams to deliver visually appealing, functional, and
               future-ready digital solutions.
-            </p>
+            </motion.p>
 
-            <p className="text-gray-400 leading-relaxed text-sm md:text-base">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="text-gray-400 leading-relaxed text-sm md:text-base md:pb-5"
+            >
               When I'm not coding, you can find me exploring new technologies. I
               enjoy blending modern development practices with good design so
               every project not only performs well but also looks and feels
               great to use.
-            </p>
+            </motion.p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 xl:gap-7">
-              <div className="bg-black/20 p-4 xl:p-5 text-center flex flex-col gap-1.5 justify-center items-center rounded-xl shadow shadow-primary">
-                <p className="text-2xl xl:text-3xl font-black">20+</p>
-                <h3 className="text-gray-300 text-sm xl:text-base text-nowrap">
-                  Total projects
-                </h3>
-              </div>
-
-              <div className="bg-black/20 p-4 xl:p-5 text-center flex flex-col gap-1.5 justify-center items-center rounded-xl shadow shadow-primary">
-                <p className="text-2xl xl:text-3xl font-black">1+</p>
-                <h3 className="text-gray-300 text-sm xl:text-base text-nowrap">
-                  Years Experience
-                </h3>
-              </div>
-
-              <div className="bg-black/20 p-4 xl:p-5 text-center flex flex-col gap-1.5 justify-center items-center rounded-xl shadow shadow-blue-500">
-                <p className="text-2xl xl:text-3xl font-black">99%</p>
-                <h3 className="text-gray-300 text-sm xl:text-base text-nowrap">
-                  Satisfaction rate
-                </h3>
-              </div>
+              {aboutCards?.map((item, idx) => (
+                <motion.div
+                  key={item?.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: idx * 0.2 }}
+                  viewport={{ once: true }}
+                  whileHover={{
+                    scale: 1.05,
+                  }}
+                  className="bg-black/10 p-4 xl:p-5 text-center flex flex-col gap-1.5 justify-center items-center rounded-xl shadow shadow-primary"
+                >
+                  <p className="text-2xl xl:text-3xl font-black">
+                    {item?.description}
+                  </p>
+                  <h3 className="text-gray-300 text-sm xl:text-base text-nowrap">
+                    {item?.title}
+                  </h3>
+                </motion.div>
+              ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { Github, Linkedin, Mail, CodeXml } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -9,24 +11,43 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 md:gap-7 lg:gap-10">
           {/* Left */}
           <div>
-            <Link href="/" className="flex gap-3 items-center pb-3 md:pb-5">
-              <p className="w-10 md:w-11 h-9 md:h-10 rounded-xl bg-primary grid place-items-center text-white">
-                <CodeXml />
-              </p>
-              <p className="text-2xl md:text-[26px] font-black text-white font-macondo">
-                Tow<span className="text-primary">fiq</span>
-              </p>
-            </Link>
+            <motion.button
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Link href="/" className="flex gap-3 items-center pb-3 md:pb-5">
+                <p className="w-10 md:w-11 h-9 md:h-10 rounded-xl bg-primary grid place-items-center text-white">
+                  <CodeXml />
+                </p>
+                <p className="text-2xl md:text-[26px] font-black text-white font-macondo">
+                  Tow<span className="text-primary">fiq</span>
+                </p>
+              </Link>
+            </motion.button>
 
-            <p className="text-gray-400 mt-2 max-w-sm text-sm md:text-base">
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="text-gray-400 mt-2 max-w-sm text-sm md:text-base"
+            >
               Building modern, scalable, and high-performance web applications
               using Next.js, React, and TypeScript with clean UI and smooth user
               experiences.
-            </p>
+            </motion.p>
           </div>
 
           {/* Center */}
-          <div className="flex flex-col md:flex-row gap-2.5 md:gap-4 xl:gap-6 text-gray-700 dark:text-gray-300 text-sm md:text-[15px] xl:text-base">
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="flex flex-col md:flex-row gap-2.5 md:gap-4 xl:gap-6 text-gray-400 dark:text-gray-300 text-sm md:text-[15px] xl:text-base"
+          >
             <Link href="/" className="hover:text-primary transition">
               Home
             </Link>
@@ -42,10 +63,16 @@ const Footer = () => {
             <Link href="#experiences" className="hover:text-primary transition">
               Experience
             </Link>
-          </div>
+          </motion.div>
 
           {/* Right */}
-          <div className="flex gap-5">
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="flex gap-5"
+          >
             <a
               href="https://github.com/towfiqislambd"
               target="_blank"
@@ -68,14 +95,20 @@ const Footer = () => {
             >
               <Mail size={24} />
             </a>
-          </div>
+          </motion.div>
         </div>
 
         <div className="border-t border-gray-200 dark:border-gray-800 mt-5 md:mt-8 pt-4 md:pt-6 flex justify-center items-center">
-          <p className="text-gray-600 dark:text-gray-400 text-[13px] md:text-sm">
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="text-gray-600 dark:text-gray-400 text-[13px] md:text-sm"
+          >
             Copyright © {new Date().getFullYear()} - All rights reserved by{" "}
             <span className="text-primary">Towfiq Islam</span>
-          </p>
+          </motion.p>
         </div>
       </div>
     </footer>
