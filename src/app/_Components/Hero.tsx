@@ -130,7 +130,7 @@ const Hero = () => {
           </div>
 
           {/* Right */}
-          <div className="flex justify-center">
+          <div className="flex justify-center relative">
             <div
               data-aos="zoom-in-up"
               data-aos-duration="1200"
@@ -169,6 +169,31 @@ const Hero = () => {
                   height={300}
                 />
               </div>
+
+              {/* Floating Badges */}
+              <motion.div
+                className="bg-blue-700/15 shadow-sm shadow-secondary rounded-full px-3 py-1 absolute top-0 -left-10 hidden lg:block"
+                animate={{ y: [0, -15, 0] }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
+                ✨ Clean Code
+              </motion.div>
+
+              <motion.div
+                className="bg-blue-700/15 shadow-sm shadow-secondary rounded-full px-3 py-1 absolute bottom-0 md:-right-10 hidden lg:block"
+                animate={{ y: [0, -10, 0] }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
+                🚀 Continuously Learning
+              </motion.div>
             </div>
           </div>
         </div>
