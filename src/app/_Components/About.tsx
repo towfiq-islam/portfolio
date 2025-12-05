@@ -32,7 +32,7 @@ export default Profile;`;
             className="text-2xl md:text-[32px] 2xl:text-4xl font-bold text-center"
           >
             About <span className="text-primary">Me</span>
-            <div className="w-14 md:w-18 h-1 rounded bg-primary mx-auto mt-1.5 2xl:mt-2.5"></div>
+            <div className="w-14 md:w-18 h-1 rounded bg-primary mx-auto mt-1 2xl:mt-2" />
           </h2>
 
           <p
@@ -90,32 +90,32 @@ export default Profile;`;
           </div>
 
           {/* Right */}
-          <div className="flex flex-col justify-center space-y-4 xl:space-y-6">
-            <h3 className="text-2xl xl:text-3xl font-bold text-blue-400">
+          <div className="flex flex-col justify-center space-y-2.5 md:space-y-4 xl:space-y-6">
+            <h3 className="text-lg md:text-2xl xl:text-3xl font-bold text-blue-400">
               Front-End Developer & Problem Solver
             </h3>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed text-sm md:text-base">
               I'm a passionate Front-End Developer with over 1 years of
               experience building modern web applications. I specialize in
               creating seamless user experiences with cutting-edge technologies.
             </p>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed text-sm md:text-base">
               With a strong commitment to writing clean, maintainable, and
               scalable code, I collaborate effectively with UI/UX designers and
               backend teams to deliver visually appealing, functional, and
               future-ready digital solutions.
             </p>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed text-sm md:text-base">
               When I'm not coding, you can find me exploring new technologies. I
               enjoy blending modern development practices with good design so
               every project not only performs well but also looks and feels
               great to use.
             </p>
 
-            <div className="grid grid-cols-3 gap-5 xl:gap-7">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 xl:gap-7">
               <div className="bg-black/20 p-4 xl:p-5 text-center flex flex-col gap-1.5 justify-center items-center rounded-xl shadow shadow-primary">
                 <p className="text-2xl xl:text-3xl font-black">20+</p>
                 <h3 className="text-gray-300 text-sm xl:text-base text-nowrap">

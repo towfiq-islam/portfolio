@@ -4,21 +4,21 @@ import { Github, Linkedin, Mail, CodeXml } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-gray-800 bg-[#0d0d1f] pt-12 pb-6">
+    <footer className="border-t border-gray-800 bg-[#0d0d1f] pt-8 md:pt-12 pb-6">
       <div className="container">
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-7 lg:gap-10">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 md:gap-7 lg:gap-10">
           {/* Left */}
           <div>
-            <Link href="/" className="flex gap-3 items-center pb-5">
-              <p className="w-11 h-10 rounded-xl bg-primary grid place-items-center text-white">
+            <Link href="/" className="flex gap-3 items-center pb-3 md:pb-5">
+              <p className="w-10 md:w-11 h-9 md:h-10 rounded-xl bg-primary grid place-items-center text-white">
                 <CodeXml />
               </p>
-              <p className="text-[26px] font-black text-white font-macondo">
+              <p className="text-2xl md:text-[26px] font-black text-white font-macondo">
                 Tow<span className="text-primary">fiq</span>
               </p>
             </Link>
 
-            <p className="text-gray-400 mt-2 max-w-sm">
+            <p className="text-gray-400 mt-2 max-w-sm text-sm md:text-base">
               Building modern, scalable, and high-performance web applications
               using Next.js, React, and TypeScript with clean UI and smooth user
               experiences.
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
 
           {/* Center */}
-          <div className="flex flex-col md:flex-row gap-4 xl:gap-6 text-gray-700 dark:text-gray-300 text-[15px] xl:text-base">
+          <div className="flex flex-col md:flex-row gap-2.5 md:gap-4 xl:gap-6 text-gray-700 dark:text-gray-300 text-sm md:text-[15px] xl:text-base">
             <Link href="/" className="hover:text-primary transition">
               Home
             </Link>
@@ -71,8 +71,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-200 dark:border-gray-800 mt-8 pt-6 flex justify-center items-center">
-          <p className="text-gray-600 dark:text-gray-400 text-sm">
+        <div className="border-t border-gray-200 dark:border-gray-800 mt-5 md:mt-8 pt-4 md:pt-6 flex justify-center items-center">
+          <p className="text-gray-600 dark:text-gray-400 text-[13px] md:text-sm">
             Copyright © {new Date().getFullYear()} - All rights reserved by{" "}
             <span className="text-primary">Towfiq Islam</span>
           </p>
