@@ -10,6 +10,7 @@ import { FaSortAmountUpAlt } from "react-icons/fa";
 import { MdDocumentScanner } from "react-icons/md";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaBars } from "react-icons/fa6";
+import { FaUser } from "react-icons/fa";
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -21,10 +22,11 @@ const Navbar = () => {
 
   const menuItems = [
     { id: "home", label: "Home", icon: <FaHome /> },
+    { id: "about", label: "About", icon: <FaUser /> },
     { id: "skills", label: "Skills", icon: <FaSortAmountUpAlt /> },
     { id: "experiences", label: "Experiences", icon: <FaGraduationCap /> },
     { id: "projects", label: "Projects", icon: <MdDocumentScanner /> },
-    { id: "services", label: "Services", icon: <IoMdOptions /> },
+    // { id: "services", label: "Services", icon: <IoMdOptions /> },
     { id: "contact", label: "Contact", icon: <IoMdMail /> },
   ];
 
