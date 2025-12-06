@@ -172,8 +172,8 @@ const Hero = () => {
 
               {/* Floating Badges */}
               <motion.div
-                className="bg-blue-700/15 shadow-sm shadow-secondary rounded-full px-3 py-1 absolute top-0 -left-10 hidden lg:block"
-                animate={{ y: [0, -15, 0] }}
+                className="bg-blue-700/15 shadow-sm shadow-secondary rounded-full px-2 md:px-3 py-1 absolute top-0 md:top-2 -left-5 md:-left-10 text-sm md:text-base"
+                animate={{ y: [0, -10, 0] }}
                 transition={{
                   duration: 2,
                   repeat: Infinity,
@@ -184,7 +184,7 @@ const Hero = () => {
               </motion.div>
 
               <motion.div
-                className="bg-blue-700/15 shadow-sm shadow-secondary rounded-full px-3 py-1 absolute bottom-0 md:-right-10 hidden lg:block"
+                className="bg-blue-700/15 shadow-sm shadow-secondary rounded-full px-2 md:px-3 py-1 absolute -bottom-8 md:bottom-0 -right-3 md:-right-10  text-sm md:text-base"
                 animate={{ y: [0, -10, 0] }}
                 transition={{
                   duration: 2,
