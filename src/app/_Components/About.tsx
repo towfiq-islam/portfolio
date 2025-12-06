@@ -4,7 +4,7 @@ import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { motion } from "framer-motion";
 
 const aboutCards = [
-  { title: "Total projects", description: "20+" },
+  { title: "Total projects", description: "25+" },
   { title: " Years Experience", description: "1+" },
   { title: " Satisfaction rate", description: "99%" },
 ];
@@ -125,9 +125,12 @@ const About = () => {
               viewport={{ once: true }}
               className="text-gray-400 leading-relaxed text-sm md:text-base"
             >
-              I'm a passionate Front-End Developer with over 1 years of
-              experience building modern web applications. I specialize in
-              creating seamless user experiences with cutting-edge technologies.
+              I'm a passionate Front-End Developer who loves turning creative
+              ideas into smooth, functional, and visually engaging web
+              experiences. My journey into programming started with simple
+              curiosity, but it quickly became a passion that drives me every
+              day — learning, building, refining, and pushing myself to create
+              better digital products.
             </motion.p>
 
             <motion.p
@@ -137,10 +140,13 @@ const About = () => {
               viewport={{ once: true }}
               className="text-gray-400 leading-relaxed text-sm md:text-base"
             >
-              With a strong commitment to writing clean, maintainable, and
-              scalable code, I collaborate effectively with UI/UX designers and
-              backend teams to deliver visually appealing, functional, and
-              future-ready digital solutions.
+              Collaboration is a big part of my growth — working alongside
+              designers, backend engineers, and creative teams always inspires
+              me to think beyond just writing code. I love projects where
+              technology and design meet, where a concept turns into a seamless,
+              polished, and user-friendly experience. I enjoy working with
+              modern tools like Next.js, React, TypeScript, Tailwind CSS, and
+              Framer Motion, especially when it comes to crafting clean UI.
             </motion.p>
 
             <motion.p
@@ -150,10 +156,10 @@ const About = () => {
               viewport={{ once: true }}
               className="text-gray-400 leading-relaxed text-sm md:text-base md:pb-5"
             >
-              When I'm not coding, you can find me exploring new technologies. I
-              enjoy blending modern development practices with good design so
-              every project not only performs well but also looks and feels
-              great to use.
+              For me, web development isn’t just a profession — it’s a space
+              where curiosity, creativity, and continuous learning come
+              together. Every project is a chance to improve, innovate, and
+              build experiences that truly feel good to use.
             </motion.p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 xl:gap-7">

@@ -50,7 +50,7 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-5 2xl:gap-6">
           {services.map((s, i) => (
             <div key={i} data-aos="zoom-in" data-aos-delay={i * 300}>
-              <div className="bg-[#0d0d1f] p-5 md:p-5.5 2xl:p-8 rounded-2xl shadow hover:shadow-primary transition-shadow duration-300 border border-transparent hover:border-primary">
+              <div className="bg-[#0d0d1f] p-5 md:p-5.5 2xl:p-8 rounded-2xl shadow hover:shadow-primary transition-shadow duration-300 border border-transparent hover:border-primary xl:min-h-[270px]">
                 <div className="mb-4 2xl:mb-6 size-14 flex items-center justify-center rounded-xl bg-[#0a0a18] border border-primary">
                   {s.icon}
                 </div>

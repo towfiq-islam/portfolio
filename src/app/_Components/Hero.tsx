@@ -51,7 +51,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-muted-foreground text-[15px] md:text-base 2xl:text-lg"
+              className="text-gray-300 text-[15px] md:text-base 2xl:text-lg"
             >
               I am a motivated and detail-oriented Front-End Developer with 1+
               years of experience building modern, responsive, and user-friendly
