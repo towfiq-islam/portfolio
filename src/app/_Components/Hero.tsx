@@ -31,7 +31,10 @@ const Hero = () => {
               data-aos-delay="100"
               className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white"
             >
-              Hello, I'm Towfiq Islam
+              Hello, I'm{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                Towfiq Islam
+              </span>
             </h1>
 
             <h2 className="!text-xl xl:!text-2xl md:!text-3xl 2xl:!text-4xl font-bold">
