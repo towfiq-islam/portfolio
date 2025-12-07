@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-gray-800 bg-[#0d0d1f] pt-8 md:pt-12 pb-6">
+    <footer className="border-t border-gray-800 bg-[#0d0d1f] pt-10 md:pt-12 pb-7">
       <div className="container">
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6 md:gap-7 lg:gap-10">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-7 lg:gap-10">
           {/* Left */}
           <div>
             <motion.button
@@ -46,7 +46,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
             viewport={{ once: true }}
-            className="flex flex-col md:flex-row gap-2.5 md:gap-4 xl:gap-6 text-gray-400 dark:text-gray-300 text-sm md:text-[15px] xl:text-base"
+            className="flex flex-col md:flex-row gap-2.5 md:gap-4 xl:gap-6 text-gray-400 text-sm md:text-[15px] xl:text-base"
           >
             <Link href="/" className="hover:text-primary transition">
               Home
@@ -98,13 +98,13 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        <div className="border-t border-gray-200 dark:border-gray-800 mt-5 md:mt-8 pt-4 md:pt-6 flex justify-center items-center">
+        <div className="border-t border-gray-700 mt-6 md:mt-8 pt-4 md:pt-6 flex justify-center items-center">
           <motion.p
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-gray-600 dark:text-gray-400 text-[13px] md:text-sm"
+            className="text-gray-400 text-[13px] md:text-sm"
           >
             Copyright © {new Date().getFullYear()} - All rights reserved by{" "}
             <span className="text-primary">Towfiq Islam</span>

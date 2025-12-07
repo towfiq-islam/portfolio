@@ -180,11 +180,11 @@ const Hero = () => {
                   ease: "easeInOut",
                 }}
               >
-                ✨ Clean Code
+                🛠️ Clean Code
               </motion.div>
 
               <motion.div
-                className="bg-blue-700/15 shadow-sm shadow-secondary rounded-full px-2 md:px-3 py-1 absolute -bottom-8 md:bottom-0 -right-3 md:-right-10  text-sm md:text-base"
+                className="bg-blue-700/15 shadow-sm shadow-secondary rounded-full px-2 md:px-3 py-1 absolute -bottom-5 md:bottom-0 -right-3 md:-right-10  text-sm md:text-base"
                 animate={{ y: [0, -10, 0] }}
                 transition={{
                   duration: 2,
@@ -192,7 +192,19 @@ const Hero = () => {
                   ease: "easeInOut",
                 }}
               >
-                🚀 Continuously Learning
+                🎯 Dedicated Learner
+              </motion.div>
+
+              <motion.div
+                className="bg-blue-700/15 shadow-sm shadow-secondary rounded-full px-2 md:px-3 py-1 absolute top-20 -right-20  text-sm md:text-base hidden md:block"
+                animate={{ y: [0, -10, 0] }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
+                💡 Problem Solver
               </motion.div>
             </div>
           </div>
