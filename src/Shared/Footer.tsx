@@ -98,7 +98,7 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        <div className="border-t border-gray-700 mt-6 md:mt-8 pt-4 md:pt-6 flex justify-center items-center">
+        <div className="border-t border-gray-700 mt-6 md:mt-8 pt-6 flex justify-center items-center">
           <motion.p
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
