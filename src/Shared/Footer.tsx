@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-gray-800 bg-[#0d0d1f] pt-10 md:pt-12 pb-7">
+    <footer className="border-t border-gray-800 bg-[#0d0d1f] pt-10 md:pt-12 pb-6 md:pb-7">
       <div className="container">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-7 lg:gap-10">
           {/* Left */}
@@ -98,7 +98,7 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        <div className="border-t border-gray-700 mt-6 md:mt-8 pt-6 flex justify-center items-center">
+        <div className="border-t border-gray-700 mt-6 md:mt-8 pt-4 md:pt-6 flex justify-center items-center">
           <motion.p
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
