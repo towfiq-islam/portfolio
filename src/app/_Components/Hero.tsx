@@ -170,7 +170,6 @@ const Hero = () => {
                 />
               </div>
 
-              
               {/* Floating Badges */}
               <motion.div
                 className="bg-blue-700/15 shadow-sm shadow-secondary rounded-full px-2 xl:px-3 py-1 absolute top-0 md:top-2 -left-5 md:-left-10 text-sm xl:text-base"
