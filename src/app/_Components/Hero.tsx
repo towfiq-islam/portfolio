@@ -71,7 +71,6 @@ const Hero = () => {
                 Resume
               </motion.a>
 
-              
               <motion.a
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
