@@ -64,7 +64,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.3 }}
-                href="https://drive.google.com/file/d/1XyXTqVO1SICm9ECXzn3n7xhwdrehZC1S/view?usp=sharing"
+                href="https://drive.google.com/file/d/1PM8RSQUoTd_WofX5Iej0rFTuPiA6ykcQ/view?usp=sharing"
                 target="_blank"
                 className="relative overflow-hidden px-4 md:px-5 py-1 md:py-1.5 rounded-full border border-primary text-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-primary before:-z-10 before:transition-all before:duration-600 hover:text-white hover:before:w-0"
               >
@@ -103,7 +103,7 @@ const Hero = () => {
                 transition={{ duration: 0.7, delay: 0.6 }}
               >
                 <a
-                  href="https://www.linkedin.com/in/towfiqislambd"
+                  href="https://www.linkedin.com/in/towfiq03"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="size-9 md:size-10 xl:size-12 rounded-full border-2 border-primary grid place-items-center hover:bg-primary text-primary hover:text-white hover:border-primary duration-500 transition-all hover:rotate-[360deg]"
@@ -118,7 +118,7 @@ const Hero = () => {
                 transition={{ duration: 0.7, delay: 0.9 }}
               >
                 <a
-                  href="https://github.com/towfiqislambd"
+                  href="https://github.com/towfiq-islam"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="size-9 md:size-10 xl:size-12 rounded-full border-2 border-primary flex items-center justify-center hover:bg-primary text-primary hover:text-white hover:border-primary duration-500 transition-all hover:rotate-[360deg]"

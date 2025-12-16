@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Link from "next/link";
 import { Github, Linkedin, Mail, CodeXml } from "lucide-react";
 import { motion } from "framer-motion";
@@ -74,7 +73,7 @@ const Footer = () => {
             className="flex gap-5"
           >
             <a
-              href="https://github.com/towfiqislambd"
+              href="https://github.com/towfiq-islam"
               target="_blank"
               className="text-gray-600 hover:text-primary transition"
             >
@@ -82,7 +81,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/towfiqislambd"
+              href="https://www.linkedin.com/in/towfiq03"
               target="_blank"
               className="text-gray-600 hover:text-primary transition"
             >
@@ -90,7 +89,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="mailto:towfiqlslambd@gmail.com"
+              href="mailto:towfiqislam2003@gmail.com"
               className="text-gray-600 hover:text-primary transition"
             >
               <Mail size={24} />

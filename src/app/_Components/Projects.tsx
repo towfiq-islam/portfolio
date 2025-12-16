@@ -36,7 +36,7 @@ const projects = [
       { name: "Tanstack Query", icon: tanstackIcon },
       { name: "Shadcn UI", icon: shadCnIcon },
     ],
-    github: "https://github.com/towfiqislambd/healthy-recipes",
+    github: "https://github.com/towfiq-islam/healthy-recipes",
     demo: "https://healthy-care-recipes.vercel.app",
   },
   {
@@ -52,7 +52,7 @@ const projects = [
       { name: "Framer Motion", icon: framerIcon },
       { name: "Axios", icon: axiosIcon },
     ],
-    github: "https://github.com/towfiqislambd/job-minds",
+    github: "https://github.com/towfiq-islam/job-minds",
     demo: "https://job-minds.vercel.app",
   },
   {
@@ -68,7 +68,7 @@ const projects = [
       { name: "Tailwind CSS", icon: tailwindIcon },
       { name: "Moment.js", icon: momentIcon },
     ],
-    github: "https://github.com/towfiqislambd/sustainable-trades",
+    github: "https://github.com/towfiq-islam/sustainable-trades",
     demo: "https://sustainable-trades.vercel.app",
   },
   {
@@ -84,7 +84,7 @@ const projects = [
       { name: "Redux", icon: reduxIcon },
       { name: "React Hook Form", icon: axiosIcon },
     ],
-    github: "https://github.com/towfiqislambd/blackjack-payments",
+    github: "https://github.com/towfiq-islam/blackjack-payments",
     demo: "https://blackjack-payments.vercel.app",
   },
   {
@@ -100,7 +100,7 @@ const projects = [
       { name: "React Router", icon: framerIcon },
       { name: "Shadcn UI", icon: shadCnIcon },
     ],
-    github: "https://github.com/towfiqislambd/park-clear",
+    github: "https://github.com/towfiq-islam/park-clear",
     demo: "https://park-clear.netlify.app",
   },
   {
@@ -116,7 +116,7 @@ const projects = [
       { name: "Tailwind CSS", icon: tailwindIcon },
       { name: "AOS", icon: shadCnIcon },
     ],
-    github: "https://github.com/towfiqislambd/more-reality",
+    github: "https://github.com/towfiq-islam/more-reality",
     demo: "https://more-reality.vercel.app",
   },
 ];
