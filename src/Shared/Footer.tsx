@@ -89,7 +89,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="mailto:towfiqislam2003@gmail.com"
+              href="mailto:tofiqislam03@gmail.com"
               className="text-gray-600 hover:text-primary transition"
             >
               <Mail size={24} />
